@@ -1,0 +1,88 @@
+{
+  "name": "vscode-gestalt",
+  "displayName": "Gestalt",
+  "description": "Pinterest's design system extension",
+  "publisher": "pinterest",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.57.0"
+  },
+  "keywords": [
+    "Pinterest",
+    "Gestalt",
+    "Design System"
+  ],
+  "license": "Apache-2.0",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "icon": "images/vscode-gestalt-256.png",
+  "configurationDefaults": {
+    "[javascript]": {
+      "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+      }
+    }
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "gestalt.track.snippet",
+        "title": "Track snippet insertions"
+      }
+    ],
+    "configuration": [
+      {
+        "title": "Gestalt",
+        "properties": {
+          "gestalt.enableTelemetry": {
+            "default": true,
+            "description": "Enable usage data and errors tracking (Google Analytics)",
+            "scope": "window",
+            "type": "boolean"
+          }
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "generate:snippets": "node ./scripts/generateSnippets.mjs",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "14.x",
+    "@types/uuid": "^8.3.1",
+    "@types/vscode": "^1.57.0",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.27.0",
+    "glob": "^7.1.7",
+    "mocha": "^8.4.0",
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.2",
+    "vscode-test": "^1.5.2"
+  },
+  "dependencies": {
+    "execa": "^5.1.1",
+    "got": "^11.8.2",
+    "react-docgen": "^5.4.0",
+    "uuid": "^8.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pinterest/vscode-gestalt"
+  }
+}

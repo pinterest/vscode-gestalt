@@ -1,0 +1,446 @@
+{
+  "Gestalt ActivationCard": {
+    "prefix": "<ActivationCard",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<ActivationCard",
+      "\tmessage={${1:string}}",
+      "\tstatus=\"${2|notStarted,pending,needsAttention,complete|}\"",
+      "\tstatusMessage={${3:string}}",
+      "\ttitle={${4:string}}",
+      "/>"
+    ]
+  },
+  "Gestalt Avatar": {
+    "prefix": "<Avatar",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Avatar", "\tname={${1:string}}", "/>"]
+  },
+  "Gestalt AvatarGroup": {
+    "prefix": "<AvatarGroup",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<AvatarGroup",
+      "\taccessibilityLabel={${1:string}}",
+      "\tcollaborators={${2:arrayOf}}",
+      "/>"
+    ]
+  },
+  "Gestalt AvatarPair": {
+    "prefix": "<AvatarPair",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<AvatarPair",
+      "\tcollaborators={${1:\\$ReadOnlyArray<CollaboratorDataType>}}",
+      "/>"
+    ]
+  },
+  "Gestalt Badge": {
+    "prefix": "<Badge",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Badge", "\ttext={${1:string}}", "/>"]
+  },
+  "Gestalt Box": {
+    "prefix": "<Box",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Box>", "\t${0:node}", "</Box>"]
+  },
+  "Gestalt Button": {
+    "prefix": "<Button",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Button", "\ttext={${1:string}}", "/>"]
+  },
+  "Gestalt ButtonGroup": {
+    "prefix": "<ButtonGroup",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<ButtonGroup>", "\t${0:node}", "</ButtonGroup>"]
+  },
+  "Gestalt Callout": {
+    "prefix": "<Callout",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<Callout",
+      "\ticonAccessibilityLabel={${1:string}}",
+      "\tmessage={${2:string}}",
+      "\ttype=\"${3|error,info,warning|}\"",
+      "/>"
+    ]
+  },
+  "Gestalt Card": {
+    "prefix": "<Card",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Card>", "\t${0:node}", "</Card>"]
+  },
+  "Gestalt Checkbox": {
+    "prefix": "<Checkbox",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Checkbox", "\tid={${1:string}}", "\tonChange={${2:func}}", "/>"]
+  },
+  "Gestalt Collage": {
+    "prefix": "<Collage",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<Collage",
+      "\tcolumns=\"${1|2,3,4|}\"",
+      "\theight={${2:number}}",
+      "\trenderImage={${3:({| width: number, height: number, index: number,\n|}) => Node}}",
+      "\twidth={${4:number}}",
+      "/>"
+    ]
+  },
+  "Gestalt Collection": {
+    "prefix": "<Collection",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<Collection",
+      "\tItem={${1:({| idx: number |}) => Node}}",
+      "\tlayout={${2:\\$ReadOnlyArray<{| top: number, left: number, width: number, height: number,\n|}>}}",
+      "/>"
+    ]
+  },
+  "Gestalt ColorSchemeProvider": {
+    "prefix": "<ColorSchemeProvider",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<ColorSchemeProvider>", "\t${0:node}", "</ColorSchemeProvider>"]
+  },
+  "Gestalt Column": {
+    "prefix": "<Column",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<Column",
+      "\tspan=\"${1|0,1,2,3,4,5,6,7,8,9,10,11,12|}\"",
+      ">${2:node}</Column>"
+    ]
+  },
+  "Gestalt ComboBox": {
+    "prefix": "<ComboBox",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<ComboBox",
+      "\taccessibilityClearButtonLabel={${1:string}}",
+      "\tid={${2:string}}",
+      "\tlabel={${3:string}}",
+      "\tnoResultText={${4:string}}",
+      "\toptions={${5:arrayOf}}",
+      "/>"
+    ]
+  },
+  "Gestalt Container": {
+    "prefix": "<Container",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Container>", "\t${0:node}", "</Container>"]
+  },
+  "Gestalt Datapoint": {
+    "prefix": "<Datapoint",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<Datapoint",
+      "\ttitle={${1:string}}",
+      "\tvalue={${2:string}}",
+      "/>"
+    ]
+  },
+  "Gestalt Divider": {
+    "prefix": "<Divider",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Divider", "/>"]
+  },
+  "Gestalt Dropdown": {
+    "prefix": "<Dropdown",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<Dropdown",
+      "\tid={${1:string}}",
+      "\tonDismiss={${2:() => void}}",
+      ">${3:node}</Dropdown>"
+    ]
+  },
+  "Gestalt Fieldset": {
+    "prefix": "<Fieldset",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Fieldset", "\tlegend={${1:string}}", ">${2:node}</Fieldset>"]
+  },
+  "Gestalt Flex": {
+    "prefix": "<Flex",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Flex>", "\t${0:node}", "</Flex>"]
+  },
+  "Gestalt Heading": {
+    "prefix": "<Heading",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Heading>", "\t${0:node}", "</Heading>"]
+  },
+  "Gestalt Icon": {
+    "prefix": "<Icon",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Icon", "\taccessibilityLabel={${1:string}}", "/>"]
+  },
+  "Gestalt IconButton": {
+    "prefix": "<IconButton",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<IconButton", "\taccessibilityLabel={${1:string}}", "/>"]
+  },
+  "Gestalt Image": {
+    "prefix": "<Image",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<Image",
+      "\talt={${1:string}}",
+      "\tnaturalHeight={${2:number}}",
+      "\tnaturalWidth={${3:number}}",
+      "\tsrc={${4:string}}",
+      ">${5:node}</Image>"
+    ]
+  },
+  "Gestalt Label": {
+    "prefix": "<Label",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Label", "\thtmlFor={${1:string}}", ">${2:node}</Label>"]
+  },
+  "Gestalt Layer": {
+    "prefix": "<Layer",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Layer>", "\t${0:node}", "</Layer>"]
+  },
+  "Gestalt Letterbox": {
+    "prefix": "<Letterbox",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<Letterbox",
+      "\tcontentAspectRatio={${1:number}}",
+      "\theight={${2:number}}",
+      "\twidth={${3:number}}",
+      ">${4:node}</Letterbox>"
+    ]
+  },
+  "Gestalt Link": {
+    "prefix": "<Link",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Link", "\thref={${1:string}}", ">${2:node}</Link>"]
+  },
+  "Gestalt Mask": {
+    "prefix": "<Mask",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Mask>", "\t${0:node}", "</Mask>"]
+  },
+  "Gestalt Masonry": {
+    "prefix": "<Masonry",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<Masonry",
+      "\tcomp={${1:ComponentType<{| data: T, itemIdx: number, isMeasuring: boolean,\n|}>}}",
+      "\titems={${2:\\$ReadOnlyArray<T>}}",
+      "/>"
+    ]
+  },
+  "Gestalt Modal": {
+    "prefix": "<Modal",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<Modal",
+      "\taccessibilityModalLabel={${1:string}}",
+      "\tonDismiss={${2:() => void}}",
+      ">${3:node}</Modal>"
+    ]
+  },
+  "Gestalt Module": {
+    "prefix": "<Module",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Module", "\tid={${1:string}}", ">${2:node}</Module>"]
+  },
+  "Gestalt OnLinkNavigationProvider": {
+    "prefix": "<OnLinkNavigationProvider",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<OnLinkNavigationProvider",
+      "\tonNavigation={${1:(OnLinkNavigationArgs) => ?EventHandlerType}}",
+      ">${2:node}</OnLinkNavigationProvider>"
+    ]
+  },
+  "Gestalt PageHeader": {
+    "prefix": "<PageHeader",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<PageHeader", "\ttitle={${1:string}}", "/>"]
+  },
+  "Gestalt Pog": {
+    "prefix": "<Pog",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Pog", "/>"]
+  },
+  "Gestalt Popover": {
+    "prefix": "<Popover",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<Popover",
+      "\tanchor={${1:shape}}",
+      "\tonDismiss={${2:() => void}}",
+      ">${3:node}</Popover>"
+    ]
+  },
+  "Gestalt Pulsar": {
+    "prefix": "<Pulsar",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Pulsar", "/>"]
+  },
+  "Gestalt RadioButton": {
+    "prefix": "<RadioButton",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<RadioButton",
+      "\tid={${1:string}}",
+      "\tonChange={${2:func}}",
+      "\tvalue={${3:string}}",
+      "/>"
+    ]
+  },
+  "Gestalt ScrollFetch": {
+    "prefix": "<ScrollFetch",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<ScrollFetch", "\tisFetching={${1|true,false|}}", "/>"]
+  },
+  "Gestalt SearchField": {
+    "prefix": "<SearchField",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<SearchField",
+      "\taccessibilityLabel={${1:string}}",
+      "\tid={${2:string}}",
+      "\tonChange={${3:func}}",
+      "/>"
+    ]
+  },
+  "Gestalt SegmentedControl": {
+    "prefix": "<SegmentedControl",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<SegmentedControl",
+      "\titems={${1:\\$ReadOnlyArray<Node>}}",
+      "\tonChange={${2:AbstractEventHandler< SyntheticMouseEvent<HTMLButtonElement>, {| activeIndex: number |},\n>}}",
+      "\tselectedItemIndex={${3:number}}",
+      "/>"
+    ]
+  },
+  "Gestalt SelectList": {
+    "prefix": "<SelectList",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<SelectList",
+      "\tid={${1:string}}",
+      "\tonChange={${2:AbstractEventHandler<SyntheticInputEvent<HTMLSelectElement>, {| value: string |}>}}",
+      "/>"
+    ]
+  },
+  "Gestalt Sheet": {
+    "prefix": "<Sheet",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Sheet>", "\t${0:node}", "</Sheet>"]
+  },
+  "Gestalt Spinner": {
+    "prefix": "<Spinner",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<Spinner",
+      "\tshow={${1|true,false|}}",
+      "\taccessibilityLabel={${2:string}}",
+      "/>"
+    ]
+  },
+  "Gestalt Status": {
+    "prefix": "<Status",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<Status",
+      "\ttype=\"${1|unstarted,inProgress,halted,ok,problem,canceled,warning|}\"",
+      "\ttitle={${2:string}}",
+      "/>"
+    ]
+  },
+  "Gestalt Sticky": {
+    "prefix": "<Sticky",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Sticky>", "\t${0:node}", "</Sticky>"]
+  },
+  "Gestalt Switch": {
+    "prefix": "<Switch",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<Switch",
+      "\tid={${1:string}}",
+      "\tonChange={${2:({| event: SyntheticInputEvent<>, value: boolean |}) => void}}",
+      "/>"
+    ]
+  },
+  "Gestalt Table": {
+    "prefix": "<Table",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Table>", "\t${0:node}", "</Table>"]
+  },
+  "Gestalt Tag": {
+    "prefix": "<Tag",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Tag", "\ttext={${1:string}}", "/>"]
+  },
+  "Gestalt TapArea": {
+    "prefix": "<TapArea",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<TapArea>", "\t${0:node}", "</TapArea>"]
+  },
+  "Gestalt Text": {
+    "prefix": "<Text",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Text>", "\t${0:node}", "</Text>"]
+  },
+  "Gestalt TextArea": {
+    "prefix": "<TextArea",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<TextArea", "\tid={${1:string}}", "\tonChange={${2:func}}", "/>"]
+  },
+  "Gestalt TextField": {
+    "prefix": "<TextField",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<TextField", "\tid={${1:string}}", "\tonChange={${2:func}}", "/>"]
+  },
+  "Gestalt Toast": {
+    "prefix": "<Toast",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Toast", "\ttext={${1:string | Element}}", "/>"]
+  },
+  "Gestalt Tooltip": {
+    "prefix": "<Tooltip",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Tooltip", "\ttext={${1:string}}", ">${2:node}</Tooltip>"]
+  },
+  "Gestalt Typeahead": {
+    "prefix": "<Typeahead",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<Typeahead",
+      "\tid={${1:string}}",
+      "\tnoResultText={${2:string}}",
+      "\toptions={${3:arrayOf}}",
+      "/>"
+    ]
+  },
+  "Gestalt Upsell": {
+    "prefix": "<Upsell",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["<Upsell", "\tmessage={${1:string}}", ">${2:node}</Upsell>"]
+  },
+  "Gestalt Video": {
+    "prefix": "<Video",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<Video",
+      "\taccessibilityMaximizeLabel={${1:string}}",
+      "\taccessibilityMinimizeLabel={${2:string}}",
+      "\taccessibilityMuteLabel={${3:string}}",
+      "\taccessibilityPauseLabel={${4:string}}",
+      "\taccessibilityPlayLabel={${5:string}}",
+      "\taccessibilityUnmuteLabel={${6:string}}",
+      "\taspectRatio={${7:number}}",
+      "\tcaptions={${8:string}}",
+      "\tsrc={${9:string | \\$ReadOnlyArray}}",
+      ">${10:node}</Video>"
+    ]
+  }
+}
