@@ -2,10 +2,8 @@ import log from "./log";
 import track from "./track";
 
 import {
-  CancellationToken,
   Command,
   commands,
-  CompletionContext,
   CompletionItem,
   CompletionItemKind,
   CompletionItemProvider,
@@ -14,10 +12,12 @@ import {
   Range,
   SnippetString,
   TextDocument,
+  window,
 } from "vscode";
 import snippets from "./snippets.json";
 import { MarkdownString } from "vscode";
 import { SnippetParser } from "./snippetParser";
+import addImport from "./ast/addImport";
 
 class SnippetCompletionItem implements CompletionItem {
   kind?: CompletionItemKind;
@@ -82,13 +82,54 @@ class SnippetCompletionItemProvider
   public registerCommands() {
     commands.registerCommand(
       "gestalt.track.insertSnippet",
-      function trackSnippet({
+      async function trackSnippet({
         component,
         charactersSaved,
       }: {
         component: string;
         charactersSaved: number;
       }) {
+        // auto import
+        const document = window.activeTextEditor!.document;
+
+        const allTextRange = new Range(
+          document.positionAt(0),
+          document.positionAt(document.getText().length)
+        );
+        const allText = document.getText(allTextRange);
+
+        const lastImportLine = allText
+          .split("\n")
+          .reduce((acc, currentValue, currentIndex) => {
+            if (currentValue.startsWith("import ")) {
+              acc = currentIndex;
+            }
+            return acc;
+          }, 0);
+
+        const untilLastImportRange = new Range(
+          document.positionAt(0),
+          document.lineAt(lastImportLine).range.end
+        );
+
+        const untilLastImport = document.getText(untilLastImportRange);
+
+        log.append(`untilLastImport\n${untilLastImport}`);
+        log.append(`Last import line ${lastImportLine}`);
+
+        const transformedCode = await addImport({
+          code: untilLastImport,
+          componentName: component,
+        });
+
+        window.activeTextEditor?.edit((builder) =>
+          builder.replace(untilLastImportRange, transformedCode)
+        );
+        await commands.executeCommand("editor.action.formatDocument");
+        log.append("transformed Code");
+
+        // log.append(`allText: ${allText}`);
+
         track.event({
           category: "Event",
           action: "Count",
