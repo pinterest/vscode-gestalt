@@ -1,6 +1,6 @@
 # VSCode Gestalt
 
-Visual Studio Code extension for Gestalt, Pinterest's design system
+Visual Studio Code extension for [Gestalt](https://gestalt.pinterest.systems/), Pinterest's design system
 
 ## Features
 
