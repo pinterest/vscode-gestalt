@@ -3,15 +3,15 @@ import traverse from "@babel/traverse";
 import fs from "fs";
 import path from "path";
 import { parse as reactDocgenParse } from "react-docgen";
-import execa from "execa";
+import { execaCommand } from "execa";
 import prettier from "prettier";
 
 const GESTALT_SRC = "out/gestalt/packages/gestalt/src/";
 
 async function cloneGestalt() {
-  await execa.command("rm -rf out/gestalt");
-  await execa.command("mkdir -p out/gestalt");
-  await execa.command(
+  await execaCommand("rm -rf out/gestalt");
+  await execaCommand("mkdir -p out/gestalt");
+  await execaCommand(
     "git clone --depth 1 git@github.com:pinterest/gestalt.git out/gestalt"
   );
 }
@@ -33,8 +33,6 @@ async function gestaltImports() {
   traverse.default(ast, {
     // eslint-disable-next-line @typescript-eslint/naming-convention
     ImportDeclaration: function (nodePath) {
-      // console.log(path.node.source.value);
-
       nodePath.node.specifiers.forEach((specifier) => {
         imports.push({
           name: specifier.local.name,

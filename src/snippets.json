@@ -22,7 +22,7 @@
     "body": [
       "<AvatarGroup",
       "\taccessibilityLabel={${1:string}}",
-      "\tcollaborators={${2:arrayOf}}",
+      "\tcollaborators={${2:\\$ReadOnlyArray<{| name: string, src?: string,\n|}>}}",
       "/>"
     ]
   },
@@ -31,7 +31,7 @@
     "scope": "javascript,typescript,javascriptreact",
     "body": [
       "<AvatarPair",
-      "\tcollaborators={${1:\\$ReadOnlyArray<CollaboratorDataType>}}",
+      "\tcollaborators={${1:\\$ReadOnlyArray<{| name: string, src?: string,\n|}>}}",
       "/>"
     ]
   },
@@ -48,7 +48,7 @@
   "Gestalt Button": {
     "prefix": "<Button",
     "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Button", "\ttext={${1:string}}", "/>"]
+    "body": ["<Button", "/>"]
   },
   "Gestalt ButtonGroup": {
     "prefix": "<ButtonGroup",
@@ -74,7 +74,12 @@
   "Gestalt Checkbox": {
     "prefix": "<Checkbox",
     "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Checkbox", "\tid={${1:string}}", "\tonChange={${2:func}}", "/>"]
+    "body": [
+      "<Checkbox",
+      "\tid={${1:string}}",
+      "\tonChange={${2:AbstractEventHandler<SyntheticInputEvent<HTMLInputElement>, {| checked: boolean |}>}}",
+      "/>"
+    ]
   },
   "Gestalt Collage": {
     "prefix": "<Collage",
@@ -120,8 +125,8 @@
       "\taccessibilityClearButtonLabel={${1:string}}",
       "\tid={${2:string}}",
       "\tlabel={${3:string}}",
-      "\tnoResultText={${4:string}}",
-      "\toptions={${5:arrayOf}}",
+      "\toptions={${4:\\$ReadOnlyArray<OptionItemType>}}",
+      "\tnoResultText={${5:string}}",
       "/>"
     ]
   },
@@ -178,7 +183,7 @@
   "Gestalt IconButton": {
     "prefix": "<IconButton",
     "scope": "javascript,typescript,javascriptreact",
-    "body": ["<IconButton", "\taccessibilityLabel={${1:string}}", "/>"]
+    "body": ["<IconButton", "/>"]
   },
   "Gestalt Image": {
     "prefix": "<Image",
@@ -246,7 +251,17 @@
   "Gestalt Module": {
     "prefix": "<Module",
     "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Module", "\tid={${1:string}}", ">${2:node}</Module>"]
+    "body": ["<Module", "/>"]
+  },
+  "Gestalt NumberField": {
+    "prefix": "<NumberField",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<NumberField",
+      "\tid={${1:string}}",
+      "\tonChange={${2:({| event: SyntheticInputEvent<HTMLInputElement>, value: number | void,\n|}) => void}}",
+      "/>"
+    ]
   },
   "Gestalt OnLinkNavigationProvider": {
     "prefix": "<OnLinkNavigationProvider",
@@ -272,7 +287,7 @@
     "scope": "javascript,typescript,javascriptreact",
     "body": [
       "<Popover",
-      "\tanchor={${1:shape}}",
+      "\tanchor={${1:undefined}}",
       "\tonDismiss={${2:() => void}}",
       ">${3:node}</Popover>"
     ]
@@ -288,9 +303,18 @@
     "body": [
       "<RadioButton",
       "\tid={${1:string}}",
-      "\tonChange={${2:func}}",
+      "\tonChange={${2:AbstractEventHandler<SyntheticInputEvent<HTMLInputElement>, {| checked: boolean |}>}}",
       "\tvalue={${3:string}}",
       "/>"
+    ]
+  },
+  "Gestalt ScrollBoundaryContainer": {
+    "prefix": "<ScrollBoundaryContainer",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "<ScrollBoundaryContainer>",
+      "\t${0:node}",
+      "</ScrollBoundaryContainer>"
     ]
   },
   "Gestalt ScrollFetch": {
@@ -305,7 +329,7 @@
       "<SearchField",
       "\taccessibilityLabel={${1:string}}",
       "\tid={${2:string}}",
-      "\tonChange={${3:func}}",
+      "\tonChange={${3:({| value: string, syntheticEvent: SyntheticEvent<HTMLInputElement>,\n|}) => void}}",
       "/>"
     ]
   },
@@ -327,21 +351,22 @@
       "<SelectList",
       "\tid={${1:string}}",
       "\tonChange={${2:AbstractEventHandler<SyntheticInputEvent<HTMLSelectElement>, {| value: string |}>}}",
+      "\toptions={${3:\\$ReadOnlyArray<{| label: string, value: string, disabled?: boolean |}>}}",
       "/>"
     ]
   },
   "Gestalt Sheet": {
     "prefix": "<Sheet",
     "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Sheet>", "\t${0:node}", "</Sheet>"]
+    "body": ["<Sheet", "/>"]
   },
   "Gestalt Spinner": {
     "prefix": "<Spinner",
     "scope": "javascript,typescript,javascriptreact",
     "body": [
       "<Spinner",
-      "\tshow={${1|true,false|}}",
-      "\taccessibilityLabel={${2:string}}",
+      "\taccessibilityLabel={${1:string}}",
+      "\tshow={${2|true,false|}}",
       "/>"
     ]
   },
@@ -351,7 +376,6 @@
     "body": [
       "<Status",
       "\ttype=\"${1|unstarted,inProgress,halted,ok,problem,canceled,warning|}\"",
-      "\ttitle={${2:string}}",
       "/>"
     ]
   },
@@ -373,7 +397,11 @@
   "Gestalt Table": {
     "prefix": "<Table",
     "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Table>", "\t${0:node}", "</Table>"]
+    "body": [
+      "<Table",
+      "\taccessibilityLabel={${1:string}}",
+      ">${2:node}</Table>"
+    ]
   },
   "Gestalt Tag": {
     "prefix": "<Tag",
@@ -383,7 +411,7 @@
   "Gestalt TapArea": {
     "prefix": "<TapArea",
     "scope": "javascript,typescript,javascriptreact",
-    "body": ["<TapArea>", "\t${0:node}", "</TapArea>"]
+    "body": ["<TapArea", "/>"]
   },
   "Gestalt Text": {
     "prefix": "<Text",
@@ -393,12 +421,22 @@
   "Gestalt TextArea": {
     "prefix": "<TextArea",
     "scope": "javascript,typescript,javascriptreact",
-    "body": ["<TextArea", "\tid={${1:string}}", "\tonChange={${2:func}}", "/>"]
+    "body": [
+      "<TextArea",
+      "\tid={${1:string}}",
+      "\tonChange={${2:AbstractEventHandler<SyntheticInputEvent<HTMLTextAreaElement>, {| value: string |}>}}",
+      "/>"
+    ]
   },
   "Gestalt TextField": {
     "prefix": "<TextField",
     "scope": "javascript,typescript,javascriptreact",
-    "body": ["<TextField", "\tid={${1:string}}", "\tonChange={${2:func}}", "/>"]
+    "body": [
+      "<TextField",
+      "\tid={${1:string}}",
+      "\tonChange={${2:({| event: SyntheticInputEvent<HTMLInputElement>, value: string,\n|}) => void}}",
+      "/>"
+    ]
   },
   "Gestalt Toast": {
     "prefix": "<Toast",
@@ -409,17 +447,6 @@
     "prefix": "<Tooltip",
     "scope": "javascript,typescript,javascriptreact",
     "body": ["<Tooltip", "\ttext={${1:string}}", ">${2:node}</Tooltip>"]
-  },
-  "Gestalt Typeahead": {
-    "prefix": "<Typeahead",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<Typeahead",
-      "\tid={${1:string}}",
-      "\tnoResultText={${2:string}}",
-      "\toptions={${3:arrayOf}}",
-      "/>"
-    ]
   },
   "Gestalt Upsell": {
     "prefix": "<Upsell",
