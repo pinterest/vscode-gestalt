@@ -1,4 +1,4 @@
-import execa from "execa";
+import { command } from "execa";
 import log from "./log";
 
 const unknown = "_unknown@pinterest.com";
@@ -8,7 +8,7 @@ const unknown = "_unknown@pinterest.com";
  */
 const userEmail = async (): Promise<string> => {
   try {
-    const result = await execa.command("git config user.email");
+    const result = await command("git config user.email");
 
     return result?.stdout ?? unknown;
   } catch (e) {

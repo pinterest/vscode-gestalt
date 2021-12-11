@@ -3,15 +3,15 @@ import traverse from "@babel/traverse";
 import fs from "fs";
 import path from "path";
 import { parse as reactDocgenParse } from "react-docgen";
-import { execaCommand } from "execa";
+import { command } from "execa";
 import prettier from "prettier";
 
 const GESTALT_SRC = "out/gestalt/packages/gestalt/src/";
 
 async function cloneGestalt() {
-  await execaCommand("rm -rf out/gestalt");
-  await execaCommand("mkdir -p out/gestalt");
-  await execaCommand(
+  await command("rm -rf out/gestalt");
+  await command("mkdir -p out/gestalt");
+  await command(
     "git clone --depth 1 git@github.com:pinterest/gestalt.git out/gestalt"
   );
 }
