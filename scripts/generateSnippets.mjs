@@ -45,6 +45,15 @@ async function gestaltImports() {
   return imports;
 }
 
+async function gestaltVersion() {
+  return JSON.parse(
+    await fs.promises.readFile(
+      path.join(GESTALT_SRC, "../package.json"),
+      "utf-8"
+    )
+  ).version;
+}
+
 // Escape dollar signs in prop values so we don't get the following exception:
 // One or more snippets very likely confuse snippet-variables and snippet-placeholders
 // (see https://code.visualstudio.com/docs/editor/userdefinedsnippets#_snippet-syntax for more details)
@@ -111,7 +120,10 @@ function convertToPropValues(propsInfo) {
 (async function init() {
   await cloneGestalt();
 
-  const imports = await gestaltImports();
+  const [imports, version] = await Promise.all([
+    gestaltImports(),
+    gestaltVersion(),
+  ]);
 
   const mappedImports = await Promise.all(
     imports.map(async ({ filePath, name }) => {
@@ -121,76 +133,77 @@ function convertToPropValues(propsInfo) {
         if (name.startsWith("use")) {
           return null;
         }
+
         return {
           docgen: reactDocgenParse(contents),
           filePath,
           name,
         };
       } catch (error) {
-        // console.error(`${filePath}: ${error.message}`);
+        console.error(`${filePath}: ${error.message}`);
         return null;
       }
     })
   );
 
-  const output = mappedImports
-    .filter(Boolean)
-    .map(({ docgen, filePath, name }) => {
-      const requiredProps = docgen.props
-        ? convertToPropValues(
-            Object.fromEntries(
-              Object.entries(docgen.props).filter(([propName, propOptions]) => {
-                return propOptions.required;
-              })
-            )
+  const output = mappedImports.filter(Boolean).map(({ docgen, name }) => {
+    const requiredProps = docgen.props
+      ? convertToPropValues(
+          Object.fromEntries(
+            Object.entries(docgen.props).filter(([_, propOptions]) => {
+              return propOptions.required;
+            })
           )
-        : null;
+        )
+      : null;
 
-      const hasChildrenProp = Boolean(docgen?.props?.children);
-      const props = requiredProps
-        ? Object.entries(requiredProps).map(([propName, propValue], index) => {
-            const [leftDelimiter, rightDelimiter] =
-              propValue.startsWith(":") || propValue === "|true,false|"
-                ? [`{`, `}`]
-                : ['"', '"'];
+    const hasChildrenProp = Boolean(docgen?.props?.children);
+    const props = requiredProps
+      ? Object.entries(requiredProps).map(([propName, propValue], index) => {
+          const [leftDelimiter, rightDelimiter] =
+            propValue.startsWith(":") || propValue === "|true,false|"
+              ? [`{`, `}`]
+              : ['"', '"'];
 
-            return `\t${propName}=${leftDelimiter}\${${
-              index + 1
-            }${propValue}}${rightDelimiter}`;
-          })
-        : null;
+          return `\t${propName}=${leftDelimiter}\${${
+            index + 1
+          }${propValue}}${rightDelimiter}`;
+        })
+      : null;
 
-      return {
-        [`Gestalt ${name}`]: {
-          prefix: `<${name}`,
-          scope: "javascript,typescript,javascriptreact",
-          body:
-            !props?.length && hasChildrenProp
-              ? [`<${name}>`, "\t${0:node}", `</${name}>`]
-              : [
-                  `<${name}`,
-                  ...(props?.length ? props : []),
-                  hasChildrenProp
-                    ? `>\${${
-                        props?.length ? props.length + 1 : 0
-                      }:node}</${name}>`
-                    : "/>",
-                ].filter(Boolean),
-        },
-      };
-    })
-    .reduce((acc, currentValue) => {
-      return {
-        ...acc,
-        ...currentValue,
-      };
-    }, {});
+    return {
+      description: docgen.description,
+      prefix: `<${name}`,
+      name,
+      scope: "javascript,typescript,javascriptreact",
+      body:
+        !props?.length && hasChildrenProp
+          ? [`<${name}>`, "\t${0:node}", `</${name}>`]
+          : [
+              `<${name}`,
+              ...(props?.length ? props : []),
+              hasChildrenProp
+                ? `>\${${props?.length ? props.length + 1 : 0}:node}</${name}>`
+                : "/>",
+            ].filter(Boolean),
+    };
+  });
 
   const snippetsFilePath = path.join("src", "snippets.json");
   await fs.promises.writeFile(
     snippetsFilePath,
-    prettier.format(JSON.stringify(output, null, 2), {
-      filepath: snippetsFilePath,
-    })
+    prettier.format(
+      JSON.stringify(
+        {
+          gestaltVersion: version,
+          snippets: output,
+        },
+        null,
+        2
+      ),
+      {
+        filepath: snippetsFilePath,
+      }
+    )
   );
 })();

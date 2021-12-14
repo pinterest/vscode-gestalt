@@ -14,7 +14,7 @@ import {
   TextDocument,
   window,
 } from "vscode";
-import snippets from "./snippets.json";
+import { snippets } from "./snippets.json";
 import { MarkdownString } from "vscode";
 import { SnippetParser } from "./snippetParser";
 import addImport from "./ast/addImport";
@@ -55,6 +55,7 @@ class SnippetCompletionItem implements CompletionItem {
         {
           component: prefix.replace("<", ""),
           charactersSaved: snippetLength - textBeforeCursorLength,
+          location: "inline",
         },
       ],
     };
@@ -85,9 +86,11 @@ class SnippetCompletionItemProvider
       async function trackSnippet({
         component,
         charactersSaved,
+        location,
       }: {
         component: string;
         charactersSaved: number;
+        location: "quickPick" | "inline";
       }) {
         // auto import
         const document = window.activeTextEditor!.document;
@@ -113,9 +116,6 @@ class SnippetCompletionItemProvider
         );
 
         const untilLastImport = document.getText(untilLastImportRange);
-
-        log.append(`untilLastImport\n${untilLastImport}`);
-        log.append(`Last import line ${lastImportLine}`);
 
         const transformedCode = await addImport({
           code: untilLastImport,
@@ -145,6 +145,12 @@ class SnippetCompletionItemProvider
         track.event({
           category: "Event",
           action: "Count",
+          label: "InsertSnippetLocation",
+          value: location,
+        });
+        track.event({
+          category: "Event",
+          action: "Count",
           label: "InsertSnippetCharactersSaved",
           value: String(charactersSaved),
         });
@@ -169,15 +175,16 @@ class SnippetCompletionItemProvider
     log.append(`textBeforeCursor: ${textBeforeCursor}`);
 
     return new CompletionList(
-      Object.entries(snippets)
-        .filter(([_, { prefix }]) => {
+      snippets
+        .filter(({ prefix }) => {
           return prefix
             .toLocaleLowerCase()
             .startsWith(textBeforeCursor.toLocaleLowerCase());
         })
-        .map(([label, { prefix, body }]) => {
+        .map(({ prefix, body, name }) => {
           const text = body.join("\n");
-          const completionItem = new SnippetCompletionItem({
+          const label = `Gestalt ${name}`;
+          return new SnippetCompletionItem({
             label,
             prefix,
             range: new Range(
@@ -188,10 +195,6 @@ class SnippetCompletionItemProvider
             textBeforeCursorLength: textBeforeCursor.length,
             snippetLength: text.length,
           });
-
-          log.append(`label: ${label}`);
-
-          return completionItem;
         })
     );
   }

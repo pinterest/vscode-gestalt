@@ -3,9 +3,11 @@ import {
   DocumentSelector,
   Disposable,
   ExtensionContext,
+  commands,
 } from "vscode";
 import log from "./log";
 import SnippetCompletionItemProvider from "./SnippetCompletionItemProvider";
+import { registerCommand as registerQuickPickCommand } from "./quickPick";
 import track from "./track";
 
 const documentSelector: DocumentSelector = [
@@ -32,6 +34,8 @@ function addProviders(): Disposable {
 
 function registerCommands(): void {
   snippetCompletionProvider.registerCommands();
+
+  registerQuickPickCommand();
 }
 
 export function activate(context: ExtensionContext) {
