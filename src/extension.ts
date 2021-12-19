@@ -4,11 +4,16 @@ import {
   Disposable,
   ExtensionContext,
   commands,
+  window,
 } from "vscode";
 import log from "./log";
 import SnippetCompletionItemProvider from "./SnippetCompletionItemProvider";
 import { registerCommand as registerQuickPickCommand } from "./quickPick";
 import track from "./track";
+import ComponentsTreeDataProvider from "./ComponentsTreeDataProvider";
+import HelpTreeDataProvider from "./HelpTreeDataProvider";
+import registerOpenUrl from "./openUrl";
+import registerOpenComponentUrl from "./openComponentUrl";
 
 const documentSelector: DocumentSelector = [
   "javascript",
@@ -28,6 +33,14 @@ function addProviders(): Disposable {
       snippetCompletionProvider,
       ...SnippetCompletionItemProvider.triggerCharacters
     ),
+    window.createTreeView("gestalt-view-components", {
+      showCollapseAll: true,
+      treeDataProvider: new ComponentsTreeDataProvider(),
+    }),
+    window.createTreeView("gestalt-view-help", {
+      showCollapseAll: true,
+      treeDataProvider: new HelpTreeDataProvider(),
+    }),
   ];
   return Disposable.from(...subscriptions);
 }
@@ -36,6 +49,8 @@ function registerCommands(): void {
   snippetCompletionProvider.registerCommands();
 
   registerQuickPickCommand();
+  registerOpenUrl();
+  registerOpenComponentUrl();
 }
 
 export function activate(context: ExtensionContext) {

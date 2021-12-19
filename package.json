@@ -17,7 +17,8 @@
     "Other"
   ],
   "activationEvents": [
-    "*"
+    "*",
+    "onView:gestaltView"
   ],
   "main": "./out/extension.js",
   "icon": "images/vscode-gestalt-256.png",
@@ -37,8 +38,17 @@
         "title": "Track snippet insertions"
       },
       {
+        "command": "gestalt.openUrl",
+        "title": "Open a URL in the browser"
+      },
+      {
         "command": "gestalt.quickPick",
         "title": "Gestalt: Quick Pick"
+      },
+      {
+        "command": "gestalt.openComponentUrl",
+        "title": "Gestalt: Open Component URL",
+        "icon": "$(globe)"
       }
     ],
     "menus": {
@@ -46,6 +56,16 @@
         {
           "command": "gestalt.quickPick",
           "title": "Gestalt: Quick Pick"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "gestalt.openComponentUrl",
+          "commandArguments": [
+            "${1:component}"
+          ],
+          "when": "view == gestalt-view-components",
+          "group": "inline"
         }
       ]
     },
@@ -69,7 +89,28 @@
           }
         }
       }
-    ]
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "gestalt-view",
+          "title": "Gestalt",
+          "icon": "src/images/gestalt-logo.svg"
+        }
+      ]
+    },
+    "views": {
+      "gestalt-view": [
+        {
+          "id": "gestalt-view-components",
+          "name": "Components"
+        },
+        {
+          "id": "gestalt-view-help",
+          "name": "Help"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
