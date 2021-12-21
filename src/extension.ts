@@ -3,17 +3,18 @@ import {
   DocumentSelector,
   Disposable,
   ExtensionContext,
-  commands,
   window,
 } from "vscode";
-import log from "./log";
-import SnippetCompletionItemProvider from "./SnippetCompletionItemProvider";
-import { registerCommand as registerQuickPickCommand } from "./quickPick";
-import track from "./track";
 import ComponentsTreeDataProvider from "./ComponentsTreeDataProvider";
 import HelpTreeDataProvider from "./HelpTreeDataProvider";
-import registerOpenUrl from "./openUrl";
-import registerOpenComponentUrl from "./openComponentUrl";
+import log from "./log";
+import registerInsertSnippet from "./registerInsertSnippet";
+import registerInsertSnippetFromTreeView from "./registerInsertSnippetFromTreeView";
+import registerOpenComponentUrl from "./registerOpenComponentUrl";
+import registerOpenUrl from "./registerOpenUrl";
+import registerQuickPickCommand from "./registerQuickPickCommand";
+import SnippetCompletionItemProvider from "./SnippetCompletionItemProvider";
+import track from "./track";
 
 const documentSelector: DocumentSelector = [
   "javascript",
@@ -46,8 +47,8 @@ function addProviders(): Disposable {
 }
 
 function registerCommands(): void {
-  snippetCompletionProvider.registerCommands();
-
+  registerInsertSnippetFromTreeView();
+  registerInsertSnippet();
   registerQuickPickCommand();
   registerOpenUrl();
   registerOpenComponentUrl();

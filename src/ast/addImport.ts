@@ -1,6 +1,8 @@
 import { transformAsync } from "@babel/core";
 import { NodePath } from "@babel/traverse";
 import { ImportDeclaration, Node } from "@babel/types";
+// @ts-ignore
+import babelSyntaxFlow from "@babel/plugin-syntax-flow";
 import * as t from "@babel/types";
 
 export default async function addImport({
@@ -19,7 +21,7 @@ export default async function addImport({
 
     retainLines: true,
     plugins: [
-      "@babel/plugin-syntax-flow",
+      babelSyntaxFlow,
       function AddGestaltComponentImportPlugin() {
         return {
           visitor: {

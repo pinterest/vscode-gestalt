@@ -38,6 +38,6 @@ async function quickPick(context: ExtensionContext) {
   });
 }
 
-export function registerCommand() {
+export default function registerQuickPickCommand() {
   vscode.commands.registerCommand("gestalt.quickPick", quickPick);
 }

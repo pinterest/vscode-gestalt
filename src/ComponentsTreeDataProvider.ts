@@ -5,7 +5,15 @@ class TreeItem extends vscode.TreeItem {
   constructor({ description, label }: { description: string; label: string }) {
     super(label);
     this.tooltip = new vscode.MarkdownString(description);
-    this.iconPath = new vscode.ThemeIcon("book");
+    this.command = {
+      title: "track",
+      command: "gestalt.insertSnippetFromTreeView",
+      arguments: [
+        {
+          component: label,
+        },
+      ],
+    };
   }
 }
 

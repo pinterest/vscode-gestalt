@@ -1,9 +1,7 @@
 import log from "./log";
-import track from "./track";
 
 import {
   Command,
-  commands,
   CompletionItem,
   CompletionItemKind,
   CompletionItemProvider,
@@ -12,12 +10,10 @@ import {
   Range,
   SnippetString,
   TextDocument,
-  window,
 } from "vscode";
 import { snippets } from "./snippets.json";
 import { MarkdownString } from "vscode";
 import { SnippetParser } from "./snippetParser";
-import addImport from "./ast/addImport";
 
 class SnippetCompletionItem implements CompletionItem {
   kind?: CompletionItemKind;
@@ -78,84 +74,6 @@ class SnippetCompletionItemProvider
     item: SnippetCompletionItem
   ): Promise<SnippetCompletionItem | undefined> {
     return item instanceof SnippetCompletionItem ? item.resolve() : item;
-  }
-
-  public registerCommands() {
-    commands.registerCommand(
-      "gestalt.track.insertSnippet",
-      async function trackSnippet({
-        component,
-        charactersSaved,
-        location,
-      }: {
-        component: string;
-        charactersSaved: number;
-        location: "quickPick" | "inline";
-      }) {
-        // auto import
-        const document = window.activeTextEditor!.document;
-
-        const allTextRange = new Range(
-          document.positionAt(0),
-          document.positionAt(document.getText().length)
-        );
-        const allText = document.getText(allTextRange);
-
-        const lastImportLine = allText
-          .split("\n")
-          .reduce((acc, currentValue, currentIndex) => {
-            if (currentValue.startsWith("import ")) {
-              acc = currentIndex;
-            }
-            return acc;
-          }, 0);
-
-        const untilLastImportRange = new Range(
-          document.positionAt(0),
-          document.lineAt(lastImportLine).range.end
-        );
-
-        const untilLastImport = document.getText(untilLastImportRange);
-
-        const transformedCode = await addImport({
-          code: untilLastImport,
-          componentName: component,
-        });
-
-        window.activeTextEditor?.edit((builder) =>
-          builder.replace(untilLastImportRange, transformedCode)
-        );
-        await commands.executeCommand("editor.action.formatDocument");
-        log.append("transformed Code");
-
-        // log.append(`allText: ${allText}`);
-
-        track.event({
-          category: "Event",
-          action: "Count",
-          label: "InsertSnippet",
-          value: String(1),
-        });
-        track.event({
-          category: "Event",
-          action: "Count",
-          label: "InsertSnippetComponent",
-          value: component,
-        });
-        track.event({
-          category: "Event",
-          action: "Count",
-          label: "InsertSnippetLocation",
-          value: location,
-        });
-        track.event({
-          category: "Event",
-          action: "Count",
-          label: "InsertSnippetCharactersSaved",
-          value: String(charactersSaved),
-        });
-      }
-    );
   }
 
   public async provideCompletionItems(
