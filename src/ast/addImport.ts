@@ -73,7 +73,7 @@ export default async function addImport({
 
   if (!foundGestaltImport) {
     return `${code}
-import { ${componentName} } from 'gestalt';`.trim();
+import { ${componentName} } from 'gestalts';`.trim();
   } else {
     return output?.code ?? "";
   }
