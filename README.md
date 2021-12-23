@@ -6,7 +6,7 @@ Visual Studio Code extension for [Gestalt](https://gestalt.pinterest.systems/), 
 
 ### Snippets
 
-- **List Gestalt components**
+- **List Gestalt components** by typing `<` or pressing `Alt+G`/`Option+G`
 - **Required props** are included
 - **Quick select** boolean & enum props
 

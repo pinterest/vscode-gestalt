@@ -1,473 +1,598 @@
 {
-  "Gestalt ActivationCard": {
-    "prefix": "<ActivationCard",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<ActivationCard",
-      "\tmessage={${1:string}}",
-      "\tstatus=\"${2|notStarted,pending,needsAttention,complete|}\"",
-      "\tstatusMessage={${3:string}}",
-      "\ttitle={${4:string}}",
-      "/>"
-    ]
-  },
-  "Gestalt Avatar": {
-    "prefix": "<Avatar",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Avatar", "\tname={${1:string}}", "/>"]
-  },
-  "Gestalt AvatarGroup": {
-    "prefix": "<AvatarGroup",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<AvatarGroup",
-      "\taccessibilityLabel={${1:string}}",
-      "\tcollaborators={${2:\\$ReadOnlyArray<{| name: string, src?: string,\n|}>}}",
-      "/>"
-    ]
-  },
-  "Gestalt AvatarPair": {
-    "prefix": "<AvatarPair",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<AvatarPair",
-      "\tcollaborators={${1:\\$ReadOnlyArray<{| name: string, src?: string,\n|}>}}",
-      "/>"
-    ]
-  },
-  "Gestalt Badge": {
-    "prefix": "<Badge",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Badge", "\ttext={${1:string}}", "/>"]
-  },
-  "Gestalt Box": {
-    "prefix": "<Box",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Box>", "\t${0:node}", "</Box>"]
-  },
-  "Gestalt Button": {
-    "prefix": "<Button",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Button", "/>"]
-  },
-  "Gestalt ButtonGroup": {
-    "prefix": "<ButtonGroup",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<ButtonGroup>", "\t${0:node}", "</ButtonGroup>"]
-  },
-  "Gestalt Callout": {
-    "prefix": "<Callout",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<Callout",
-      "\ticonAccessibilityLabel={${1:string}}",
-      "\tmessage={${2:string}}",
-      "\ttype=\"${3|error,info,warning|}\"",
-      "/>"
-    ]
-  },
-  "Gestalt Card": {
-    "prefix": "<Card",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Card>", "\t${0:node}", "</Card>"]
-  },
-  "Gestalt Checkbox": {
-    "prefix": "<Checkbox",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<Checkbox",
-      "\tid={${1:string}}",
-      "\tonChange={${2:AbstractEventHandler<SyntheticInputEvent<HTMLInputElement>, {| checked: boolean |}>}}",
-      "/>"
-    ]
-  },
-  "Gestalt Collage": {
-    "prefix": "<Collage",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<Collage",
-      "\tcolumns=\"${1|2,3,4|}\"",
-      "\theight={${2:number}}",
-      "\trenderImage={${3:({| width: number, height: number, index: number,\n|}) => Node}}",
-      "\twidth={${4:number}}",
-      "/>"
-    ]
-  },
-  "Gestalt Collection": {
-    "prefix": "<Collection",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<Collection",
-      "\tItem={${1:({| idx: number |}) => Node}}",
-      "\tlayout={${2:\\$ReadOnlyArray<{| top: number, left: number, width: number, height: number,\n|}>}}",
-      "/>"
-    ]
-  },
-  "Gestalt ColorSchemeProvider": {
-    "prefix": "<ColorSchemeProvider",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<ColorSchemeProvider>", "\t${0:node}", "</ColorSchemeProvider>"]
-  },
-  "Gestalt Column": {
-    "prefix": "<Column",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<Column",
-      "\tspan=\"${1|0,1,2,3,4,5,6,7,8,9,10,11,12|}\"",
-      ">${2:node}</Column>"
-    ]
-  },
-  "Gestalt ComboBox": {
-    "prefix": "<ComboBox",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<ComboBox",
-      "\taccessibilityClearButtonLabel={${1:string}}",
-      "\tid={${2:string}}",
-      "\tlabel={${3:string}}",
-      "\toptions={${4:\\$ReadOnlyArray<OptionItemType>}}",
-      "\tnoResultText={${5:string}}",
-      "/>"
-    ]
-  },
-  "Gestalt Container": {
-    "prefix": "<Container",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Container>", "\t${0:node}", "</Container>"]
-  },
-  "Gestalt Datapoint": {
-    "prefix": "<Datapoint",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<Datapoint",
-      "\ttitle={${1:string}}",
-      "\tvalue={${2:string}}",
-      "/>"
-    ]
-  },
-  "Gestalt Divider": {
-    "prefix": "<Divider",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Divider", "/>"]
-  },
-  "Gestalt Dropdown": {
-    "prefix": "<Dropdown",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<Dropdown",
-      "\tid={${1:string}}",
-      "\tonDismiss={${2:() => void}}",
-      ">${3:node}</Dropdown>"
-    ]
-  },
-  "Gestalt Fieldset": {
-    "prefix": "<Fieldset",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Fieldset", "\tlegend={${1:string}}", ">${2:node}</Fieldset>"]
-  },
-  "Gestalt Flex": {
-    "prefix": "<Flex",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Flex>", "\t${0:node}", "</Flex>"]
-  },
-  "Gestalt Heading": {
-    "prefix": "<Heading",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Heading>", "\t${0:node}", "</Heading>"]
-  },
-  "Gestalt Icon": {
-    "prefix": "<Icon",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Icon", "\taccessibilityLabel={${1:string}}", "/>"]
-  },
-  "Gestalt IconButton": {
-    "prefix": "<IconButton",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<IconButton", "/>"]
-  },
-  "Gestalt Image": {
-    "prefix": "<Image",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<Image",
-      "\talt={${1:string}}",
-      "\tnaturalHeight={${2:number}}",
-      "\tnaturalWidth={${3:number}}",
-      "\tsrc={${4:string}}",
-      ">${5:node}</Image>"
-    ]
-  },
-  "Gestalt Label": {
-    "prefix": "<Label",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Label", "\thtmlFor={${1:string}}", ">${2:node}</Label>"]
-  },
-  "Gestalt Layer": {
-    "prefix": "<Layer",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Layer>", "\t${0:node}", "</Layer>"]
-  },
-  "Gestalt Letterbox": {
-    "prefix": "<Letterbox",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<Letterbox",
-      "\tcontentAspectRatio={${1:number}}",
-      "\theight={${2:number}}",
-      "\twidth={${3:number}}",
-      ">${4:node}</Letterbox>"
-    ]
-  },
-  "Gestalt Link": {
-    "prefix": "<Link",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Link", "\thref={${1:string}}", ">${2:node}</Link>"]
-  },
-  "Gestalt Mask": {
-    "prefix": "<Mask",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Mask>", "\t${0:node}", "</Mask>"]
-  },
-  "Gestalt Masonry": {
-    "prefix": "<Masonry",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<Masonry",
-      "\tcomp={${1:ComponentType<{| data: T, itemIdx: number, isMeasuring: boolean,\n|}>}}",
-      "\titems={${2:\\$ReadOnlyArray<T>}}",
-      "/>"
-    ]
-  },
-  "Gestalt Modal": {
-    "prefix": "<Modal",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<Modal",
-      "\taccessibilityModalLabel={${1:string}}",
-      "\tonDismiss={${2:() => void}}",
-      ">${3:node}</Modal>"
-    ]
-  },
-  "Gestalt Module": {
-    "prefix": "<Module",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Module", "/>"]
-  },
-  "Gestalt NumberField": {
-    "prefix": "<NumberField",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<NumberField",
-      "\tid={${1:string}}",
-      "\tonChange={${2:({| event: SyntheticInputEvent<HTMLInputElement>, value: number | void,\n|}) => void}}",
-      "/>"
-    ]
-  },
-  "Gestalt OnLinkNavigationProvider": {
-    "prefix": "<OnLinkNavigationProvider",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<OnLinkNavigationProvider",
-      "\tonNavigation={${1:(OnLinkNavigationArgs) => ?EventHandlerType}}",
-      ">${2:node}</OnLinkNavigationProvider>"
-    ]
-  },
-  "Gestalt PageHeader": {
-    "prefix": "<PageHeader",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<PageHeader", "\ttitle={${1:string}}", "/>"]
-  },
-  "Gestalt Pog": {
-    "prefix": "<Pog",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Pog", "/>"]
-  },
-  "Gestalt Popover": {
-    "prefix": "<Popover",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<Popover",
-      "\tanchor={${1:undefined}}",
-      "\tonDismiss={${2:() => void}}",
-      ">${3:node}</Popover>"
-    ]
-  },
-  "Gestalt Pulsar": {
-    "prefix": "<Pulsar",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Pulsar", "/>"]
-  },
-  "Gestalt RadioButton": {
-    "prefix": "<RadioButton",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<RadioButton",
-      "\tid={${1:string}}",
-      "\tonChange={${2:AbstractEventHandler<SyntheticInputEvent<HTMLInputElement>, {| checked: boolean |}>}}",
-      "\tvalue={${3:string}}",
-      "/>"
-    ]
-  },
-  "Gestalt ScrollBoundaryContainer": {
-    "prefix": "<ScrollBoundaryContainer",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<ScrollBoundaryContainer>",
-      "\t${0:node}",
-      "</ScrollBoundaryContainer>"
-    ]
-  },
-  "Gestalt ScrollFetch": {
-    "prefix": "<ScrollFetch",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<ScrollFetch", "\tisFetching={${1|true,false|}}", "/>"]
-  },
-  "Gestalt SearchField": {
-    "prefix": "<SearchField",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<SearchField",
-      "\taccessibilityLabel={${1:string}}",
-      "\tid={${2:string}}",
-      "\tonChange={${3:({| value: string, syntheticEvent: SyntheticEvent<HTMLInputElement>,\n|}) => void}}",
-      "/>"
-    ]
-  },
-  "Gestalt SegmentedControl": {
-    "prefix": "<SegmentedControl",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<SegmentedControl",
-      "\titems={${1:\\$ReadOnlyArray<Node>}}",
-      "\tonChange={${2:AbstractEventHandler< SyntheticMouseEvent<HTMLButtonElement>, {| activeIndex: number |},\n>}}",
-      "\tselectedItemIndex={${3:number}}",
-      "/>"
-    ]
-  },
-  "Gestalt SelectList": {
-    "prefix": "<SelectList",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<SelectList",
-      "\tid={${1:string}}",
-      "\tonChange={${2:AbstractEventHandler<SyntheticInputEvent<HTMLSelectElement>, {| value: string |}>}}",
-      "\toptions={${3:\\$ReadOnlyArray<{| label: string, value: string, disabled?: boolean |}>}}",
-      "/>"
-    ]
-  },
-  "Gestalt Sheet": {
-    "prefix": "<Sheet",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Sheet", "/>"]
-  },
-  "Gestalt Spinner": {
-    "prefix": "<Spinner",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<Spinner",
-      "\taccessibilityLabel={${1:string}}",
-      "\tshow={${2|true,false|}}",
-      "/>"
-    ]
-  },
-  "Gestalt Status": {
-    "prefix": "<Status",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<Status",
-      "\ttype=\"${1|unstarted,inProgress,halted,ok,problem,canceled,warning|}\"",
-      "/>"
-    ]
-  },
-  "Gestalt Sticky": {
-    "prefix": "<Sticky",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Sticky>", "\t${0:node}", "</Sticky>"]
-  },
-  "Gestalt Switch": {
-    "prefix": "<Switch",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<Switch",
-      "\tid={${1:string}}",
-      "\tonChange={${2:({| event: SyntheticInputEvent<>, value: boolean |}) => void}}",
-      "/>"
-    ]
-  },
-  "Gestalt Table": {
-    "prefix": "<Table",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<Table",
-      "\taccessibilityLabel={${1:string}}",
-      ">${2:node}</Table>"
-    ]
-  },
-  "Gestalt Tag": {
-    "prefix": "<Tag",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Tag", "\ttext={${1:string}}", "/>"]
-  },
-  "Gestalt TapArea": {
-    "prefix": "<TapArea",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<TapArea", "/>"]
-  },
-  "Gestalt Text": {
-    "prefix": "<Text",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Text>", "\t${0:node}", "</Text>"]
-  },
-  "Gestalt TextArea": {
-    "prefix": "<TextArea",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<TextArea",
-      "\tid={${1:string}}",
-      "\tonChange={${2:AbstractEventHandler<SyntheticInputEvent<HTMLTextAreaElement>, {| value: string |}>}}",
-      "/>"
-    ]
-  },
-  "Gestalt TextField": {
-    "prefix": "<TextField",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<TextField",
-      "\tid={${1:string}}",
-      "\tonChange={${2:({| event: SyntheticInputEvent<HTMLInputElement>, value: string,\n|}) => void}}",
-      "/>"
-    ]
-  },
-  "Gestalt Toast": {
-    "prefix": "<Toast",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Toast", "\ttext={${1:string | Element}}", "/>"]
-  },
-  "Gestalt Tooltip": {
-    "prefix": "<Tooltip",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Tooltip", "\ttext={${1:string}}", ">${2:node}</Tooltip>"]
-  },
-  "Gestalt Upsell": {
-    "prefix": "<Upsell",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": ["<Upsell", "\tmessage={${1:string}}", ">${2:node}</Upsell>"]
-  },
-  "Gestalt Video": {
-    "prefix": "<Video",
-    "scope": "javascript,typescript,javascriptreact",
-    "body": [
-      "<Video",
-      "\taccessibilityMaximizeLabel={${1:string}}",
-      "\taccessibilityMinimizeLabel={${2:string}}",
-      "\taccessibilityMuteLabel={${3:string}}",
-      "\taccessibilityPauseLabel={${4:string}}",
-      "\taccessibilityPlayLabel={${5:string}}",
-      "\taccessibilityUnmuteLabel={${6:string}}",
-      "\taspectRatio={${7:number}}",
-      "\tcaptions={${8:string}}",
-      "\tsrc={${9:string | \\$ReadOnlyArray}}",
-      ">${10:node}</Video>"
-    ]
-  }
+  "gestaltVersion": "40.4.6",
+  "snippets": [
+    {
+      "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.",
+      "prefix": "<ActivationCard",
+      "name": "ActivationCard",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<ActivationCard",
+        "\tmessage={${1:string}}",
+        "\tstatus=\"${2|notStarted,pending,needsAttention,complete|}\"",
+        "\tstatusMessage={${3:string}}",
+        "\ttitle={${4:string}}",
+        "/>"
+      ]
+    },
+    {
+      "description": "[Avatar](https://gestalt.pinterest.systems/avatar) is used to represent a user. Every Avatar image has a subtle color wash.",
+      "prefix": "<Avatar",
+      "name": "Avatar",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Avatar", "\tname={${1:string}}", "/>"]
+    },
+    {
+      "description": "[AvatarGroup](https://gestalt.pinterest.systems/avatargroup) is used to both display a group of user avatars and, optionally, control actions related to the users group.\n\n![AvatarGroup light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/AvatarGroup%20%230.png)\n![AvatarGroup dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/AvatarGroup-dark%20%230.png)",
+      "prefix": "<AvatarGroup",
+      "name": "AvatarGroup",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<AvatarGroup",
+        "\taccessibilityLabel={${1:string}}",
+        "\tcollaborators={${2:\\$ReadOnlyArray<{| name: string, src?: string,\n|}>}}",
+        "/>"
+      ]
+    },
+    {
+      "description": "[AvatarPair](https://gestalt.pinterest.systems/avatarpair) is used to display two avatars in an overlapping grouping.",
+      "prefix": "<AvatarPair",
+      "name": "AvatarPair",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<AvatarPair",
+        "\tcollaborators={${1:\\$ReadOnlyArray<{| name: string, src?: string,\n|}>}}",
+        "/>"
+      ]
+    },
+    {
+      "description": "[Badge](https://gestalt.pinterest.systems/badge) is used to label text.",
+      "prefix": "<Badge",
+      "name": "Badge",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Badge", "\ttext={${1:string}}", "/>"]
+    },
+    {
+      "description": "[Box](https://gestalt.pinterest.systems/box) is a component primitive that can be used to build the foundation of pretty much any other component. It keeps details like spacing, borders and colors consistent with the rest of Gestalt, while allowing the developer to focus on the content.",
+      "prefix": "<Box",
+      "name": "Box",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Box>", "\t${0:node}", "</Box>"]
+    },
+    {
+      "description": "[Buttons](https://gestalt.pinterest.systems/button) allow users to perform actions within a surface. They can be used alone for immediate action, or as a trigger for another component, like [Dropdown](https://gestalt.pinterest.systems/dropdown) or [Popover](https://gestalt.pinterest.systems/popover).",
+      "prefix": "<Button",
+      "name": "Button",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Button", "/>"]
+    },
+    {
+      "description": "[ButtonGroup](https://gestalt.pinterest.systems/buttongroup) is used to display a series of buttons.",
+      "prefix": "<ButtonGroup",
+      "name": "ButtonGroup",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<ButtonGroup>", "\t${0:node}", "</ButtonGroup>"]
+    },
+    {
+      "description": "[Callout](https://gestalt.pinterest.systems/callout) is a banner displaying short messages with helpful information for a task on the page, or something that requires the user’s attention.\n\n⚠️ Please note: Callout is not currently supported in dark mode.",
+      "prefix": "<Callout",
+      "name": "Callout",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<Callout",
+        "\ticonAccessibilityLabel={${1:string}}",
+        "\tmessage={${2:string}}",
+        "\ttype=\"${3|error,info,warning|}\"",
+        "/>"
+      ]
+    },
+    {
+      "description": "[Cards](https://gestalt.pinterest.systems/card) are meant to highlight content in grids. It visually shows that items belong together and highlights the items on hover.",
+      "prefix": "<Card",
+      "name": "Card",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Card>", "\t${0:node}", "</Card>"]
+    },
+    {
+      "description": "[Checkbox](https://gestalt.pinterest.systems/checkbox)is used over [Switch](https://gestalt.pinterest.systems/switch) when you have a long list (>3) of toggles.",
+      "prefix": "<Checkbox",
+      "name": "Checkbox",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<Checkbox",
+        "\tid={${1:string}}",
+        "\tonChange={${2:AbstractEventHandler<SyntheticInputEvent<HTMLInputElement>, {| checked: boolean |}>}}",
+        "/>"
+      ]
+    },
+    {
+      "description": "[Collage](https://gestalt.pinterest.systems/collage), similarly to [Masonry](https://gestalt.pinterest.systems/masonry), creates a deterministic grid layout that can absolutely position and virtualize images.",
+      "prefix": "<Collage",
+      "name": "Collage",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<Collage",
+        "\tcolumns=\"${1|2,3,4|}\"",
+        "\theight={${2:number}}",
+        "\trenderImage={${3:({| width: number, height: number, index: number,\n|}) => Node}}",
+        "\twidth={${4:number}}",
+        "/>"
+      ]
+    },
+    {
+      "description": "https://gestalt.pinterest.systems/collection",
+      "prefix": "<Collection",
+      "name": "Collection",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<Collection",
+        "\tItem={${1:({| idx: number |}) => Node}}",
+        "\tlayout={${2:\\$ReadOnlyArray<{| top: number, left: number, width: number, height: number,\n|}>}}",
+        "/>"
+      ]
+    },
+    {
+      "description": "[ColorSchemeProvider](https://gestalt.pinterest.systems/colorschemeprovider) is an optional [React context provider](https://reactjs.org/docs/context.html#contextprovider) to enable dark mode",
+      "prefix": "<ColorSchemeProvider",
+      "name": "ColorSchemeProvider",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<ColorSchemeProvider>", "\t${0:node}", "</ColorSchemeProvider>"]
+    },
+    {
+      "description": "[Column](https://gestalt.pinterest.systems/column). Gestalt supports a 12-column system.",
+      "prefix": "<Column",
+      "name": "Column",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<Column",
+        "\tspan=\"${1|0,1,2,3,4,5,6,7,8,9,10,11,12|}\"",
+        ">${2:node}</Column>"
+      ]
+    },
+    {
+      "description": "[ComboBox](https://gestalt.pinterest.systems/combobox) is the combination of a [Textfield](https://gestalt.pinterest.systems/textfield) and an associated [Dropdown](https://gestalt.pinterest.systems/dropdown) that allows the user to filter a list when selecting an option. ComboBox allows users to type the full option, type part of the option and narrow the results, or select an option from the list.",
+      "prefix": "<ComboBox",
+      "name": "ComboBox",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<ComboBox",
+        "\taccessibilityClearButtonLabel={${1:string}}",
+        "\tid={${2:string}}",
+        "\tlabel={${3:string}}",
+        "\toptions={${4:\\$ReadOnlyArray<OptionItemType>}}",
+        "\tnoResultText={${5:string}}",
+        "/>"
+      ]
+    },
+    {
+      "description": "[Containers](https://gestalt.pinterest.systems/container ) are useful in responsively laying out content on different screens.",
+      "prefix": "<Container",
+      "name": "Container",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Container>", "\t${0:node}", "</Container>"]
+    },
+    {
+      "description": "[Datapoint](https://gestalt.pinterest.systems/datapoint) displays at-a-glance data for a user to quickly view key metrics.\n\n⚠️ Please note: Datapoint is not currently supported in dark mode.",
+      "prefix": "<Datapoint",
+      "name": "Datapoint",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<Datapoint",
+        "\ttitle={${1:string}}",
+        "\tvalue={${2:string}}",
+        "/>"
+      ]
+    },
+    {
+      "description": "[Divider](https://gestalt.pinterest.systems/divider) is a light gray 1px horizontal or vertical line which groups and divides content in lists and layouts.",
+      "prefix": "<Divider",
+      "name": "Divider",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Divider", "/>"]
+    },
+    {
+      "description": "[Dropdown](https://gestalt.pinterest.systems/dropdown) displays a list of actions, options or links. It is triggered when a user interacts with a Button, Textfield or other control. Dropdown allows for complex functionality that can’t be accomplished with SelectList.",
+      "prefix": "<Dropdown",
+      "name": "Dropdown",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<Dropdown",
+        "\tid={${1:string}}",
+        "\tonDismiss={${2:() => void}}",
+        ">${3:node}</Dropdown>"
+      ]
+    },
+    {
+      "description": "[Fieldset](https://gestalt.pinterest.systems/fieldset) creates a fieldset and legend for a group of related form items, like [RadioButtons](https://gestalt.pinterest.systems/radiobutton) or [CheckBoxes](https://gestalt.pinterest.systems/checkbox), in order to clearly indicate related form items.\"",
+      "prefix": "<Fieldset",
+      "name": "Fieldset",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Fieldset", "\tlegend={${1:string}}", ">${2:node}</Fieldset>"]
+    },
+    {
+      "description": "https://gestalt.pinterest.systems/flex",
+      "prefix": "<Flex",
+      "name": "Flex",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Flex>", "\t${0:node}", "</Flex>"]
+    },
+    {
+      "description": "[Heading](https://gestalt.pinterest.systems/heading) allows you to show headings on the page & has a bigger line height than regular text.",
+      "prefix": "<Heading",
+      "name": "Heading",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Heading>", "\t${0:node}", "</Heading>"]
+    },
+    {
+      "description": "[Icons](https://gestalt.pinterest.systems/icon) are the symbolic representation of an action or information, providing visual context and improving usability.\n\nSee the [Iconography and SVG guidelines](https://gestalt.pinterest.systems/iconography_and_svgs) to explore the full icon library.",
+      "prefix": "<Icon",
+      "name": "Icon",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Icon", "\taccessibilityLabel={${1:string}}", "/>"]
+    },
+    {
+      "description": "[IconButton](https://gestalt.pinterest.systems/iconbutton) allows users to take actions and make choices with a single click or tap. IconButtons use icons instead of text to convey available actions on a screen. IconButton is typically found in forms, dialogs and toolbars.\n Some buttons are specialized for particular tasks, such as navigation or presenting menus.",
+      "prefix": "<IconButton",
+      "name": "IconButton",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<IconButton", "/>"]
+    },
+    {
+      "description": "[Image](https://gestalt.pinterest.systems/image) is the workhorse of Pinterest. If you define Pinterest to be all about collecting ideas, then images are how we choose to represent those ideas. In response, we've added a few extra superpowers to the regular img tag to make it even more awesome.",
+      "prefix": "<Image",
+      "name": "Image",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<Image",
+        "\talt={${1:string}}",
+        "\tnaturalHeight={${2:number}}",
+        "\tnaturalWidth={${3:number}}",
+        "\tsrc={${4:string}}",
+        ">${5:node}</Image>"
+      ]
+    },
+    {
+      "description": "Use the [Label](https://gestalt.pinterest.systems/labels) component to connect a label with a form component in an accessible way.",
+      "prefix": "<Label",
+      "name": "Label",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Label", "\thtmlFor={${1:string}}", ">${2:node}</Label>"]
+    },
+    {
+      "description": "[Layers](https://gestalt.pinterest.systems/layer) allow you to render children outside the DOM hierarchy of the parent. It's a wrapper around React createPortal that lets you use it as a component. This is particularly useful for places you might have needed to use z-index to overlay the screen before.",
+      "prefix": "<Layer",
+      "name": "Layer",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Layer>", "\t${0:node}", "</Layer>"]
+    },
+    {
+      "description": "[Letterboxes](https://gestalt.pinterest.systems/letterbox) are useful if you have some source media which is larger than the area you want to display it in. For instance, you might have a really tall image and want it to be displayed in a neatly cropped square. While the ideal solution to this problem is to update the source image, this might not always be possible for either cost or performance reasons.\n\nLetterbox should be used in situations where you would otherwise use the CSS property \\`background-size: cover\\`.",
+      "prefix": "<Letterbox",
+      "name": "Letterbox",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<Letterbox",
+        "\tcontentAspectRatio={${1:number}}",
+        "\theight={${2:number}}",
+        "\twidth={${3:number}}",
+        ">${4:node}</Letterbox>"
+      ]
+    },
+    {
+      "description": "The [Link](https://gestalt.pinterest.systems/link) component allows you to show links on the page, open them in a new window, and change the color.",
+      "prefix": "<Link",
+      "name": "Link",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Link", "\thref={${1:string}}", ">${2:node}</Link>"]
+    },
+    {
+      "description": "[Mask](https://gestalt.pinterest.systems/mask) is used when you have an item you need to fit into a shape, you can achieve this by putting a \\`Mask\\` on it.",
+      "prefix": "<Mask",
+      "name": "Mask",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Mask>", "\t${0:node}", "</Mask>"]
+    },
+    {
+      "description": "[Masonry](https://gestalt.pinterest.systems/masonry) creates a deterministic grid layout, positioning items based on available vertical space. It contains performance optimizations like virtualization and support for infinite scrolling.",
+      "prefix": "<Masonry",
+      "name": "Masonry",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<Masonry",
+        "\tcomp={${1:ComponentType<{| data: T, itemIdx: number, isMeasuring: boolean,\n|}>}}",
+        "\titems={${2:\\$ReadOnlyArray<T>}}",
+        "/>"
+      ]
+    },
+    {
+      "description": "A [Modal](https://gestalt.pinterest.systems/modal) displays content that requires user interaction. Modals appear on a layer above the page and therefore block the content underneath, preventing users from interacting with anything else besides the Modal. The most common example of Modal is confirming an action the user has taken.",
+      "prefix": "<Modal",
+      "name": "Modal",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<Modal",
+        "\taccessibilityModalLabel={${1:string}}",
+        "\tonDismiss={${2:() => void}}",
+        ">${3:node}</Modal>"
+      ]
+    },
+    {
+      "description": "https://gestalt.pinterest.systems/module",
+      "prefix": "<Module",
+      "name": "Module",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Module", "/>"]
+    },
+    {
+      "description": "[NumberField](https://gestalt.pinterest.systems/numberfield) allows for numerical input.",
+      "prefix": "<NumberField",
+      "name": "NumberField",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<NumberField",
+        "\tid={${1:string}}",
+        "\tonChange={${2:({| event: SyntheticInputEvent<HTMLInputElement>, value: number | void,\n|}) => void}}",
+        "/>"
+      ]
+    },
+    {
+      "description": "[OnLinkNavigationProvider](https://gestalt.pinterest.systems/onlinknavigationprovider) is an optional [React context provider](https://reactjs.org/docs/context.html#contextprovider) to externally control the link behaviour of components further down the tree",
+      "prefix": "<OnLinkNavigationProvider",
+      "name": "OnLinkNavigationProvider",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<OnLinkNavigationProvider",
+        "\tonNavigation={${1:(OnLinkNavigationArgs) => ?EventHandlerType}}",
+        ">${2:node}</OnLinkNavigationProvider>"
+      ]
+    },
+    {
+      "description": "[PageHeader](https://gestalt.pinterest.systems/pageheader) is used to indicate the title of the current page, as well as optional actions.",
+      "prefix": "<PageHeader",
+      "name": "PageHeader",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<PageHeader", "\ttitle={${1:string}}", "/>"]
+    },
+    {
+      "description": "[Pog](https://gestalt.pinterest.systems/pog) is a lower-level functional component to show the active, hovered, & focused states of an [IconButton](/iconbutton).\n\nThis abstraction to allow for links that look like an IconButton.",
+      "prefix": "<Pog",
+      "name": "Pog",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Pog", "/>"]
+    },
+    {
+      "description": "[Popover](https://gestalt.pinterest.systems/popover) is a floating view that contains a task related to the content on screen. It can be triggered when the user clicks or focuses on an element, typically [Button](/button) or [IconButton](/iconbutton). It can also be triggered automatically, as in the case of user education. Popover is non-modal and can be dismissed by interacting with another part of the screen or an item within Popover.\n\nPopover is most appropriate for desktop screens and can contain a variety of elements, such as [Button](/button) and [Images](/image). Popover is also the container used to construct more complex elements like [Dropdown](/dropdown) and the board picker, pictured below, which allow people to choose the board to save a Pin to.",
+      "prefix": "<Popover",
+      "name": "Popover",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<Popover",
+        "\tanchor={${1:undefined}}",
+        "\tonDismiss={${2:() => void}}",
+        ">${3:node}</Popover>"
+      ]
+    },
+    {
+      "description": "[Pulsars](https://gestalt.pinterest.systems/pulsar ) bring focus to a specific element on the screen and act like training wheels to guide people towards the normal way to perform that action. They are used in isolation or combination with other education components for more instructions.",
+      "prefix": "<Pulsar",
+      "name": "Pulsar",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Pulsar", "/>"]
+    },
+    {
+      "description": "Use [RadioButtons](https://gestalt.pinterest.systems/radiobutton) when you have a few options that a user can choose from. Never use radio buttons if the user can select more than one option from a list.",
+      "prefix": "<RadioButton",
+      "name": "RadioButton",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<RadioButton",
+        "\tid={${1:string}}",
+        "\tonChange={${2:AbstractEventHandler<SyntheticInputEvent<HTMLInputElement>, {| checked: boolean |}>}}",
+        "\tvalue={${3:string}}",
+        "/>"
+      ]
+    },
+    {
+      "description": "[ScrollBoundaryContainer](https://gestalt.pinterest.systems/scrollboundarycontainer) is used with anchored components such as Popover, Tooltip, Dropdown or ComboBox. A ScrollBoundaryContainer is needed for proper positioning when the Tooltip is anchored to an element that is located within a scrolling container. The use of ScrollBoundaryContainer ensures the Tooltip remains attached to its anchor when scrolling.",
+      "prefix": "<ScrollBoundaryContainer",
+      "name": "ScrollBoundaryContainer",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<ScrollBoundaryContainer>",
+        "\t${0:node}",
+        "</ScrollBoundaryContainer>"
+      ]
+    },
+    {
+      "description": "",
+      "prefix": "<ScrollFetch",
+      "name": "ScrollFetch",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<ScrollFetch", "\tisFetching={${1|true,false|}}", "/>"]
+    },
+    {
+      "description": "[SearchField](https://gestalt.pinterest.systems/searchfield) allows users to search for free-form content.",
+      "prefix": "<SearchField",
+      "name": "SearchField",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<SearchField",
+        "\taccessibilityLabel={${1:string}}",
+        "\tid={${2:string}}",
+        "\tonChange={${3:({| value: string, syntheticEvent: SyntheticEvent<HTMLInputElement>,\n|}) => void}}",
+        "/>"
+      ]
+    },
+    {
+      "description": "[SegmentedControls](https://gestalt.pinterest.systems/segmentedcontrol)  may be used to group between multiple selections. The controls display the current state and related state.\n\nCreate layout to convey clear sense of information hierarchy. When a control is engaged, information below the control should get updated.",
+      "prefix": "<SegmentedControl",
+      "name": "SegmentedControl",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<SegmentedControl",
+        "\titems={${1:\\$ReadOnlyArray<Node>}}",
+        "\tonChange={${2:AbstractEventHandler< SyntheticMouseEvent<HTMLButtonElement>, {| activeIndex: number |},\n>}}",
+        "\tselectedItemIndex={${3:number}}",
+        "/>"
+      ]
+    },
+    {
+      "description": "[SelectList](https://gestalt.pinterest.systems/selectlist) displays a list of actions or options using the browser’s native select.",
+      "prefix": "<SelectList",
+      "name": "SelectList",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<SelectList",
+        "\tid={${1:string}}",
+        "\tonChange={${2:AbstractEventHandler<SyntheticInputEvent<HTMLSelectElement>, {| value: string |}>}}",
+        "\toptions={${3:\\$ReadOnlyArray<{| label: string, value: string, disabled?: boolean |}>}}",
+        "/>"
+      ]
+    },
+    {
+      "description": "[Sheets](https://gestalt.pinterest.systems/sheet ) are surfaces that allow users to view optional information or complete sub-tasks in a workflow while keeping the context of the current page. The most common example of Sheet displays content in a panel that opens from the side of the screen for the user to read or input information. Sheets have default, internal padding for content.",
+      "prefix": "<Sheet",
+      "name": "Sheet",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Sheet", "/>"]
+    },
+    {
+      "description": "[Spinners](https://gestalt.pinterest.systems/spinner ) help indicate that a surface's content or portion of content is currently loading.",
+      "prefix": "<Spinner",
+      "name": "Spinner",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<Spinner",
+        "\taccessibilityLabel={${1:string}}",
+        "\tshow={${2|true,false|}}",
+        "/>"
+      ]
+    },
+    {
+      "description": "[Status](https://gestalt.pinterest.systems/status) is an indicator with an icon that provides information to a user.",
+      "prefix": "<Status",
+      "name": "Status",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<Status",
+        "\ttype=\"${1|unstarted,inProgress,halted,ok,problem,canceled,warning|}\"",
+        "/>"
+      ]
+    },
+    {
+      "description": "[Sticky](https://gestalt.pinterest.systems/sticky) allows an element to become fixed when it reaches a threshold (top, left, bottom, or right).",
+      "prefix": "<Sticky",
+      "name": "Sticky",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Sticky>", "\t${0:node}", "</Sticky>"]
+    },
+    {
+      "description": "Use [switches](https://gestalt.pinterest.systems/switch) for single cell options that can be turned on and off only. If you have a cell with multiple options that can activated, consider using check marks.\n\nSwitch supports right-to-left(RTL) language locales layout (auto flip on RTL locales like Arabic).",
+      "prefix": "<Switch",
+      "name": "Switch",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<Switch",
+        "\tid={${1:string}}",
+        "\tonChange={${2:({| event: SyntheticInputEvent<>, value: boolean |}) => void}}",
+        "/>"
+      ]
+    },
+    {
+      "description": "https://gestalt.pinterest.systems/table",
+      "prefix": "<Table",
+      "name": "Table",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<Table",
+        "\taccessibilityLabel={${1:string}}",
+        ">${2:node}</Table>"
+      ]
+    },
+    {
+      "description": "[Tags](https://gestalt.pinterest.systems/tag) are objects that hold text and have a delete icon to remove them. They can appear within [TextFields](https://gestalt.pinterest.systems/textfield#tagsExample), [TextAreas](https://gestalt.pinterest.systems/textarea#tagsExample), [ComboBox](https://gestalt.pinterest.systems/combobox#Tags) or as standalone components.\n\n![Tag light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Tag%20%230.png)\n![Tag dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Tag-dark%20%230.png)",
+      "prefix": "<Tag",
+      "name": "Tag",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Tag", "\ttext={${1:string}}", "/>"]
+    },
+    {
+      "description": "[TapArea](https://gestalt.pinterest.systems/tapArea) allows components to be clickable and touchable in an accessible way",
+      "prefix": "<TapArea",
+      "name": "TapArea",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<TapArea", "/>"]
+    },
+    {
+      "description": "The [Text](https://gestalt.pinterest.systems/text) component should be used for all text on the page.\n\n![Text light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Text%20%230.png)\n![Text dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Text-dark%20%230.png)",
+      "prefix": "<Text",
+      "name": "Text",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Text>", "\t${0:node}", "</Text>"]
+    },
+    {
+      "description": "[TextArea](https://gestalt.pinterest.systems/textArea) allows for multi-line input.",
+      "prefix": "<TextArea",
+      "name": "TextArea",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<TextArea",
+        "\tid={${1:string}}",
+        "\tonChange={${2:AbstractEventHandler<SyntheticInputEvent<HTMLTextAreaElement>, {| value: string |}>}}",
+        "/>"
+      ]
+    },
+    {
+      "description": "[TextField](https://gestalt.pinterest.systems/textfield) allows for multiple types of text input.",
+      "prefix": "<TextField",
+      "name": "TextField",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<TextField",
+        "\tid={${1:string}}",
+        "\tonChange={${2:({| event: SyntheticInputEvent<HTMLInputElement>, value: string,\n|}) => void}}",
+        "/>"
+      ]
+    },
+    {
+      "description": "[Toasts](https://gestalt.pinterest.systems/toast) can educate people on the content of the screen, provide confirmation when people complete an action, or simply communicate a short message.\n\nToast is purely visual. In order to properly handle the showing and dismissing of Toasts, as well as any animations, you will need to implement a Toast manager.",
+      "prefix": "<Toast",
+      "name": "Toast",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Toast", "\ttext={${1:string | Element}}", "/>"]
+    },
+    {
+      "description": "[Tooltip](https://gestalt.pinterest.systems/tooltip) is a floating text label that succinctly describes the function of an interactive element, typically [Icon Button](/iconbutton). It’s displayed continuously as long as the user hovers over or focuses on the element.",
+      "prefix": "<Tooltip",
+      "name": "Tooltip",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Tooltip", "\ttext={${1:string}}", ">${2:node}</Tooltip>"]
+    },
+    {
+      "description": "[Upsells](https://gestalt.pinterest.systems/upsell) are banners that display short messages that focus on promoting an action or upgrading something the user already has.\n\n⚠️ Please note: Upsell is not currently supported in dark mode.",
+      "prefix": "<Upsell",
+      "name": "Upsell",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<Upsell", "\tmessage={${1:string}}", ">${2:node}</Upsell>"]
+    },
+    {
+      "description": "Like an Image, [Video](https://gestalt.pinterest.systems/video) is used for media layout. This component is supercharged with lots of goodies to turn a regular video in a full blown viewing experience.",
+      "prefix": "<Video",
+      "name": "Video",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<Video",
+        "\taccessibilityMaximizeLabel={${1:string}}",
+        "\taccessibilityMinimizeLabel={${2:string}}",
+        "\taccessibilityMuteLabel={${3:string}}",
+        "\taccessibilityPauseLabel={${4:string}}",
+        "\taccessibilityPlayLabel={${5:string}}",
+        "\taccessibilityUnmuteLabel={${6:string}}",
+        "\taspectRatio={${7:number}}",
+        "\tcaptions={${8:string}}",
+        "\tsrc={${9:string | \\$ReadOnlyArray}}",
+        ">${10:node}</Video>"
+      ]
+    }
+  ]
 }
