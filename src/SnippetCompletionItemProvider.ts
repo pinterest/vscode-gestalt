@@ -1,11 +1,7 @@
 import log from "./log";
-import track from "./track";
 
 import {
-  CancellationToken,
   Command,
-  commands,
-  CompletionContext,
   CompletionItem,
   CompletionItemKind,
   CompletionItemProvider,
@@ -15,7 +11,7 @@ import {
   SnippetString,
   TextDocument,
 } from "vscode";
-import snippets from "./snippets.json";
+import { snippets } from "./snippets.json";
 import { MarkdownString } from "vscode";
 import { SnippetParser } from "./snippetParser";
 
@@ -55,6 +51,7 @@ class SnippetCompletionItem implements CompletionItem {
         {
           component: prefix.replace("<", ""),
           charactersSaved: snippetLength - textBeforeCursorLength,
+          location: "inline",
         },
       ],
     };
@@ -79,38 +76,6 @@ class SnippetCompletionItemProvider
     return item instanceof SnippetCompletionItem ? item.resolve() : item;
   }
 
-  public registerCommands() {
-    commands.registerCommand(
-      "gestalt.track.insertSnippet",
-      function trackSnippet({
-        component,
-        charactersSaved,
-      }: {
-        component: string;
-        charactersSaved: number;
-      }) {
-        track.event({
-          category: "Event",
-          action: "Count",
-          label: "InsertSnippet",
-          value: String(1),
-        });
-        track.event({
-          category: "Event",
-          action: "Count",
-          label: "InsertSnippetComponent",
-          value: component,
-        });
-        track.event({
-          category: "Event",
-          action: "Count",
-          label: "InsertSnippetCharactersSaved",
-          value: String(charactersSaved),
-        });
-      }
-    );
-  }
-
   public async provideCompletionItems(
     document: TextDocument,
     position: Position
@@ -128,15 +93,16 @@ class SnippetCompletionItemProvider
     log.append(`textBeforeCursor: ${textBeforeCursor}`);
 
     return new CompletionList(
-      Object.entries(snippets)
-        .filter(([_, { prefix }]) => {
+      snippets
+        .filter(({ prefix }) => {
           return prefix
             .toLocaleLowerCase()
             .startsWith(textBeforeCursor.toLocaleLowerCase());
         })
-        .map(([label, { prefix, body }]) => {
+        .map(({ prefix, body, name }) => {
           const text = body.join("\n");
-          const completionItem = new SnippetCompletionItem({
+          const label = `Gestalt ${name}`;
+          return new SnippetCompletionItem({
             label,
             prefix,
             range: new Range(
@@ -147,10 +113,6 @@ class SnippetCompletionItemProvider
             textBeforeCursorLength: textBeforeCursor.length,
             snippetLength: text.length,
           });
-
-          log.append(`label: ${label}`);
-
-          return completionItem;
         })
     );
   }
