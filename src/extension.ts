@@ -47,15 +47,10 @@ function addProviders(): Disposable {
 }
 
 function registerCommands(): void {
-  log.append("registerInsertSnippetFromTreeView");
   registerInsertSnippetFromTreeView();
-  log.append("registerInsertSnippet");
   registerInsertSnippet();
-  log.append("registerQuickPickCommand");
   registerQuickPickCommand();
-  log.append("registerOpenUrl");
   registerOpenUrl();
-  log.append("registerOpenComponentUrl");
   registerOpenComponentUrl();
 }
 

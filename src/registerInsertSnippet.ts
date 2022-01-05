@@ -1,7 +1,7 @@
 import * as vscode from "vscode";
 import log from "./log";
 import track from "./track";
-import addImport from "./ast/addImport";
+import addImport from "./addImport";
 
 async function insertSnippet({
   component,
