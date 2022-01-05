@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "40.4.6",
+  "gestaltVersion": "41.1.3",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.",
@@ -87,21 +87,21 @@
       ]
     },
     {
-      "description": "[Cards](https://gestalt.pinterest.systems/card) are meant to highlight content in grids. It visually shows that items belong together and highlights the items on hover.",
+      "description": "[Card](https://gestalt.pinterest.systems/card) is used to highlight content in grids. It visually shows that children elements belong together and can highlight the items on hover.",
       "prefix": "<Card",
       "name": "Card",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Card>", "\t${0:node}", "</Card>"]
     },
     {
-      "description": "[Checkbox](https://gestalt.pinterest.systems/checkbox)is used over [Switch](https://gestalt.pinterest.systems/switch) when you have a long list (>3) of toggles.",
+      "description": "Use [Checkbox](https://gestalt.pinterest.systems/checkbox) instead of [Switch](https://gestalt.pinterest.systems/switch) when displaying 3 or more toggle inputs.",
       "prefix": "<Checkbox",
       "name": "Checkbox",
       "scope": "javascript,typescript,javascriptreact",
       "body": [
         "<Checkbox",
         "\tid={${1:string}}",
-        "\tonChange={${2:AbstractEventHandler<SyntheticInputEvent<HTMLInputElement>, {| checked: boolean |}>}}",
+        "\tonChange={${2:({| event: SyntheticInputEvent<HTMLInputElement>, checked: boolean |}) => void}}",
         "/>"
       ]
     },
@@ -139,7 +139,7 @@
       "body": ["<ColorSchemeProvider>", "\t${0:node}", "</ColorSchemeProvider>"]
     },
     {
-      "description": "[Column](https://gestalt.pinterest.systems/column). Gestalt supports a 12-column system.",
+      "description": "Use [Column](https://gestalt.pinterest.systems/column) to implement a 12-column system.",
       "prefix": "<Column",
       "name": "Column",
       "scope": "javascript,typescript,javascriptreact",
@@ -159,7 +159,7 @@
         "\taccessibilityClearButtonLabel={${1:string}}",
         "\tid={${2:string}}",
         "\tlabel={${3:string}}",
-        "\toptions={${4:\\$ReadOnlyArray<OptionItemType>}}",
+        "\toptions={${4:\\$ReadOnlyArray<ComboBoxItemType>}}",
         "\tnoResultText={${5:string}}",
         "/>"
       ]
@@ -317,11 +317,11 @@
       ]
     },
     {
-      "description": "https://gestalt.pinterest.systems/module",
+      "description": "[Module](https://gestalt.pinterest.systems/module) is a container that holds content about one subject. Its contents can be visible at all times, or expand and collapse as individual modules or a group of modules.",
       "prefix": "<Module",
       "name": "Module",
       "scope": "javascript,typescript,javascriptreact",
-      "body": ["<Module", "/>"]
+      "body": ["<Module", "\tid={${1:string}}", ">${2:node}</Module>"]
     },
     {
       "description": "[NumberField](https://gestalt.pinterest.systems/numberfield) allows for numerical input.",
@@ -507,6 +507,19 @@
         "<Table",
         "\taccessibilityLabel={${1:string}}",
         ">${2:node}</Table>"
+      ]
+    },
+    {
+      "description": "https://gestalt.pinterest.systems/tabs",
+      "prefix": "<Tabs",
+      "name": "Tabs",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<Tabs",
+        "\tactiveTabIndex={${1:number}}",
+        "\tonChange={${2:AbstractEventHandler< | SyntheticMouseEvent<HTMLAnchorElement> | SyntheticKeyboardEvent<HTMLAnchorElement> | SyntheticMouseEvent<HTMLDivElement> | SyntheticKeyboardEvent<HTMLDivElement>, {| +activeTabIndex: number, dangerouslyDisableOnNavigation: () => void |},\n>}}",
+        "\ttabs={${3:\\$ReadOnlyArray<{| ...TabType, ref?: {| current: ?HTMLElement |} |}>}}",
+        "/>"
       ]
     },
     {

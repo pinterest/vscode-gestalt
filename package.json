@@ -3,7 +3,7 @@
   "displayName": "Gestalt",
   "description": "Pinterest's design system extension",
   "publisher": "pinterest",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "engines": {
     "vscode": "^1.57.0"
   },
@@ -99,7 +99,7 @@
         {
           "id": "gestalt-view",
           "title": "Gestalt",
-          "icon": "src/images/gestalt-logo.svg"
+          "icon": "images/gestalt-logo.svg"
         }
       ]
     },
