@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "41.1.14",
+  "gestaltVersion": "41.1.15",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.",
@@ -286,7 +286,7 @@
       "body": ["<Link", "\thref={${1:string}}", ">${2:node}</Link>"]
     },
     {
-      "description": "[Mask](https://gestalt.pinterest.systems/mask) is used when you have an item you need to fit into a shape, you can achieve this by putting a \\`Mask\\` on it.",
+      "description": "[Mask](https://gestalt.pinterest.systems/mask) is used to display content in a specific shape.",
       "prefix": "<Mask",
       "name": "Mask",
       "scope": "javascript,typescript,javascriptreact",
