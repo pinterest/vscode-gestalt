@@ -12,7 +12,7 @@ async function cloneGestalt() {
   await command("rm -rf out/gestalt");
   await command("mkdir -p out/gestalt");
   await command(
-    "git clone --depth 1 git@github.com:pinterest/gestalt.git out/gestalt"
+    "git clone --depth 1 https://github.com/pinterest/gestalt.git out/gestalt"
   );
 }
 
