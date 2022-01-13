@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "41.2.2",
+  "gestaltVersion": "41.2.3",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.",
@@ -457,7 +457,7 @@
       "body": ["<Sheet", "/>"]
     },
     {
-      "description": "[Spinners](https://gestalt.pinterest.systems/spinner ) help indicate that a surface's content or portion of content is currently loading.",
+      "description": "[Spinner](https://gestalt.pinterest.systems/spinner ) helps indicate that a surface's content or portion of content is currently loading.",
       "prefix": "<Spinner",
       "name": "Spinner",
       "scope": "javascript,typescript,javascriptreact",
@@ -487,7 +487,7 @@
       "body": ["<Sticky>", "\t${0:node}", "</Sticky>"]
     },
     {
-      "description": "Use [switches](https://gestalt.pinterest.systems/switch) for single cell options that can be turned on and off only. If you have a cell with multiple options that can activated, consider using check marks.\n\nSwitch supports right-to-left(RTL) language locales layout (auto flip on RTL locales like Arabic).",
+      "description": "Use [Switch](https://gestalt.pinterest.systems/switch) for single cell options that can be turned on and off only. If you have a cell with multiple options that can activated, consider using [Checkbox](https://gestalt.pinterest.systems/checkbox).\n\nSwitch supports right-to-left(RTL) language locales layout (auto flip on RTL locales like Arabic).",
       "prefix": "<Switch",
       "name": "Switch",
       "scope": "javascript,typescript,javascriptreact",
