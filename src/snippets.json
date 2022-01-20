@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "42.0.0",
+  "gestaltVersion": "42.0.1",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.",
@@ -336,14 +336,14 @@
       ]
     },
     {
-      "description": "[OnLinkNavigationProvider](https://gestalt.pinterest.systems/onlinknavigationprovider) is an optional [React context provider](https://reactjs.org/docs/context.html#contextprovider) to externally control the link behaviour of components further down the tree",
+      "description": "[OnLinkNavigationProvider](https://gestalt.pinterest.systems/onlinknavigationprovider) is a [React context provider](https://reactjs.org/docs/context.html#contextprovider) to externally control the link behavior of components further down the tree.",
       "prefix": "<OnLinkNavigationProvider",
       "name": "OnLinkNavigationProvider",
       "scope": "javascript,typescript,javascriptreact",
       "body": [
-        "<OnLinkNavigationProvider",
-        "\tonNavigation={${1:(OnLinkNavigationArgs) => ?EventHandlerType}}",
-        ">${2:node}</OnLinkNavigationProvider>"
+        "<OnLinkNavigationProvider>",
+        "\t${0:node}",
+        "</OnLinkNavigationProvider>"
       ]
     },
     {
@@ -424,7 +424,7 @@
       ]
     },
     {
-      "description": "[SegmentedControls](https://gestalt.pinterest.systems/segmentedcontrol)  may be used to group between multiple selections. The controls display the current state and related state.\n\nCreate layout to convey clear sense of information hierarchy. When a control is engaged, information below the control should get updated.",
+      "description": "[SegmentedControl](https://gestalt.pinterest.systems/segmentedcontrol)  may be used to group multiple selections. The controls display the current state and related state.\n\nCreate layout to convey clear sense of information hierarchy. When a control is engaged, information below the control should also be updated.",
       "prefix": "<SegmentedControl",
       "name": "SegmentedControl",
       "scope": "javascript,typescript,javascriptreact",
