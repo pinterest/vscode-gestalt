@@ -15,11 +15,20 @@ async function insertSnippet({
   // auto import
   const document = vscode.window.activeTextEditor!.document;
 
+  log.append(`document: ${document.fileName} - ${document.getText().length}`);
+
   const allTextRange = new vscode.Range(
     document.positionAt(0),
     document.positionAt(document.getText().length)
   );
+
+  log.append(
+    `allTextRange: ${allTextRange.start.line}-${allTextRange.end.line}`
+  );
+
   const allText = document.getText(allTextRange);
+
+  log.append(`allText: ${allText}`);
 
   const lastImportLine = allText
     .split("\n")
@@ -29,11 +38,14 @@ async function insertSnippet({
       }
       return acc;
     }, 0);
+  log.append(`lastImportLine: ${lastImportLine}`);
 
   const untilLastImportRange = new vscode.Range(
     document.positionAt(0),
     document.lineAt(lastImportLine).range.end
   );
+
+  log.append(`lastImportLine: ${lastImportLine}`);
 
   const untilLastImport = document.getText(untilLastImportRange);
 
