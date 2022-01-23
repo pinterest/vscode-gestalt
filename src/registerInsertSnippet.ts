@@ -37,6 +37,8 @@ async function insertSnippet({
 
   const untilLastImport = document.getText(untilLastImportRange);
 
+  log.append(`untilLastImport\n\n${untilLastImport}`);
+
   let transformedCode = "";
 
   try {

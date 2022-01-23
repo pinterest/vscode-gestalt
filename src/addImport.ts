@@ -2,6 +2,7 @@ import { transformAsync } from "@babel/core";
 import { NodePath } from "@babel/traverse";
 import { ImportDeclaration, Node } from "@babel/types";
 import * as t from "@babel/types";
+import log from "./log";
 
 export default async function addImport({
   code,
@@ -11,6 +12,9 @@ export default async function addImport({
   componentName: string;
 }): Promise<string> {
   let foundGestaltImport = false;
+
+  log.append(`addImport-code\n\n${code}`);
+  log.append(`addImport-componentName\n\n${componentName}`);
 
   const output = await transformAsync(code, {
     filename: "test.ts",
@@ -28,6 +32,7 @@ export default async function addImport({
                 return;
               }
               foundGestaltImport = true;
+              log.append(`foundGestaltImport: ${foundGestaltImport}`);
 
               const hasComponentImport = path.node.specifiers.find(
                 (node) =>
@@ -35,6 +40,7 @@ export default async function addImport({
                   t.isIdentifier(node.imported) &&
                   node.imported.name === componentName
               );
+              log.append(`hasComponentImport: ${hasComponentImport}`);
 
               if (!hasComponentImport) {
                 const newSpecifier = t.importSpecifier(
@@ -68,6 +74,12 @@ export default async function addImport({
       },
     ],
   });
+
+  log.append(
+    `addImport End-code\n${code}\nfoundGestaltImport: ${foundGestaltImport}  ---- ${
+      output?.code ?? ""
+    }`
+  );
 
   if (!foundGestaltImport) {
     return `${code}
