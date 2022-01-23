@@ -51,8 +51,8 @@ async function insertSnippet({
   vscode.window.activeTextEditor?.edit((builder) =>
     builder.replace(untilLastImportRange, transformedCode)
   );
-  await vscode.commands.executeCommand("editor.action.formatDocument");
-  log.append("transformed Code");
+  // await vscode.commands.executeCommand("editor.action.formatDocument");
+  log.append(`transformed Code \n\n${transformedCode}`);
 
   // log.append(`allText: ${allText}`);
 
