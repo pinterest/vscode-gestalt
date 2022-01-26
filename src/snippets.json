@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "42.2.2",
+  "gestaltVersion": "42.2.3",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.",
@@ -354,7 +354,7 @@
       "body": ["<PageHeader", "\ttitle={${1:string}}", "/>"]
     },
     {
-      "description": "[Pog](https://gestalt.pinterest.systems/pog) is a lower-level functional component to show the active, hovered, & focused states of an [IconButton](/iconbutton).\n\nThis abstraction to allow for links that look like an IconButton.",
+      "description": "[Pog](https://gestalt.pinterest.systems/pog) is a lower-level functional component to show the active, hovered, & focused states of [IconButton](https://gestalt.pinterest.systems/pog/iconbutton).\n\nThis abstraction to allow for links that look like IconButton.",
       "prefix": "<Pog",
       "name": "Pog",
       "scope": "javascript,typescript,javascriptreact",
