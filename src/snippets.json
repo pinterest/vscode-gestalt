@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "42.3.4",
+  "gestaltVersion": "42.3.5",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.",
@@ -510,15 +510,15 @@
       ]
     },
     {
-      "description": "https://gestalt.pinterest.systems/tabs",
+      "description": "[Tabs](https://gestalt.pinterest.systems/tabs) may be used navigate between multiple URLs. Tabs are intended as page-level navigation - if you're looking at just switching panels of content, please use [SegmentedControl](https://gestalt.pinterest.systems/segmentedcontrol).",
       "prefix": "<Tabs",
       "name": "Tabs",
       "scope": "javascript,typescript,javascriptreact",
       "body": [
         "<Tabs",
         "\tactiveTabIndex={${1:number}}",
-        "\tonChange={${2:AbstractEventHandler< | SyntheticMouseEvent<HTMLAnchorElement> | SyntheticKeyboardEvent<HTMLAnchorElement> | SyntheticMouseEvent<HTMLDivElement> | SyntheticKeyboardEvent<HTMLDivElement>, {| +activeTabIndex: number, dangerouslyDisableOnNavigation: () => void |},\n>}}",
-        "\ttabs={${3:\\$ReadOnlyArray<{| ...TabType, ref?: {| current: ?HTMLElement |} |}>}}",
+        "\tonChange={${2:({| event: | SyntheticMouseEvent<HTMLAnchorElement> | SyntheticKeyboardEvent<HTMLAnchorElement> | SyntheticMouseEvent<HTMLDivElement> | SyntheticKeyboardEvent<HTMLDivElement>, +activeTabIndex: number, dangerouslyDisableOnNavigation: () => void,\n|}) => void}}",
+        "\ttabs={${3:\\$ReadOnlyArray<{| href: string, id?: string, indicator?: 'dot' | number, ref?: {| current: ?HTMLElement |}, text: Node,\n|}>}}",
         "/>"
       ]
     },
@@ -551,7 +551,7 @@
       "body": [
         "<TextArea",
         "\tid={${1:string}}",
-        "\tonChange={${2:AbstractEventHandler<SyntheticInputEvent<HTMLTextAreaElement>, {| value: string |}>}}",
+        "\tonChange={${2:({| event: SyntheticInputEvent<HTMLTextAreaElement>, value: string,\n|}) => void}}",
         "/>"
       ]
     },
