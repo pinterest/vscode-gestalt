@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "43.1.0",
+  "gestaltVersion": "43.1.1",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.",
@@ -159,8 +159,8 @@
         "\taccessibilityClearButtonLabel={${1:string}}",
         "\tid={${2:string}}",
         "\tlabel={${3:string}}",
-        "\toptions={${4:\\$ReadOnlyArray<ComboBoxItemType>}}",
-        "\tnoResultText={${5:string}}",
+        "\tnoResultText={${4:string}}",
+        "\toptions={${5:\\$ReadOnlyArray<{| label: string, subtext?: string, value: string,\n|}>}}",
         "/>"
       ]
     },
