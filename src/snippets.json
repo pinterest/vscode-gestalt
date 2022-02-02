@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "43.1.3",
+  "gestaltVersion": "44.0.0",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.",
@@ -431,7 +431,7 @@
       "body": [
         "<SegmentedControl",
         "\titems={${1:\\$ReadOnlyArray<Node>}}",
-        "\tonChange={${2:AbstractEventHandler< SyntheticMouseEvent<HTMLButtonElement>, {| activeIndex: number |},\n>}}",
+        "\tonChange={${2:({| event: SyntheticMouseEvent<HTMLButtonElement>, activeIndex: number |}) => void}}",
         "\tselectedItemIndex={${3:number}}",
         "/>"
       ]
