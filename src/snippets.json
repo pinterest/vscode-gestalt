@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "45.0.2",
+  "gestaltVersion": "45.0.3",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.",
@@ -589,7 +589,7 @@
       "body": ["<Upsell", "\tmessage={${1:string}}", ">${2:node}</Upsell>"]
     },
     {
-      "description": "Like an Image, [Video](https://gestalt.pinterest.systems/video) is used for media layout. This component is supercharged with lots of goodies to turn a regular video in a full blown viewing experience.",
+      "description": "Like Image, [Video](https://gestalt.pinterest.systems/video) is used for media layout. This component is supercharged with lots of goodies to turn a regular video in a full blown viewing experience.",
       "prefix": "<Video",
       "name": "Video",
       "scope": "javascript,typescript,javascriptreact",
