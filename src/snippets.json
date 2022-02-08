@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "45.2.1",
+  "gestaltVersion": "45.2.2",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.",
@@ -150,7 +150,7 @@
       ]
     },
     {
-      "description": "[ComboBox](https://gestalt.pinterest.systems/combobox) is the combination of a [Textfield](https://gestalt.pinterest.systems/textfield) and an associated [Dropdown](https://gestalt.pinterest.systems/dropdown) that allows the user to filter a list when selecting an option. ComboBox allows users to type the full option, type part of the option and narrow the results, or select an option from the list.",
+      "description": "[ComboBox](https://gestalt.pinterest.systems/combobox) is the combination of a [Textfield](https://gestalt.pinterest.systems/textfield) and an associated [Dropdown](https://gestalt.pinterest.systems/dropdown) that allows the user to filter a list when selecting an option. ComboBox allows users to type the full option, type part of the option and narrow the results, or select an option from the list.\nNote: this is a new version of the deprecated component \"Typeahead\".",
       "prefix": "<ComboBox",
       "name": "ComboBox",
       "scope": "javascript,typescript,javascriptreact",
