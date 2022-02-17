@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "45.4.5",
+  "gestaltVersion": "45.4.6",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.",
@@ -469,7 +469,7 @@
       ]
     },
     {
-      "description": "[Status](https://gestalt.pinterest.systems/status) is an indicator with an icon that provides information to a user.",
+      "description": "[Status](https://gestalt.pinterest.systems/status) is a graphic indicator of an element’s state.",
       "prefix": "<Status",
       "name": "Status",
       "scope": "javascript,typescript,javascriptreact",
