@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "45.5.1",
+  "gestaltVersion": "45.5.2",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.",
@@ -210,7 +210,7 @@
       "body": ["<Fieldset", "\tlegend={${1:string}}", ">${2:node}</Fieldset>"]
     },
     {
-      "description": "https://gestalt.pinterest.systems/flex",
+      "description": "[Flex](https://gestalt.pinterest.systems/flex) is a layout component with a very limited subset of the props available to [Box](https://gestalt.pinterest.systems/box) and a special prop of its own.\n\nUse this component for flexbox layouts, especially when even spacing between elements is desired (see the `gap` prop!).",
       "prefix": "<Flex",
       "name": "Flex",
       "scope": "javascript,typescript,javascriptreact",
