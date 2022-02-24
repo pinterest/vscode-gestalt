@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "45.5.10",
+  "gestaltVersion": "45.6.0",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.",
@@ -181,6 +181,17 @@
         "\ttitle={${1:string}}",
         "\tvalue={${2:string}}",
         "/>"
+      ]
+    },
+    {
+      "description": "*ALPHA - DO NOT USE YET - MAY HAVE BREAKING CHANGES IN THE NEAR FUTURE*\n[DeviceTypeProvider](https://gestalt.pinterest.systems/devicetypeprovider) is an optional [React Context provider](https://reactjs.org/docs/context.html#contextprovider) to enable device-specific UI for Gestalt components that support it.",
+      "prefix": "<DeviceTypeProvider",
+      "name": "DeviceTypeProvider",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<DeviceTypeProvider",
+        "\tdeviceType=\"${1|desktop,phone,tablet|}\"",
+        ">${2:node}</DeviceTypeProvider>"
       ]
     },
     {
