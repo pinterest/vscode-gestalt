@@ -1,8 +1,8 @@
 {
-  "gestaltVersion": "45.6.1",
+  "gestaltVersion": "45.6.2",
   "snippets": [
     {
-      "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.",
+      "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard%20%230.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard-dark%20%230.png)",
       "prefix": "<ActivationCard",
       "name": "ActivationCard",
       "scope": "javascript,typescript,javascriptreact",
@@ -16,7 +16,7 @@
       ]
     },
     {
-      "description": "[Avatar](https://gestalt.pinterest.systems/avatar) is used to represent a user. Every Avatar image has a subtle color wash.",
+      "description": "[Avatar](https://gestalt.pinterest.systems/avatar) is used to represent a user. Every Avatar image has a subtle color wash.\n\n![Avatar light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Avatar%20%230.png)\n![Avatar dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Avatar-dark%20%230.png)",
       "prefix": "<Avatar",
       "name": "Avatar",
       "scope": "javascript,typescript,javascriptreact",
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "description": "[Badge](https://gestalt.pinterest.systems/badge) is used to label text.",
+      "description": "[Badge](https://gestalt.pinterest.systems/badge) is used to label text.\n\n![Badge light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Badge%20%230.png)\n![Badge dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Badge-dark%20%230.png)",
       "prefix": "<Badge",
       "name": "Badge",
       "scope": "javascript,typescript,javascriptreact",
@@ -60,7 +60,7 @@
       "body": ["<Box>", "\t${0:node}", "</Box>"]
     },
     {
-      "description": "[Buttons](https://gestalt.pinterest.systems/button) allow users to perform actions within a surface. They can be used alone for immediate action, or as a trigger for another component, like [Dropdown](https://gestalt.pinterest.systems/dropdown) or [Popover](https://gestalt.pinterest.systems/popover).",
+      "description": "[Buttons](https://gestalt.pinterest.systems/button) allow users to perform actions within a surface. They can be used alone for immediate action, or as a trigger for another component, like [Dropdown](https://gestalt.pinterest.systems/dropdown) or [Popover](https://gestalt.pinterest.systems/popover).\n\n![Button light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Button%20%230.png)\n![Button dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Button-dark%20%230.png)",
       "prefix": "<Button",
       "name": "Button",
       "scope": "javascript,typescript,javascriptreact",
@@ -74,7 +74,7 @@
       "body": ["<ButtonGroup>", "\t${0:node}", "</ButtonGroup>"]
     },
     {
-      "description": "[Callout](https://gestalt.pinterest.systems/callout) is a banner displaying short messages with helpful information for a task on the page, or something that requires the user’s attention.\n\n⚠️ Please note: Callout is not currently supported in dark mode.",
+      "description": "[Callout](https://gestalt.pinterest.systems/callout) is a banner displaying short messages with helpful information for a task on the page, or something that requires the user’s attention.\n\n⚠️ Please note: Callout is not currently supported in dark mode.\n\n![Callout light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Callout%20%230.png)",
       "prefix": "<Callout",
       "name": "Callout",
       "scope": "javascript,typescript,javascriptreact",
@@ -150,7 +150,7 @@
       ]
     },
     {
-      "description": "[ComboBox](https://gestalt.pinterest.systems/combobox) is the combination of a [Textfield](https://gestalt.pinterest.systems/textfield) and an associated [Dropdown](https://gestalt.pinterest.systems/dropdown) that allows the user to filter a list when selecting an option. ComboBox allows users to type the full option, type part of the option and narrow the results, or select an option from the list.\nNote: this is a new version of the deprecated component \"Typeahead\".",
+      "description": "[ComboBox](https://gestalt.pinterest.systems/combobox) is the combination of a [Textfield](https://gestalt.pinterest.systems/textfield) and an associated [Dropdown](https://gestalt.pinterest.systems/dropdown) that allows the user to filter a list when selecting an option. ComboBox allows users to type the full option, type part of the option and narrow the results, or select an option from the list.\nNote: this is a new version of the deprecated component \"Typeahead\".\n\n![ComboBox closed light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ComboBox-closed%20%230.png)\n![ComboBox open light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ComboBox-open%20%230.png)\n![ComboBox closed dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ComboBox-closed-dark%20%230.png)\n![ComboBox open dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ComboBox-open-dark%20%230.png)",
       "prefix": "<ComboBox",
       "name": "ComboBox",
       "scope": "javascript,typescript,javascriptreact",
@@ -172,7 +172,7 @@
       "body": ["<Container>", "\t${0:node}", "</Container>"]
     },
     {
-      "description": "[Datapoint](https://gestalt.pinterest.systems/datapoint) displays at-a-glance data for a user to quickly view key metrics.\n\n⚠️ Please note: Datapoint is not currently supported in dark mode.",
+      "description": "[Datapoint](https://gestalt.pinterest.systems/datapoint) displays at-a-glance data for a user to quickly view key metrics.\n\n⚠️ Please note: Datapoint is not currently supported in dark mode.\n\n![Datapoint light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Datapoint%20%230.png)\n![Datapoint dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Datapoint-dark%20%230.png)",
       "prefix": "<Datapoint",
       "name": "Datapoint",
       "scope": "javascript,typescript,javascriptreact",
@@ -195,14 +195,14 @@
       ]
     },
     {
-      "description": "[Divider](https://gestalt.pinterest.systems/divider) is a light gray 1px horizontal or vertical line which groups and divides content in lists and layouts.",
+      "description": "[Divider](https://gestalt.pinterest.systems/divider) is a light gray 1px horizontal or vertical line which groups and divides content in lists and layouts.\n\n![Divider light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Divider%20%230.png)\n![Divider dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Divider-dark%20%230.png)",
       "prefix": "<Divider",
       "name": "Divider",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Divider", "/>"]
     },
     {
-      "description": "[Dropdown](https://gestalt.pinterest.systems/dropdown) displays a list of actions, options or links. It is triggered when a user interacts with a Button, Textfield or other control. Dropdown allows for complex functionality that can’t be accomplished with SelectList.",
+      "description": "[Dropdown](https://gestalt.pinterest.systems/dropdown) displays a list of actions, options or links. It is triggered when a user interacts with a Button, Textfield or other control. Dropdown allows for complex functionality that can’t be accomplished with SelectList.\n\n![Dropdown open light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Dropdown-open%20%230.png)\n![Dropdown open dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Dropdown-open-dark%20%230.png)",
       "prefix": "<Dropdown",
       "name": "Dropdown",
       "scope": "javascript,typescript,javascriptreact",
@@ -228,21 +228,21 @@
       "body": ["<Flex>", "\t${0:node}", "</Flex>"]
     },
     {
-      "description": "[Heading](https://gestalt.pinterest.systems/heading) allows you to show headings on the page & has a bigger line height than regular text.",
+      "description": "[Heading](https://gestalt.pinterest.systems/heading) allows you to show headings on the page & has a bigger line height than regular text.\n\n![Heading light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Heading%20%230.png)\n![Heading dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Heading-dark%20%230.png)",
       "prefix": "<Heading",
       "name": "Heading",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Heading>", "\t${0:node}", "</Heading>"]
     },
     {
-      "description": "[Icons](https://gestalt.pinterest.systems/icon) are the symbolic representation of an action or information, providing visual context and improving usability.\n\nSee the [Iconography and SVG guidelines](https://gestalt.pinterest.systems/iconography_and_svgs) to explore the full icon library.",
+      "description": "[Icons](https://gestalt.pinterest.systems/icon) are the symbolic representation of an action or information, providing visual context and improving usability.\n\nSee the [Iconography and SVG guidelines](https://gestalt.pinterest.systems/iconography_and_svgs) to explore the full icon library.\n\n![Icon light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Icon%20%230.png)\n![Icon dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Icon-dark%20%230.png)",
       "prefix": "<Icon",
       "name": "Icon",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Icon", "\taccessibilityLabel={${1:string}}", "/>"]
     },
     {
-      "description": "[IconButton](https://gestalt.pinterest.systems/iconbutton) allows users to take actions and make choices with a single click or tap. IconButtons use icons instead of text to convey available actions on a screen. IconButton is typically found in forms, dialogs and toolbars.\n Some buttons are specialized for particular tasks, such as navigation or presenting menus.",
+      "description": "[IconButton](https://gestalt.pinterest.systems/iconbutton) allows users to take actions and make choices with a single click or tap. IconButtons use icons instead of text to convey available actions on a screen. IconButton is typically found in forms, dialogs and toolbars.\n Some buttons are specialized for particular tasks, such as navigation or presenting menus.\n\n![IconButton light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/IconButton%20%230.png)\n![IconButton dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/IconButton-dark%20%230.png)",
       "prefix": "<IconButton",
       "name": "IconButton",
       "scope": "javascript,typescript,javascriptreact",
