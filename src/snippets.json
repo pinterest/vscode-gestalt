@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "45.8.5",
+  "gestaltVersion": "45.8.6",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard%20%230.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard-dark%20%230.png)",
@@ -583,7 +583,7 @@
       "prefix": "<Toast",
       "name": "Toast",
       "scope": "javascript,typescript,javascriptreact",
-      "body": ["<Toast", "\ttext={${1:string | Node}}", "/>"]
+      "body": ["<Toast", "\ttext={${1:string | Element}}", "/>"]
     },
     {
       "description": "[Tooltip](https://gestalt.pinterest.systems/tooltip) is a floating text label that succinctly describes the function of an interactive element, typically [Icon Button](/iconbutton). It’s displayed continuously as long as the user hovers over or focuses on the element.",
