@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "45.10.1",
+  "gestaltVersion": "45.10.2",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard%20%230.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard-dark%20%230.png)",
@@ -94,7 +94,7 @@
       "body": ["<Card>", "\t${0:node}", "</Card>"]
     },
     {
-      "description": "Use [Checkbox](https://gestalt.pinterest.systems/checkbox) instead of [Switch](https://gestalt.pinterest.systems/switch) when displaying 3 or more toggle inputs.",
+      "description": "Use [Checkbox](https://gestalt.pinterest.systems/checkbox) instead of [Switch](https://gestalt.pinterest.systems/switch) when displaying 3 or more toggle inputs.\n\n![Checkbox light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Checkbox%20%230.png)\n![Checkbox dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Checkbox-dark%20%230.png)",
       "prefix": "<Checkbox",
       "name": "Checkbox",
       "scope": "javascript,typescript,javascriptreact",
@@ -235,7 +235,7 @@
       "body": ["<Heading>", "\t${0:node}", "</Heading>"]
     },
     {
-      "description": "[Icons](https://gestalt.pinterest.systems/icon) are the symbolic representation of an action or information, providing visual context and improving usability.\n\nSee the [Iconography and SVG guidelines](https://gestalt.pinterest.systems/iconography_and_svgs) to explore the full icon library.\n\n![Icon light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Icon%20%230.png)\n![Icon dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Icon-dark%20%230.png)",
+      "description": "[Icons](https://gestalt.pinterest.systems/icon) are the symbolic representation of an action or information, providing visual context and improving usability.\n\nSee the [Iconography and SVG guidelines](https://gestalt.pinterest.systems/iconography_and_svgs) to explore the full icon library.\n\n![Icon light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Icon-list%20%230.png)\n![Icon dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Icon-list-dark%20%230.png)",
       "prefix": "<Icon",
       "name": "Icon",
       "scope": "javascript,typescript,javascriptreact",
@@ -290,7 +290,7 @@
       ]
     },
     {
-      "description": "The [Link](https://gestalt.pinterest.systems/link) component allows you to show links on the page and open them in a new window.",
+      "description": "The [Link](https://gestalt.pinterest.systems/link) component allows you to show links on the page and open them in a new window.\n\n![Link light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Link%20%230.png)\n![Link dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Link-dark%20%230.png)",
       "prefix": "<Link",
       "name": "Link",
       "scope": "javascript,typescript,javascriptreact",
@@ -328,14 +328,14 @@
       ]
     },
     {
-      "description": "[Module](https://gestalt.pinterest.systems/module) is a container that holds content about one subject. Its contents can be visible at all times, or expand and collapse as individual modules or a group of modules.",
+      "description": "[Module](https://gestalt.pinterest.systems/module) is a container that holds content about one subject. Its contents can be visible at all times, or expand and collapse as individual modules or a group of modules.\n\n![Module light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Module%20%230.png)\n![Module dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Module-dark%20%230.png)",
       "prefix": "<Module",
       "name": "Module",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Module", "\tid={${1:string}}", ">${2:node}</Module>"]
     },
     {
-      "description": "[NumberField](https://gestalt.pinterest.systems/numberfield) allows for numerical input.",
+      "description": "[NumberField](https://gestalt.pinterest.systems/numberfield) allows for numerical input.\n\n![NumberField light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/NumberField%20%230.png)\n![NumberField dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/NumberField-dark%20%230.png)",
       "prefix": "<NumberField",
       "name": "NumberField",
       "scope": "javascript,typescript,javascriptreact",
@@ -391,7 +391,7 @@
       "body": ["<Pulsar", "/>"]
     },
     {
-      "description": "Use [RadioButtons](https://gestalt.pinterest.systems/radiobutton) when you have a few options that a user can choose from. Never use radio buttons if the user can select more than one option from a list.",
+      "description": "Use [RadioButtons](https://gestalt.pinterest.systems/radiobutton) when you have a few options that a user can choose from. Never use radio buttons if the user can select more than one option from a list.\n\n![RadioButton light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/RadioButton%20%230.png)\n![RadioButton dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/RadioButton-dark%20%230.png)",
       "prefix": "<RadioButton",
       "name": "RadioButton",
       "scope": "javascript,typescript,javascriptreact",
@@ -422,7 +422,7 @@
       "body": ["<ScrollFetch", "\tisFetching={${1|true,false|}}", "/>"]
     },
     {
-      "description": "[SearchField](https://gestalt.pinterest.systems/searchfield) allows users to search for free-form content.",
+      "description": "[SearchField](https://gestalt.pinterest.systems/searchfield) allows users to search for free-form content.\n\n![SearchFields light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/SearchFields%20%230.png)\n![SearchFields dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/SearchFields-dark%20%230.png)",
       "prefix": "<SearchField",
       "name": "SearchField",
       "scope": "javascript,typescript,javascriptreact",
@@ -448,7 +448,7 @@
       ]
     },
     {
-      "description": "[SelectList](https://gestalt.pinterest.systems/selectlist) displays a list of actions or options using the browser’s native select.",
+      "description": "[SelectList](https://gestalt.pinterest.systems/selectlist) displays a list of actions or options using the browser’s native select.\n\n![SelectList light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/SelectList%20%230.png)\n![SelectList dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/SelectList-dark%20%230.png)",
       "prefix": "<SelectList",
       "name": "SelectList",
       "scope": "javascript,typescript,javascriptreact",
@@ -480,7 +480,7 @@
       ]
     },
     {
-      "description": "[Status](https://gestalt.pinterest.systems/status) is a graphic indicator of an element’s state.",
+      "description": "[Status](https://gestalt.pinterest.systems/status) is a graphic indicator of an element’s state.\n\n![Status light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Status%20%230.png)\n![Status dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Status-dark%20%230.png)",
       "prefix": "<Status",
       "name": "Status",
       "scope": "javascript,typescript,javascriptreact",
@@ -498,7 +498,7 @@
       "body": ["<Sticky>", "\t${0:node}", "</Sticky>"]
     },
     {
-      "description": "Use [Switch](https://gestalt.pinterest.systems/switch) for single cell options that can be turned on and off only. If you have a cell with multiple options that can activated, consider using [Checkbox](https://gestalt.pinterest.systems/checkbox).\n\nSwitch supports right-to-left(RTL) language locales layout (auto flip on RTL locales like Arabic).",
+      "description": "Use [Switch](https://gestalt.pinterest.systems/switch) for single cell options that can be turned on and off only. If you have a cell with multiple options that can activated, consider using [Checkbox](https://gestalt.pinterest.systems/checkbox).\n\nSwitch supports right-to-left(RTL) language locales layout (auto flip on RTL locales like Arabic).\n\n![Switch light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Switch%20%230.png)\n![Switch dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Switch-dark%20%230.png)",
       "prefix": "<Switch",
       "name": "Switch",
       "scope": "javascript,typescript,javascriptreact",
@@ -555,7 +555,7 @@
       "body": ["<Text>", "\t${0:node}", "</Text>"]
     },
     {
-      "description": "[TextArea](https://gestalt.pinterest.systems/textArea) allows for multi-line input.",
+      "description": "[TextArea](https://gestalt.pinterest.systems/textArea) allows for multi-line input.\n\n![TextArea light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/TextArea%20%230.png)\n![TextArea dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/TextArea-dark%20%230.png)",
       "prefix": "<TextArea",
       "name": "TextArea",
       "scope": "javascript,typescript,javascriptreact",
@@ -567,7 +567,7 @@
       ]
     },
     {
-      "description": "[TextField](https://gestalt.pinterest.systems/textfield) allows for multiple types of text input.",
+      "description": "[TextField](https://gestalt.pinterest.systems/textfield) allows for multiple types of text input.\n\n![TextField light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/TextField%20%230.png)\n![TextField dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/TextField-dark%20%230.png)",
       "prefix": "<TextField",
       "name": "TextField",
       "scope": "javascript,typescript,javascriptreact",
