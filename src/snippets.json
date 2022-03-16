@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "46.0.1",
+  "gestaltVersion": "46.1.0",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard%20%230.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard-dark%20%230.png)",
@@ -74,7 +74,7 @@
       "body": ["<ButtonGroup>", "\t${0:node}", "</ButtonGroup>"]
     },
     {
-      "description": "[Callout](https://gestalt.pinterest.systems/callout) is a banner displaying short messages with helpful information for a task on the page, or something that requires the user’s attention.\n\n⚠️ Please note: Callout is not currently supported in dark mode.\n\n![Callout light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Callout%20%230.png)",
+      "description": "[Callout](https://gestalt.pinterest.systems/callout) is a banner displaying short messages with helpful information for a task on the page, or something that requires the user’s attention.\n\n⚠️ Please note: Callout is not currently optimized for dark mode.\n\n![Callout light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Callout%20%230.png)",
       "prefix": "<Callout",
       "name": "Callout",
       "scope": "javascript,typescript,javascriptreact",
