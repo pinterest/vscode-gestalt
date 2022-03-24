@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "46.7.4",
+  "gestaltVersion": "46.7.5",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard%20%230.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard-dark%20%230.png)",
@@ -67,7 +67,7 @@
       "body": ["<Button", "/>"]
     },
     {
-      "description": "[ButtonGroup](https://gestalt.pinterest.systems/buttongroup) is used to display a series of buttons.",
+      "description": "[ButtonGroup](https://gestalt.pinterest.systems/buttongroup) is used to display a series of buttons.\n\n![ButtonGroup light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ButtonGroup%20%230.png)\n![ButtonGroup dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ButtonGroup-dark%20%230.png)",
       "prefix": "<ButtonGroup",
       "name": "ButtonGroup",
       "scope": "javascript,typescript,javascriptreact",
@@ -106,7 +106,7 @@
       ]
     },
     {
-      "description": "[Collage](https://gestalt.pinterest.systems/collage), similarly to [Masonry](https://gestalt.pinterest.systems/masonry), creates a deterministic grid layout that can absolutely position and virtualize images.",
+      "description": "[Collage](https://gestalt.pinterest.systems/collage), similarly to [Masonry](https://gestalt.pinterest.systems/masonry), creates a deterministic grid layout that can absolutely position and virtualize images.\n\n![Collage light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Collage%20%230.png)\n![Collage dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Collage-dark%20%230.png)",
       "prefix": "<Collage",
       "name": "Collage",
       "scope": "javascript,typescript,javascriptreact",
@@ -214,7 +214,7 @@
       ]
     },
     {
-      "description": "[Fieldset](https://gestalt.pinterest.systems/fieldset) creates a fieldset and legend for a group of related form items, like [RadioButtons](https://gestalt.pinterest.systems/radiobutton) or [CheckBoxes](https://gestalt.pinterest.systems/checkbox), in order to clearly indicate related form items.\"",
+      "description": "[Fieldset](https://gestalt.pinterest.systems/fieldset) creates a fieldset and legend for a group of related form items, like [RadioButtons](https://gestalt.pinterest.systems/radiobutton) or [CheckBoxes](https://gestalt.pinterest.systems/checkbox), in order to clearly indicate related form items.\"\n\n![Fielset light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Fielset%20%230.png)\n![Fielset dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Fielset-dark%20%230.png)",
       "prefix": "<Fieldset",
       "name": "Fieldset",
       "scope": "javascript,typescript,javascriptreact",
@@ -249,7 +249,7 @@
       "body": ["<IconButton", "/>"]
     },
     {
-      "description": "[Image](https://gestalt.pinterest.systems/image) is the workhorse of Pinterest. If you define Pinterest to be all about collecting ideas, then images are how we choose to represent those ideas. In response, we've added a few extra superpowers to the regular img tag to make it even more awesome.",
+      "description": "[Image](https://gestalt.pinterest.systems/image) is the workhorse of Pinterest. If you define Pinterest to be all about collecting ideas, then images are how we choose to represent those ideas. In response, we've added a few extra superpowers to the regular img tag to make it even more awesome.\n\n![Image light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Image%20%230.png)\n![Image dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Image-dark%20%230.png)",
       "prefix": "<Image",
       "name": "Image",
       "scope": "javascript,typescript,javascriptreact",
@@ -263,7 +263,7 @@
       ]
     },
     {
-      "description": "Use the [Label](https://gestalt.pinterest.systems/labels) component to connect a label with a form component in an accessible way.",
+      "description": "Use the [Label](https://gestalt.pinterest.systems/labels) component to connect a label with a form component in an accessible way.\n\n![Label light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Label%20%230.png)\n![Label dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Label-dark%20%230.png)",
       "prefix": "<Label",
       "name": "Label",
       "scope": "javascript,typescript,javascriptreact",
