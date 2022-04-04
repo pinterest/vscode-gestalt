@@ -555,7 +555,7 @@
       "body": ["<Text>", "\t${0:node}", "</Text>"]
     },
     {
-      "description": "[TextArea](https://gestalt.pinterest.systems/textArea) allows for multi-line input.\n\n![TextArea light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/TextArea%20%230.png)\n![TextArea dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/TextArea-dark%20%230.png)",
+      "description": "[TextArea](https://gestalt.pinterest.systems/textarea) allows for multi-line input.\n\n![TextArea light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/TextArea%20%230.png)\n![TextArea dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/TextArea-dark%20%230.png)",
       "prefix": "<TextArea",
       "name": "TextArea",
       "scope": "javascript,typescript,javascriptreact",
