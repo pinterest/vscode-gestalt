@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "48.0.8",
+  "gestaltVersion": "48.0.9",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard%20%230.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard-dark%20%230.png)",
@@ -404,7 +404,7 @@
       ]
     },
     {
-      "description": "[ScrollBoundaryContainer](https://gestalt.pinterest.systems/scrollboundarycontainer) is used with anchored components such as Popover, Tooltip, Dropdown or ComboBox. A ScrollBoundaryContainer is needed for proper positioning when the Tooltip is anchored to an element that is located within a scrolling container. The use of ScrollBoundaryContainer ensures the Tooltip remains attached to its anchor when scrolling.",
+      "description": "[ScrollBoundaryContainer](https://gestalt.pinterest.systems/scrollboundarycontainer) is used with anchor-based components such as Popover, Tooltip, Dropdown or ComboBox. ScrollBoundaryContainer is needed for proper positioning when the anchor-based component is anchored to an element that is located within a scrolling container. The use of ScrollBoundaryContainer ensures the anchor-based component remains attached to its anchor when scrolling. Don't use ScrollBoundaryContainer to add scrolling to a container, use [Box's props](https://gestalt.pinterest.systems/box#Props) instead.",
       "prefix": "<ScrollBoundaryContainer",
       "name": "ScrollBoundaryContainer",
       "scope": "javascript,typescript,javascriptreact",
