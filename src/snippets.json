@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "48.0.12",
+  "gestaltVersion": "49.0.0",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard%20%230.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard-dark%20%230.png)",
@@ -358,7 +358,7 @@
       ]
     },
     {
-      "description": "[PageHeader](https://gestalt.pinterest.systems/pageheader) is used to indicate the title of the current page, as well as optional actions.\n\n![PageHeader light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/PageHeader-basic-sm%20%230.png)\n![PageHeader dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/PageHeader-basic-dark-sm%20%230.png)",
+      "description": "[PageHeader](https://gestalt.pinterest.systems/pageheader) is used to indicate the title of the current page, as well as optional actions.\n\n![PageHeader light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/PageHeader-items-secondaryAction-md%20%230.png)\n![PageHeader light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/PageHeader-thumbnail-badge-iconButton-sm%20%230.png)\n![PageHeader dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/PageHeader-borderStyle-dark-md%20%230.png)",
       "prefix": "<PageHeader",
       "name": "PageHeader",
       "scope": "javascript,typescript,javascriptreact",
