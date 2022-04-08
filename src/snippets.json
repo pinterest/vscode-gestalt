@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "48.0.10",
+  "gestaltVersion": "48.0.11",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard%20%230.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard-dark%20%230.png)",
@@ -365,7 +365,7 @@
       "body": ["<PageHeader", "\ttitle={${1:string}}", "/>"]
     },
     {
-      "description": "[Pog](https://gestalt.pinterest.systems/pog) is a lower-level functional component to show the active, hovered, & focused states of [IconButton](https://gestalt.pinterest.systems/pog/iconbutton).\n\nThis abstraction to allow for links that look like IconButton.",
+      "description": "[Pog](https://gestalt.pinterest.systems/pog) is a lower-level functional component to show the active, hovered, & focused states of [IconButton](https://gestalt.pinterest.systems/pog/iconbutton).\n\nThis is an abstraction to allow for links that look like IconButton.\n\n![Pog light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Pog%20%230.png)\n![Pog dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Pog-dark%20%230.png)",
       "prefix": "<Pog",
       "name": "Pog",
       "scope": "javascript,typescript,javascriptreact",
@@ -579,28 +579,28 @@
       ]
     },
     {
-      "description": "[Toasts](https://gestalt.pinterest.systems/toast) can educate people on the content of the screen, provide confirmation when people complete an action, or simply communicate a short message.\n\nToast is purely visual. In order to properly handle the showing and dismissing of Toasts, as well as any animations, you will need to implement a Toast manager.",
+      "description": "[Toasts](https://gestalt.pinterest.systems/toast) can educate people on the content of the screen, provide confirmation when people complete an action, or simply communicate a short message.\n\nToast is purely visual. In order to properly handle the showing and dismissing of Toasts, as well as any animations, you will need to implement a Toast manager.\n\n⚠️ Please note: Toast is not currently supported in dark mode.\n\n![Toast light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Toast%20%230.png)",
       "prefix": "<Toast",
       "name": "Toast",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Toast", "\ttext={${1:string | Element}}", "/>"]
     },
     {
-      "description": "[Tooltip](https://gestalt.pinterest.systems/tooltip) is a floating text label that succinctly describes the function of an interactive element, typically [Icon Button](/iconbutton). It’s displayed continuously as long as the user hovers over or focuses on the element.",
+      "description": "[Tooltip](https://gestalt.pinterest.systems/tooltip) is a floating text label that succinctly describes the function of an interactive element, typically [Icon Button](/iconbutton). It’s displayed continuously as long as the user hovers over or focuses on the element.\n\n![Tooltip light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Tooltip%20%230.png)\n![Tooltip dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Tooltip-dark%20%230.png)",
       "prefix": "<Tooltip",
       "name": "Tooltip",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Tooltip", "\ttext={${1:string}}", ">${2:node}</Tooltip>"]
     },
     {
-      "description": "[Upsells](https://gestalt.pinterest.systems/upsell) are banners that display short messages that focus on promoting an action or upgrading something the user already has.\n\n⚠️ Please note: Upsell is not currently supported in dark mode.",
+      "description": "[Upsells](https://gestalt.pinterest.systems/upsell) are banners that display short messages that focus on promoting an action or upgrading something the user already has.\n\n⚠️ Please note: Upsell is not currently supported in dark mode.\n\n![Upsell light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Upsell%20%230.png)",
       "prefix": "<Upsell",
       "name": "Upsell",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Upsell", "\tmessage={${1:string}}", ">${2:node}</Upsell>"]
     },
     {
-      "description": "Like Image, [Video](https://gestalt.pinterest.systems/video) is used for media layout. This component is supercharged with lots of goodies to turn a regular video in a full blown viewing experience.",
+      "description": "Like Image, [Video](https://gestalt.pinterest.systems/video) is used for media layout. This component is supercharged with lots of goodies to turn a regular video in a full blown viewing experience.\n\n![Video light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Video%20%230.png)",
       "prefix": "<Video",
       "name": "Video",
       "scope": "javascript,typescript,javascriptreact",
