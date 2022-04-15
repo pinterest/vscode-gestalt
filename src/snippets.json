@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "50.0.8",
+  "gestaltVersion": "50.0.9",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard%20%230.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard-dark%20%230.png)",
@@ -94,7 +94,7 @@
       "body": ["<Card>", "\t${0:node}", "</Card>"]
     },
     {
-      "description": "Use [Checkbox](https://gestalt.pinterest.systems/checkbox) instead of [Switch](https://gestalt.pinterest.systems/switch) when displaying 3 or more toggle inputs.\n\n![Checkbox light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Checkbox%20%230.png)\n![Checkbox dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Checkbox-dark%20%230.png)",
+      "description": "[Checkbox](https://gestalt.pinterest.systems/checkbox) is used for multiple choice selection. They are independent of each other in a list, and therefore, different from [RadioButton](https://gestalt.pinterest.systems/radiobutton), one selection does not affect other checkboxes in the same list.\n\n![Checkbox light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Checkbox%20%230.png)\n![Checkbox dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Checkbox-dark%20%230.png)",
       "prefix": "<Checkbox",
       "name": "Checkbox",
       "scope": "javascript,typescript,javascriptreact",
