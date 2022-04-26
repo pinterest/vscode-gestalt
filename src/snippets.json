@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "51.0.0",
+  "gestaltVersion": "52.0.1",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard%20%230.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard-dark%20%230.png)",
@@ -600,7 +600,7 @@
       "body": ["<Upsell", "\tmessage={${1:string}}", ">${2:node}</Upsell>"]
     },
     {
-      "description": "Like Image, [Video](https://gestalt.pinterest.systems/video) is used for media layout. This component is supercharged with lots of goodies to turn a regular video in a full blown viewing experience.\n\n![Video light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Video%20%230.png)",
+      "description": "[Video](https://gestalt.pinterest.systems/video) is used for media layout.\n\n![Video light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Video%20%230.png)",
       "prefix": "<Video",
       "name": "Video",
       "scope": "javascript,typescript,javascriptreact",
@@ -614,9 +614,10 @@
         "\taccessibilityProgressBarLabel={${6:string}}",
         "\taccessibilityUnmuteLabel={${7:string}}",
         "\taspectRatio={${8:number}}",
-        "\tcaptions={${9:string}}",
-        "\tsrc={${10:string | \\$ReadOnlyArray}}",
-        ">${11:node}</Video>"
+        "\tonPlay={${9:({| event: SyntheticEvent<HTMLVideoElement> |}) => void}}",
+        "\tonPlayError={${10:({| error: Error |}) => void}}",
+        "\tsrc={${11:string | \\$ReadOnlyArray}}",
+        ">${12:node}</Video>"
       ]
     }
   ]
