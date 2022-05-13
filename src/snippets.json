@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "55.1.2",
+  "gestaltVersion": "55.2.0",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard%20%230.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard-dark%20%230.png)",
@@ -74,7 +74,7 @@
       "body": ["<ButtonGroup>", "\t${0:node}", "</ButtonGroup>"]
     },
     {
-      "description": "[Callout](https://gestalt.pinterest.systems/callout) is a banner displaying short messages with helpful information for a task on the page, or something that requires the user’s attention.\n\n⚠️ Please note: Callout is not currently optimized for dark mode.\n\n![Callout light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Callout%20%230.png)",
+      "description": "[Callout](https://gestalt.pinterest.systems/callout) is a banner displaying short messages with helpful information for a task on the page, or something that requires the user’s attention.\n\n![Callout light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Callout%20%230.png)\n![Callout dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Callout-dark%20%230.png)",
       "prefix": "<Callout",
       "name": "Callout",
       "scope": "javascript,typescript,javascriptreact",
@@ -466,6 +466,13 @@
       "name": "Sheet",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Sheet", "/>"]
+    },
+    {
+      "description": "[SlimBanner](https://gestalt.pinterest.systems/slimbanner) conveys brief information related to a specific section of a page. The message can relay success, warning, error or general information. Since they are about a specific section of a page or surface, SlimBanner sits inside of a container, and not at the top of the page. For alerts that apply to the whole page, use [Callout](https://gestalt.pinterest.systems/callout).\n\n![SlimBanner light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/SlimBanner%20%230.png)\n![SlimBanner dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/SlimBanner-dark%20%230.png)",
+      "prefix": "<SlimBanner",
+      "name": "SlimBanner",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<SlimBanner", "\tmessage={${1:string}}", "/>"]
     },
     {
       "description": "[Spinner](https://gestalt.pinterest.systems/spinner ) helps indicate that a surface's content or portion of content is currently loading.",
