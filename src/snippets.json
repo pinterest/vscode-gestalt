@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "56.0.1",
+  "gestaltVersion": "56.1.0",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard%20%230.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard-dark%20%230.png)",
@@ -391,7 +391,7 @@
       "body": ["<Pulsar", "/>"]
     },
     {
-      "description": "Use [RadioButtons](https://gestalt.pinterest.systems/radiobutton) when you have a few options that a user can choose from. Never use radio buttons if the user can select more than one option from a list.\n\n![RadioButton light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/RadioButton%20%230.png)\n![RadioButton dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/RadioButton-dark%20%230.png)",
+      "description": "Use [RadioButtons](https://gestalt.pinterest.systems/radiobutton) when you have a few options that a user can choose from. Never use radio buttons if the user can select more than one option from a list. Note: The standalone RadioButton is soon to be deprecated, use RadioGroup and RadioGroup.RadioButton instead.\n\n![RadioButton light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/RadioButton%20%230.png)\n![RadioButton dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/RadioButton-dark%20%230.png)",
       "prefix": "<RadioButton",
       "name": "RadioButton",
       "scope": "javascript,typescript,javascriptreact",
@@ -401,6 +401,18 @@
         "\tonChange={${2:AbstractEventHandler<SyntheticInputEvent<HTMLInputElement>, {| checked: boolean |}>}}",
         "\tvalue={${3:string}}",
         "/>"
+      ]
+    },
+    {
+      "description": "[RadioGroups](https://gestalt.pinterest.systems/radiogroup) are used for selecting only 1 item from a list of 2 or more items. If you need multiple selection or have only one option, use [Checkbox](https://gestalt.pinterest.systems/checkbox). If you need to provide a binary on/off choice that takes effect immediately, use [Switch](https://gestalt.pinterest.systems/switch).",
+      "prefix": "<RadioGroup",
+      "name": "RadioGroup",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<RadioGroup",
+        "\tid={${1:string}}",
+        "\tlegend={${2:string}}",
+        ">${3:node}</RadioGroup>"
       ]
     },
     {
