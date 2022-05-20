@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "56.1.1",
+  "gestaltVersion": "56.2.0",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard%20%230.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/ActivationCard-dark%20%230.png)",
@@ -612,7 +612,7 @@
       "body": ["<Tooltip", "\ttext={${1:string}}", ">${2:node}</Tooltip>"]
     },
     {
-      "description": "[Upsells](https://gestalt.pinterest.systems/upsell) are banners that display short messages that focus on promoting an action or upgrading something the user already has.\n\n⚠️ Please note: Upsell is not currently supported in dark mode.\n\n![Upsell light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Upsell%20%230.png)",
+      "description": "[Upsells](https://gestalt.pinterest.systems/upsell) are banners that display short messages that focus on promoting an action or upgrading something the user already has.\n\n\n![Upsell light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Upsell%20%230.png)\n![Upsell dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/cypress/integration/visual-test/__image_snapshots__/Upsell-dark%20%230.png)",
       "prefix": "<Upsell",
       "name": "Upsell",
       "scope": "javascript,typescript,javascriptreact",
