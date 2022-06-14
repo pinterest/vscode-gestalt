@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "58.1.0",
+  "gestaltVersion": "58.1.1",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard.spec.mjs-snapshots/ActivationCard-chromium-darwin.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard-dark.spec.mjs-snapshots/ActivationCard-dark-chromium-darwin.png)",
@@ -217,7 +217,7 @@
       "body": ["<Flex>", "\t${0:node}", "</Flex>"]
     },
     {
-      "description": "[Heading](https://gestalt.pinterest.systems/heading) allows you to show headings on the page & has a bigger line height than regular text.\n\n![Heading light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Heading.spec.mjs-snapshots/Heading-chromium-darwin.png)\n![Heading dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Heading-dark.spec.mjs-snapshots/Heading-dark-chromium-darwin.png)",
+      "description": "[Heading](https://gestalt.pinterest.systems/heading) allows you to add H1–H6 level text on a page. They are generally placed underneath a PageHeader, and provide you with a way to create a logical text hierarchy.\n\n![Heading light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Heading.spec.mjs-snapshots/Heading-chromium-darwin.png)\n![Heading dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Heading-dark.spec.mjs-snapshots/Heading-dark-chromium-darwin.png)",
       "prefix": "<Heading",
       "name": "Heading",
       "scope": "javascript,typescript,javascriptreact",
