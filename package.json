@@ -3,7 +3,7 @@
   "displayName": "Gestalt",
   "description": "Pinterest's design system extension",
   "publisher": "pinterest",
-  "version": "0.0.297",
+  "version": "0.0.298",
   "engines": {
     "vscode": "^1.57.0"
   },
