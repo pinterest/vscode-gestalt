@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "61.1.0",
+  "gestaltVersion": "61.2.0",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard.spec.mjs-snapshots/ActivationCard-chromium-darwin.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard-dark.spec.mjs-snapshots/ActivationCard-dark-chromium-darwin.png)",
@@ -467,6 +467,17 @@
       "name": "Sheet",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Sheet", "/>"]
+    },
+    {
+      "description": "Use [SideNavigation](https://gestalt.pinterest.systems/sidenavigation) for side navigation on a page or section.\n**NOTE**This component is on alpha phase, still under developoment. The component will support three levels and keyboard navigation. The component will change behavior and the API might also change in future component version releases.**NOTE**\n\n![SideNavigation light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SideNavigation.spec.mjs-snapshots/SideNavigation-chromium-darwin.png)\n![SideNavigation dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SideNavigation-dark.spec.mjs-snapshots/SideNavigation-dark-chromium-darwin.png)",
+      "prefix": "<SideNavigation",
+      "name": "SideNavigation",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<SideNavigation",
+        "\taccessibilityLabel={${1:string}}",
+        ">${2:node}</SideNavigation>"
+      ]
     },
     {
       "description": "[SlimBanner](https://gestalt.pinterest.systems/slimbanner) conveys brief information related to a specific section of a page. The message can relay success, warning, error or general information. Since they are about a specific section of a page or surface, SlimBanner sits inside of a container, and not at the top of the page. For alerts that apply to the whole page, use [Callout](https://gestalt.pinterest.systems/callout).\n\n![SlimBanner light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SlimBanner.spec.mjs-snapshots/SlimBanner-chromium-darwin.png)\n![SlimBanner dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SlimBanner-dark.spec.mjs-snapshots/SlimBanner-dark-chromium-darwin.png)",
