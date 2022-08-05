@@ -1,8 +1,8 @@
 {
-  "gestaltVersion": "63.3.0",
+  "gestaltVersion": "63.3.1",
   "snippets": [
     {
-      "description": "[ActivationCards](https://gestalt.pinterest.systems/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard.spec.mjs-snapshots/ActivationCard-chromium-darwin.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard-dark.spec.mjs-snapshots/ActivationCard-dark-chromium-darwin.png)",
+      "description": "[ActivationCards](https://gestalt.pinterest.systems/web/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard.spec.mjs-snapshots/ActivationCard-chromium-darwin.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard-dark.spec.mjs-snapshots/ActivationCard-dark-chromium-darwin.png)",
       "prefix": "<ActivationCard",
       "name": "ActivationCard",
       "scope": "javascript,typescript,javascriptreact",
@@ -16,14 +16,14 @@
       ]
     },
     {
-      "description": "[Avatar](https://gestalt.pinterest.systems/avatar) is used to represent a user. Every Avatar image has a subtle color wash.\n\n![Avatar light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Avatar.spec.mjs-snapshots/Avatar-chromium-darwin.png)\n![Avatar dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Avatar-dark.spec.mjs-snapshots/Avatar-dark-chromium-darwin.png)",
+      "description": "[Avatar](https://gestalt.pinterest.systems/web/avatar) is used to represent a user. Every Avatar image has a subtle color wash.\n\n![Avatar light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Avatar.spec.mjs-snapshots/Avatar-chromium-darwin.png)\n![Avatar dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Avatar-dark.spec.mjs-snapshots/Avatar-dark-chromium-darwin.png)",
       "prefix": "<Avatar",
       "name": "Avatar",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Avatar", "\tname={${1:string}}", "/>"]
     },
     {
-      "description": "[AvatarGroup](https://gestalt.pinterest.systems/avatargroup) is used to both display a group of user avatars and, optionally, control actions related to the users group.\n\n![AvatarGroup light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/AvatarGroup.spec.mjs-snapshots/AvatarGroup-chromium-darwin.png)\n![AvatarGroup dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/AvatarGroup-dark.spec.mjs-snapshots/AvatarGroup-dark-chromium-darwin.png)",
+      "description": "[AvatarGroup](https://gestalt.pinterest.systems/web/avatargroup) is used to both display a group of user avatars and, optionally, control actions related to the users group.\n\n![AvatarGroup light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/AvatarGroup.spec.mjs-snapshots/AvatarGroup-chromium-darwin.png)\n![AvatarGroup dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/AvatarGroup-dark.spec.mjs-snapshots/AvatarGroup-dark-chromium-darwin.png)",
       "prefix": "<AvatarGroup",
       "name": "AvatarGroup",
       "scope": "javascript,typescript,javascriptreact",
@@ -35,35 +35,35 @@
       ]
     },
     {
-      "description": "[Badge](https://gestalt.pinterest.systems/badge) is a label that indicates status or importance. Badges should provide quick recognition.\n\n![Badge light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Badge.spec.mjs-snapshots/Badge-chromium-darwin.png)\n![Badge dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Badge-dark.spec.mjs-snapshots/Badge-dark-chromium-darwin.png)",
+      "description": "[Badge](https://gestalt.pinterest.systems/web/badge) is a label that indicates status or importance. Badges should provide quick recognition.\n\n![Badge light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Badge.spec.mjs-snapshots/Badge-chromium-darwin.png)\n![Badge dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Badge-dark.spec.mjs-snapshots/Badge-dark-chromium-darwin.png)",
       "prefix": "<Badge",
       "name": "Badge",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Badge", "\ttext={${1:string}}", "/>"]
     },
     {
-      "description": "[Box](https://gestalt.pinterest.systems/box) is a component primitive that can be used to build the foundation of pretty much any other component. It keeps details like spacing, borders and colors consistent with the rest of Gestalt, while allowing the developer to focus on the content.\n\n![Box light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Box.spec.mjs-snapshots/Box-chromium-darwin.png)\n![Box dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Box-dark.spec.mjs-snapshots/Box-dark-chromium-darwin.png)",
+      "description": "[Box](https://gestalt.pinterest.systems/web/box) is a component primitive that can be used to build the foundation of pretty much any other component. It keeps details like spacing, borders and colors consistent with the rest of Gestalt, while allowing the developer to focus on the content.\n\n![Box light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Box.spec.mjs-snapshots/Box-chromium-darwin.png)\n![Box dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Box-dark.spec.mjs-snapshots/Box-dark-chromium-darwin.png)",
       "prefix": "<Box",
       "name": "Box",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Box>", "\t${0:node}", "</Box>"]
     },
     {
-      "description": "[Buttons](https://gestalt.pinterest.systems/button) allow users to perform actions within a surface. They can be used alone for immediate action, or as a trigger for another component, like [Dropdown](https://gestalt.pinterest.systems/dropdown) or [Popover](https://gestalt.pinterest.systems/popover).\n\n![Button light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Button.spec.mjs-snapshots/Button-chromium-darwin.png)\n![Button dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Button-dark.spec.mjs-snapshots/Button-dark-chromium-darwin.png)",
+      "description": "[Buttons](https://gestalt.pinterest.systems/web/button) allow users to perform actions within a surface. They can be used alone for immediate action, or as a trigger for another component, like [Dropdown](https://gestalt.pinterest.systems/web/dropdown) or [Popover](https://gestalt.pinterest.systems/web/popover).\n\n![Button light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Button.spec.mjs-snapshots/Button-chromium-darwin.png)\n![Button dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Button-dark.spec.mjs-snapshots/Button-dark-chromium-darwin.png)",
       "prefix": "<Button",
       "name": "Button",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Button", "/>"]
     },
     {
-      "description": "[ButtonGroup](https://gestalt.pinterest.systems/buttongroup) is used to display a series of buttons.\n\n![ButtonGroup light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ButtonGroup.spec.mjs-snapshots/ButtonGroup-chromium-darwin.png)\n![ButtonGroup dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ButtonGroup-dark.spec.mjs-snapshots/ButtonGroup-dark-chromium-darwin.png)",
+      "description": "[ButtonGroup](https://gestalt.pinterest.systems/web/buttongroup) is used to display a series of buttons.\n\n![ButtonGroup light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ButtonGroup.spec.mjs-snapshots/ButtonGroup-chromium-darwin.png)\n![ButtonGroup dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ButtonGroup-dark.spec.mjs-snapshots/ButtonGroup-dark-chromium-darwin.png)",
       "prefix": "<ButtonGroup",
       "name": "ButtonGroup",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<ButtonGroup>", "\t${0:node}", "</ButtonGroup>"]
     },
     {
-      "description": "[Callout](https://gestalt.pinterest.systems/callout) is a banner displaying short messages with helpful information for a task on the page, or something that requires the user’s attention.\n\n![Callout light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Callout.spec.mjs-snapshots/Callout-chromium-darwin.png)\n![Callout dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Callout-dark.spec.mjs-snapshots/Callout-dark-chromium-darwin.png)",
+      "description": "[Callout](https://gestalt.pinterest.systems/web/callout) is a banner displaying short messages with helpful information for a task on the page, or something that requires the user’s attention.\n\n![Callout light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Callout.spec.mjs-snapshots/Callout-chromium-darwin.png)\n![Callout dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Callout-dark.spec.mjs-snapshots/Callout-dark-chromium-darwin.png)",
       "prefix": "<Callout",
       "name": "Callout",
       "scope": "javascript,typescript,javascriptreact",
@@ -76,14 +76,14 @@
       ]
     },
     {
-      "description": "[Card](https://gestalt.pinterest.systems/card) is used to highlight content in grids. It visually shows that children elements belong together and can highlight the items on hover.",
+      "description": "[Card](https://gestalt.pinterest.systems/web/card) is used to highlight content in grids. It visually shows that children elements belong together and can highlight the items on hover.",
       "prefix": "<Card",
       "name": "Card",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Card>", "\t${0:node}", "</Card>"]
     },
     {
-      "description": "[Checkbox](https://gestalt.pinterest.systems/checkbox) is used for multiple choice selection. They are independent of each other in a list, and therefore, different from [RadioButton](https://gestalt.pinterest.systems/radiobutton), one selection does not affect other checkboxes in the same list.\n\n![Checkbox light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Checkbox.spec.mjs-snapshots/Checkbox-chromium-darwin.png)\n![Checkbox dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Checkbox-dark.spec.mjs-snapshots/Checkbox-dark-chromium-darwin.png)",
+      "description": "[Checkbox](https://gestalt.pinterest.systems/web/checkbox) is used for multiple choice selection. They are independent of each other in a list, and therefore, different from [RadioButton](https://gestalt.pinterest.systems/web/radiobutton), one selection does not affect other checkboxes in the same list.\n\n![Checkbox light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Checkbox.spec.mjs-snapshots/Checkbox-chromium-darwin.png)\n![Checkbox dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Checkbox-dark.spec.mjs-snapshots/Checkbox-dark-chromium-darwin.png)",
       "prefix": "<Checkbox",
       "name": "Checkbox",
       "scope": "javascript,typescript,javascriptreact",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "description": "[Collage](https://gestalt.pinterest.systems/collage), similarly to [Masonry](https://gestalt.pinterest.systems/masonry), creates a deterministic grid layout that can absolutely position and virtualize images.\n\n![Collage light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Collage.spec.mjs-snapshots/Collage-chromium-darwin.png)\n![Collage dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Collage-dark.spec.mjs-snapshots/Collage-dark-chromium-darwin.png)",
+      "description": "[Collage](https://gestalt.pinterest.systems/web/collage), similarly to [Masonry](https://gestalt.pinterest.systems/web/masonry), creates a deterministic grid layout that can absolutely position and virtualize images.\n\n![Collage light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Collage.spec.mjs-snapshots/Collage-chromium-darwin.png)\n![Collage dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Collage-dark.spec.mjs-snapshots/Collage-dark-chromium-darwin.png)",
       "prefix": "<Collage",
       "name": "Collage",
       "scope": "javascript,typescript,javascriptreact",
@@ -121,14 +121,14 @@
       ]
     },
     {
-      "description": "[ColorSchemeProvider](https://gestalt.pinterest.systems/colorschemeprovider) is an optional [React context provider](https://reactjs.org/docs/context.html#contextprovider) to enable dark mode.",
+      "description": "[ColorSchemeProvider](https://gestalt.pinterest.systems/web/utilities/colorschemeprovider) is an optional [React context provider](https://reactjs.org/docs/context.html#contextprovider) to enable dark mode.",
       "prefix": "<ColorSchemeProvider",
       "name": "ColorSchemeProvider",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<ColorSchemeProvider>", "\t${0:node}", "</ColorSchemeProvider>"]
     },
     {
-      "description": "Use [Column](https://gestalt.pinterest.systems/column) to implement a 12-column system.\n\n![Column light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Column.spec.mjs-snapshots/Column-chromium-darwin.png)",
+      "description": "Use [Column](https://gestalt.pinterest.systems/web/column) to implement a 12-column system.\n\n![Column light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Column.spec.mjs-snapshots/Column-chromium-darwin.png)",
       "prefix": "<Column",
       "name": "Column",
       "scope": "javascript,typescript,javascriptreact",
@@ -139,7 +139,7 @@
       ]
     },
     {
-      "description": "[ComboBox](https://gestalt.pinterest.systems/combobox) is the combination of a [Textfield](https://gestalt.pinterest.systems/textfield) and an associated [Dropdown](https://gestalt.pinterest.systems/dropdown) that allows the user to filter a list when selecting an option. ComboBox allows users to type the full option, type part of the option and narrow the results, or select an option from the list.\nNote: this is a new version of the deprecated component \"Typeahead\".\n\n![Combobox closed light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ComboBox-closed.spec.mjs-snapshots/ComboBox-closed-chromium-darwin.png)\n![Combobox open light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ComboBox-open.spec.mjs-snapshots/ComboBox-open-chromium-darwin.png)\n![Combobox closed dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ComboBox-closed-dark.spec.mjs-snapshots/ComboBox-closed-dark-chromium-darwin.png)\n![Combobox open dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ComboBox-open-dark.spec.mjs-snapshots/ComboBox-open-dark-chromium-darwin.png)",
+      "description": "[ComboBox](https://gestalt.pinterest.systems/web/combobox) is the combination of a [Textfield](https://gestalt.pinterest.systems/web/textfield) and an associated [Dropdown](https://gestalt.pinterest.systems/web/dropdown) that allows the user to filter a list when selecting an option. ComboBox allows users to type the full option, type part of the option and narrow the results, or select an option from the list.\nNote: this is a new version of the deprecated component \"Typeahead\".\n\n![Combobox closed light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ComboBox-closed.spec.mjs-snapshots/ComboBox-closed-chromium-darwin.png)\n![Combobox open light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ComboBox-open.spec.mjs-snapshots/ComboBox-open-chromium-darwin.png)\n![Combobox closed dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ComboBox-closed-dark.spec.mjs-snapshots/ComboBox-closed-dark-chromium-darwin.png)\n![Combobox open dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ComboBox-open-dark.spec.mjs-snapshots/ComboBox-open-dark-chromium-darwin.png)",
       "prefix": "<ComboBox",
       "name": "ComboBox",
       "scope": "javascript,typescript,javascriptreact",
@@ -154,14 +154,14 @@
       ]
     },
     {
-      "description": "[Containers](https://gestalt.pinterest.systems/container ) are useful in responsively laying out content on different screens.\n\n![Container light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Container.spec.mjs-snapshots/Container-chromium-darwin.png)",
+      "description": "[Containers](https://gestalt.pinterest.systems/web/container ) are useful in responsively laying out content on different screens.\n\n![Container light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Container.spec.mjs-snapshots/Container-chromium-darwin.png)",
       "prefix": "<Container",
       "name": "Container",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Container>", "\t${0:node}", "</Container>"]
     },
     {
-      "description": "[Datapoint](https://gestalt.pinterest.systems/datapoint) displays at-a-glance data for a user to quickly view key metrics.\n\n![Datapoint light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Datapoint.spec.mjs-snapshots/Datapoint-chromium-darwin.png)\n![Datapoint dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Datapoint-dark.spec.mjs-snapshots/Datapoint-dark-chromium-darwin.png)",
+      "description": "[Datapoint](https://gestalt.pinterest.systems/web/datapoint) displays at-a-glance data for a user to quickly view key metrics.\n\n![Datapoint light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Datapoint.spec.mjs-snapshots/Datapoint-chromium-darwin.png)\n![Datapoint dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Datapoint-dark.spec.mjs-snapshots/Datapoint-dark-chromium-darwin.png)",
       "prefix": "<Datapoint",
       "name": "Datapoint",
       "scope": "javascript,typescript,javascriptreact",
@@ -173,7 +173,7 @@
       ]
     },
     {
-      "description": "*ALPHA - DO NOT USE YET - MAY HAVE BREAKING CHANGES IN THE NEAR FUTURE*\n[DeviceTypeProvider](https://gestalt.pinterest.systems/devicetypeprovider) is an optional [React Context provider](https://reactjs.org/docs/context.html#contextprovider) to enable device-specific UI for Gestalt components that support it.",
+      "description": "*ALPHA - DO NOT USE YET - MAY HAVE BREAKING CHANGES IN THE NEAR FUTURE*\n[DeviceTypeProvider](https://gestalt.pinterest.systems/web/utilities/devicetypeprovider) is an optional [React Context provider](https://reactjs.org/docs/context.html#contextprovider) to enable device-specific UI for Gestalt components that support it.",
       "prefix": "<DeviceTypeProvider",
       "name": "DeviceTypeProvider",
       "scope": "javascript,typescript,javascriptreact",
@@ -184,14 +184,14 @@
       ]
     },
     {
-      "description": "[Divider](https://gestalt.pinterest.systems/divider) is a light gray 1px horizontal or vertical line which groups and divides content in lists and layouts.\n\n![Divider light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Divider.spec.mjs-snapshots/Divider-chromium-darwin.png)\n![Divider dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Divider-dark.spec.mjs-snapshots/Divider-dark-chromium-darwin.png)",
+      "description": "[Divider](https://gestalt.pinterest.systems/web/divider) is a light gray 1px horizontal or vertical line which groups and divides content in lists and layouts.\n\n![Divider light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Divider.spec.mjs-snapshots/Divider-chromium-darwin.png)\n![Divider dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Divider-dark.spec.mjs-snapshots/Divider-dark-chromium-darwin.png)",
       "prefix": "<Divider",
       "name": "Divider",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Divider", "/>"]
     },
     {
-      "description": "[Dropdown](https://gestalt.pinterest.systems/dropdown) displays a list of actions, options or links. It is triggered when a user interacts with a Button, Textfield or other control. Dropdown allows for complex functionality that can’t be accomplished with SelectList.\n\n![Dropdown open light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Dropdown-open.spec.mjs-snapshots/Dropdown-open-chromium-darwin.png)\n![Dropdown open dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Dropdown-open-dark.spec.mjs-snapshots/Dropdown-open-dark-chromium-darwin.png)",
+      "description": "[Dropdown](https://gestalt.pinterest.systems/web/dropdown) displays a list of actions, options or links. It is triggered when a user interacts with a Button, Textfield or other control. Dropdown allows for complex functionality that can’t be accomplished with SelectList.\n\n![Dropdown open light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Dropdown-open.spec.mjs-snapshots/Dropdown-open-chromium-darwin.png)\n![Dropdown open dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Dropdown-open-dark.spec.mjs-snapshots/Dropdown-open-dark-chromium-darwin.png)",
       "prefix": "<Dropdown",
       "name": "Dropdown",
       "scope": "javascript,typescript,javascriptreact",
@@ -203,42 +203,42 @@
       ]
     },
     {
-      "description": "[Fieldset](https://gestalt.pinterest.systems/fieldset) creates a fieldset and legend for a group of related form items, like [RadioButtons](https://gestalt.pinterest.systems/radiobutton) or [CheckBoxes](https://gestalt.pinterest.systems/checkbox), in order to clearly indicate related form items.\"\n\n![Fieldset light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Fieldset.spec.mjs-snapshots/Fieldset-chromium-darwin.png)\n![Fieldset dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Fieldset-dark.spec.mjs-snapshots/Fieldset-dark-chromium-darwin.png)",
+      "description": "[Fieldset](https://gestalt.pinterest.systems/web/fieldset) creates a fieldset and legend for a group of related form items, like [RadioButtons](https://gestalt.pinterest.systems/web/radiobutton) or [CheckBoxes](https://gestalt.pinterest.systems/web/checkbox), in order to clearly indicate related form items.\"\n\n![Fieldset light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Fieldset.spec.mjs-snapshots/Fieldset-chromium-darwin.png)\n![Fieldset dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Fieldset-dark.spec.mjs-snapshots/Fieldset-dark-chromium-darwin.png)",
       "prefix": "<Fieldset",
       "name": "Fieldset",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Fieldset", "\tlegend={${1:string}}", ">${2:node}</Fieldset>"]
     },
     {
-      "description": "[Flex](https://gestalt.pinterest.systems/flex) is a layout component with a very limited subset of the props available to [Box](https://gestalt.pinterest.systems/box) and a special prop of its own.\n\nUse this component for flexbox layouts, especially when even spacing between elements is desired (see the `gap` prop!).\n\n![Flex light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Flex.spec.mjs-snapshots/Flex-chromium-darwin.png)",
+      "description": "[Flex](https://gestalt.pinterest.systems/web/flex) is a layout component with a very limited subset of the props available to [Box](https://gestalt.pinterest.systems/web/box) and a special prop of its own.\n\nUse this component for flexbox layouts, especially when even spacing between elements is desired (see the `gap` prop!).\n\n![Flex light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Flex.spec.mjs-snapshots/Flex-chromium-darwin.png)",
       "prefix": "<Flex",
       "name": "Flex",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Flex>", "\t${0:node}", "</Flex>"]
     },
     {
-      "description": "[Heading](https://gestalt.pinterest.systems/heading) allows you to add H1–H6 level text on a page. They are generally placed underneath a PageHeader, and provide you with a way to create a logical text hierarchy.\n\n![Heading light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Heading.spec.mjs-snapshots/Heading-chromium-darwin.png)\n![Heading dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Heading-dark.spec.mjs-snapshots/Heading-dark-chromium-darwin.png)",
+      "description": "[Heading](https://gestalt.pinterest.systems/web/heading) allows you to add H1–H6 level text on a page. They are generally placed underneath a PageHeader, and provide you with a way to create a logical text hierarchy.\n\n![Heading light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Heading.spec.mjs-snapshots/Heading-chromium-darwin.png)\n![Heading dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Heading-dark.spec.mjs-snapshots/Heading-dark-chromium-darwin.png)",
       "prefix": "<Heading",
       "name": "Heading",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Heading>", "\t${0:node}", "</Heading>"]
     },
     {
-      "description": "[Icons](https://gestalt.pinterest.systems/icon) are the symbolic representation of an action or information, providing visual context and improving usability.\n\nSee the [Iconography and SVG guidelines](https://gestalt.pinterest.systems/iconography_and_svgs) to explore the full icon library.\n\n![Icon light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Icon-list.spec.mjs-snapshots/Icon-list-chromium-darwin.png)\n![Icon dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Icon-list-dark.spec.mjs-snapshots/Icon-list-dark-chromium-darwin.png)",
+      "description": "[Icons](https://gestalt.pinterest.systems/web/icon) are the symbolic representation of an action or information, providing visual context and improving usability.\n\nSee the [Iconography and SVG guidelines](https://gestalt.pinterest.systems/foundations/iconography/library) to explore the full icon library.\n\n![Icon light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Icon-list.spec.mjs-snapshots/Icon-list-chromium-darwin.png)\n![Icon dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Icon-list-dark.spec.mjs-snapshots/Icon-list-dark-chromium-darwin.png)",
       "prefix": "<Icon",
       "name": "Icon",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Icon", "\taccessibilityLabel={${1:string}}", "/>"]
     },
     {
-      "description": "[IconButton](https://gestalt.pinterest.systems/iconbutton) allows users to take actions and make choices with a single click or tap. IconButtons use icons instead of text to convey available actions on a screen. IconButton is typically found in forms, dialogs and toolbars.\n Some buttons are specialized for particular tasks, such as navigation or presenting menus.\n\n![IconButton light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/IconButton.spec.mjs-snapshots/IconButton-chromium-darwin.png)\n![IconButton dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/IconButton-dark.spec.mjs-snapshots/IconButton-dark-chromium-darwin.png)",
+      "description": "[IconButton](https://gestalt.pinterest.systems/web/iconbutton) allows users to take actions and make choices with a single click or tap. IconButtons use icons instead of text to convey available actions on a screen. IconButton is typically found in forms, dialogs and toolbars.\n Some buttons are specialized for particular tasks, such as navigation or presenting menus.\n\n![IconButton light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/IconButton.spec.mjs-snapshots/IconButton-chromium-darwin.png)\n![IconButton dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/IconButton-dark.spec.mjs-snapshots/IconButton-dark-chromium-darwin.png)",
       "prefix": "<IconButton",
       "name": "IconButton",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<IconButton", "/>"]
     },
     {
-      "description": "[Image](https://gestalt.pinterest.systems/image) is the workhorse of Pinterest. If you define Pinterest to be all about collecting ideas, then images are how we choose to represent those ideas. In response, we've added a few extra superpowers to the regular img tag to make it even more awesome.\n\n![Image light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Image.spec.mjs-snapshots/Image-chromium-darwin.png)\n![Image dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Image-dark.spec.mjs-snapshots/Image-dark-chromium-darwin.png)",
+      "description": "[Image](https://gestalt.pinterest.systems/web/image) is the workhorse of Pinterest. If you define Pinterest to be all about collecting ideas, then images are how we choose to represent those ideas. In response, we've added a few extra superpowers to the regular img tag to make it even more awesome.\n\n![Image light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Image.spec.mjs-snapshots/Image-chromium-darwin.png)\n![Image dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Image-dark.spec.mjs-snapshots/Image-dark-chromium-darwin.png)",
       "prefix": "<Image",
       "name": "Image",
       "scope": "javascript,typescript,javascriptreact",
@@ -252,21 +252,21 @@
       ]
     },
     {
-      "description": "Use the [Label](https://gestalt.pinterest.systems/labels) component to connect a label with a form component in an accessible way.\n\n![Label light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Label.spec.mjs-snapshots/Label-chromium-darwin.png)\n![Label dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Label-dark.spec.mjs-snapshots/Label-dark-chromium-darwin.png)",
+      "description": "Use the [Label](https://gestalt.pinterest.systems/web/label) component to connect a label with a form component in an accessible way.\n\n![Label light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Label.spec.mjs-snapshots/Label-chromium-darwin.png)\n![Label dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Label-dark.spec.mjs-snapshots/Label-dark-chromium-darwin.png)",
       "prefix": "<Label",
       "name": "Label",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Label", "\thtmlFor={${1:string}}", ">${2:node}</Label>"]
     },
     {
-      "description": "[Layers](https://gestalt.pinterest.systems/layer) allow you to render children outside the DOM hierarchy of the parent. It's a wrapper around React createPortal that lets you use it as a component. This is particularly useful for places you might have needed to use z-index to overlay the screen before.",
+      "description": "[Layers](https://gestalt.pinterest.systems/web/layer) allow you to render children outside the DOM hierarchy of the parent. It's a wrapper around React createPortal that lets you use it as a component. This is particularly useful for places you might have needed to use z-index to overlay the screen before.",
       "prefix": "<Layer",
       "name": "Layer",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Layer>", "\t${0:node}", "</Layer>"]
     },
     {
-      "description": "[Letterboxes](https://gestalt.pinterest.systems/letterbox) are useful if you have some source media which is larger than the area you want to display it in. For instance, you might have a really tall image and want it to be displayed in a neatly cropped square. While the ideal solution to this problem is to update the source image, this might not always be possible for either cost or performance reasons.\n\nLetterbox should be used in situations where you would otherwise use the CSS property \\`background-size: cover\\`.",
+      "description": "[Letterboxes](https://gestalt.pinterest.systems/web/letterbox) are useful if you have some source media which is larger than the area you want to display it in. For instance, you might have a really tall image and want it to be displayed in a neatly cropped square. While the ideal solution to this problem is to update the source image, this might not always be possible for either cost or performance reasons.\n\nLetterbox should be used in situations where you would otherwise use the CSS property \\`background-size: cover\\`.",
       "prefix": "<Letterbox",
       "name": "Letterbox",
       "scope": "javascript,typescript,javascriptreact",
@@ -279,21 +279,21 @@
       ]
     },
     {
-      "description": "[Link](https://gestalt.pinterest.systems/link) is mainly used as navigational element and usually appear within or directly following a paragraph or sentence.\n\n![Link light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Link.spec.mjs-snapshots/Link-chromium-darwin.png)\n![Link dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Link-dark.spec.mjs-snapshots/Link-dark-chromium-darwin.png)",
+      "description": "[Link](https://gestalt.pinterest.systems/web/link) is mainly used as navigational element and usually appear within or directly following a paragraph or sentence.\n\n![Link light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Link.spec.mjs-snapshots/Link-chromium-darwin.png)\n![Link dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Link-dark.spec.mjs-snapshots/Link-dark-chromium-darwin.png)",
       "prefix": "<Link",
       "name": "Link",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Link", "\thref={${1:string}}", ">${2:node}</Link>"]
     },
     {
-      "description": "[Mask](https://gestalt.pinterest.systems/mask) is used to display content in a specific shape.",
+      "description": "[Mask](https://gestalt.pinterest.systems/web/mask) is used to display content in a specific shape.",
       "prefix": "<Mask",
       "name": "Mask",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Mask>", "\t${0:node}", "</Mask>"]
     },
     {
-      "description": "[Masonry](https://gestalt.pinterest.systems/masonry) creates a deterministic grid layout, positioning items based on available vertical space. It contains performance optimizations like virtualization and support for infinite scrolling.",
+      "description": "[Masonry](https://gestalt.pinterest.systems/web/masonry) creates a deterministic grid layout, positioning items based on available vertical space. It contains performance optimizations like virtualization and support for infinite scrolling.",
       "prefix": "<Masonry",
       "name": "Masonry",
       "scope": "javascript,typescript,javascriptreact",
@@ -305,7 +305,7 @@
       ]
     },
     {
-      "description": "A [Modal](https://gestalt.pinterest.systems/modal) displays content that requires user interaction. Modals appear on a layer above the page and therefore block the content underneath, preventing users from interacting with anything else besides the Modal. The most common example of Modal is confirming an action the user has taken.",
+      "description": "A [Modal](https://gestalt.pinterest.systems/web/modal) displays content that requires user interaction. Modals appear on a layer above the page and therefore block the content underneath, preventing users from interacting with anything else besides the Modal. The most common example of Modal is confirming an action the user has taken.",
       "prefix": "<Modal",
       "name": "Modal",
       "scope": "javascript,typescript,javascriptreact",
@@ -324,7 +324,7 @@
       "body": ["<Module", "\tid={${1:string}}", ">${2:node}</Module>"]
     },
     {
-      "description": "[NumberField](https://gestalt.pinterest.systems/numberfield) allows for numerical input.\n\n![NumberField light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/NumberField.spec.mjs-snapshots/NumberField-chromium-darwin.png)\n![NumberField dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/NumberField-dark.spec.mjs-snapshots/NumberField-dark-chromium-darwin.png)",
+      "description": "[NumberField](https://gestalt.pinterest.systems/web/numberfield) allows for numerical input.\n\n![NumberField light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/NumberField.spec.mjs-snapshots/NumberField-chromium-darwin.png)\n![NumberField dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/NumberField-dark.spec.mjs-snapshots/NumberField-dark-chromium-darwin.png)",
       "prefix": "<NumberField",
       "name": "NumberField",
       "scope": "javascript,typescript,javascriptreact",
@@ -336,7 +336,7 @@
       ]
     },
     {
-      "description": "[OnLinkNavigationProvider](https://gestalt.pinterest.systems/onlinknavigationprovider) is a [React context provider](https://reactjs.org/docs/context.html#contextprovider) to externally control the link behavior of components further down the tree.",
+      "description": "[OnLinkNavigationProvider](https://gestalt.pinterest.systems/web/utilities/onlinknavigationprovider) is a [React context provider](https://reactjs.org/docs/context.html#contextprovider) to externally control the link behavior of components further down the tree.",
       "prefix": "<OnLinkNavigationProvider",
       "name": "OnLinkNavigationProvider",
       "scope": "javascript,typescript,javascriptreact",
@@ -347,21 +347,21 @@
       ]
     },
     {
-      "description": "[PageHeader](https://gestalt.pinterest.systems/pageheader) is used to indicate the title of the current screen and can also provide additional content and actions that relate to the current screen as a whole.\n\n![PageHeader light mode secondary action](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/PageHeader-items-secondaryAction.spec.mjs-snapshots/PageHeader-items-secondaryAction-md-chromium-darwin.png)\n![PageHeader light mode badge](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/PageHeader-thumbnail-badge-iconButton.spec.mjs-snapshots/PageHeader-thumbnail-badge-iconButton-sm-chromium-darwin.png)\n![PageHeader dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/PageHeader-borderStyle-dark.spec.mjs-snapshots/PageHeader-borderStyle-dark-chromium-darwin.png)",
+      "description": "[PageHeader](https://gestalt.pinterest.systems/web/pageheader) is used to indicate the title of the current screen and can also provide additional content and actions that relate to the current screen as a whole.\n\n![PageHeader light mode secondary action](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/PageHeader-items-secondaryAction.spec.mjs-snapshots/PageHeader-items-secondaryAction-md-chromium-darwin.png)\n![PageHeader light mode badge](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/PageHeader-thumbnail-badge-iconButton.spec.mjs-snapshots/PageHeader-thumbnail-badge-iconButton-sm-chromium-darwin.png)\n![PageHeader dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/PageHeader-borderStyle-dark.spec.mjs-snapshots/PageHeader-borderStyle-dark-chromium-darwin.png)",
       "prefix": "<PageHeader",
       "name": "PageHeader",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<PageHeader", "\ttitle={${1:string}}", "/>"]
     },
     {
-      "description": "[Pog](https://gestalt.pinterest.systems/pog) is a lower-level functional component to show the active, hovered, & focused states of [IconButton](https://gestalt.pinterest.systems/pog/iconbutton).\n\nThis is an abstraction to allow for links that look like IconButton.\n\n![Pog light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Pog.spec.mjs-snapshots/Pog-chromium-darwin.png)\n![Pog dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Pog-dark.spec.mjs-snapshots/Pog-dark-chromium-darwin.png)",
+      "description": "[Pog](https://gestalt.pinterest.systems/web/pog) is a lower-level functional component to show the active, hovered, & focused states of [IconButton](https://gestalt.pinterest.systems/web/pog/iconbutton).\n\nThis is an abstraction to allow for links that look like IconButton.\n\n![Pog light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Pog.spec.mjs-snapshots/Pog-chromium-darwin.png)\n![Pog dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Pog-dark.spec.mjs-snapshots/Pog-dark-chromium-darwin.png)",
       "prefix": "<Pog",
       "name": "Pog",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Pog", "/>"]
     },
     {
-      "description": "[Popover](https://gestalt.pinterest.systems/popover) is a floating view that contains a task related to the content on screen. It can be triggered when the user clicks or focuses on an element, typically [Button](/button) or [IconButton](/iconbutton). It can also be triggered automatically, as in the case of user education. Popover is non-modal and can be dismissed by interacting with another part of the screen or an item within Popover.\n\nPopover is most appropriate for desktop screens and can contain a variety of elements, such as [Button](/button) and [Images](/image). Popover is also the container used to construct more complex elements like [Dropdown](/dropdown) and the board picker, pictured below, which allow people to choose the board to save a Pin to.",
+      "description": "[Popover](https://gestalt.pinterest.systems/web/popover) is a floating view that contains a task related to the content on screen. It can be triggered when the user clicks or focuses on an element, typically [Button](/button) or [IconButton](/iconbutton). It can also be triggered automatically, as in the case of user education. Popover is non-modal and can be dismissed by interacting with another part of the screen or an item within Popover.\n\nPopover is most appropriate for desktop screens and can contain a variety of elements, such as [Button](/button) and [Images](/image). Popover is also the container used to construct more complex elements like [Dropdown](/dropdown) and the board picker, pictured below, which allow people to choose the board to save a Pin to.",
       "prefix": "<Popover",
       "name": "Popover",
       "scope": "javascript,typescript,javascriptreact",
@@ -373,14 +373,14 @@
       ]
     },
     {
-      "description": "[Pulsars](https://gestalt.pinterest.systems/pulsar ) bring focus to a specific element on the screen and act like training wheels to guide people towards the normal way to perform that action. They are used in isolation or combination with other education components for more instructions.",
+      "description": "[Pulsars](https://gestalt.pinterest.systems/web/pulsar ) bring focus to a specific element on the screen and act like training wheels to guide people towards the normal way to perform that action. They are used in isolation or combination with other education components for more instructions.",
       "prefix": "<Pulsar",
       "name": "Pulsar",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Pulsar", "/>"]
     },
     {
-      "description": "Use [RadioButtons](https://gestalt.pinterest.systems/radiobutton) when you have a few options that a user can choose from. Never use radio buttons if the user can select more than one option from a list.\n**NOTE** The standalone RadioButton is soon to be deprecated, use [RadioGroup](https://gestalt.pinterest.systems/radiogroup) and RadioGroup.RadioButton instead.**NOTE**\n![RadioButton light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/RadioButton.spec.mjs-snapshots/RadioButton-chromium-darwin.png)\n![RadioButton dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/RadioButton-dark.spec.mjs-snapshots/RadioButton-dark-chromium-darwin.png)",
+      "description": "Use [RadioButtons](https://gestalt.pinterest.systems/web/radiobutton) when you have a few options that a user can choose from. Never use radio buttons if the user can select more than one option from a list.\n**NOTE** The standalone RadioButton is soon to be deprecated, use [RadioGroup](https://gestalt.pinterest.systems/web/radiogroup) and RadioGroup.RadioButton instead.**NOTE**\n![RadioButton light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/RadioButton.spec.mjs-snapshots/RadioButton-chromium-darwin.png)\n![RadioButton dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/RadioButton-dark.spec.mjs-snapshots/RadioButton-dark-chromium-darwin.png)",
       "prefix": "<RadioButton",
       "name": "RadioButton",
       "scope": "javascript,typescript,javascriptreact",
@@ -393,7 +393,7 @@
       ]
     },
     {
-      "description": "[RadioGroups](https://gestalt.pinterest.systems/radiogroup) are used for selecting only 1 item from a list of 2 or more items. If you need multiple selection or have only one option, use [Checkbox](https://gestalt.pinterest.systems/checkbox). If you need to provide a binary on/off choice that takes effect immediately, use [Switch](https://gestalt.pinterest.systems/switch).",
+      "description": "[RadioGroups](https://gestalt.pinterest.systems/web/radiogroup) are used for selecting only 1 item from a list of 2 or more items. If you need multiple selection or have only one option, use [Checkbox](https://gestalt.pinterest.systems/web/checkbox). If you need to provide a binary on/off choice that takes effect immediately, use [Switch](https://gestalt.pinterest.systems/web/switch).",
       "prefix": "<RadioGroup",
       "name": "RadioGroup",
       "scope": "javascript,typescript,javascriptreact",
@@ -405,7 +405,7 @@
       ]
     },
     {
-      "description": "[ScrollBoundaryContainer](https://gestalt.pinterest.systems/scrollboundarycontainer) is used with anchor-based components such as Popover, Tooltip, Dropdown or ComboBox. ScrollBoundaryContainer is needed for proper positioning when the anchor-based component is anchored to an element that is located within a scrolling container. The use of ScrollBoundaryContainer ensures the anchor-based component remains attached to its anchor when scrolling. Don't use ScrollBoundaryContainer to add scrolling to a container, use [Box's props](https://gestalt.pinterest.systems/box#Props) instead.",
+      "description": "[ScrollBoundaryContainer](https://gestalt.pinterest.systems/web/utilities/scrollboundarycontainer) is used with anchor-based components such as Popover, Tooltip, Dropdown or ComboBox. ScrollBoundaryContainer is needed for proper positioning when the anchor-based component is anchored to an element that is located within a scrolling container. The use of ScrollBoundaryContainer ensures the anchor-based component remains attached to its anchor when scrolling. Don't use ScrollBoundaryContainer to add scrolling to a container, use [Box's props](https://gestalt.pinterest.systems/web/box#Props) instead.",
       "prefix": "<ScrollBoundaryContainer",
       "name": "ScrollBoundaryContainer",
       "scope": "javascript,typescript,javascriptreact",
@@ -423,7 +423,7 @@
       "body": ["<ScrollFetch", "\tisFetching={${1|true,false|}}", "/>"]
     },
     {
-      "description": "[SearchField](https://gestalt.pinterest.systems/searchfield) allows users to search for free-form content.\n\n![SearchField light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SearchField.spec.mjs-snapshots/SearchField-chromium-darwin.png)\n![SearchField dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SearchField-dark.spec.mjs-snapshots/SearchField-dark-chromium-darwin.png)",
+      "description": "[SearchField](https://gestalt.pinterest.systems/web/searchfield) allows users to search for free-form content.\n\n![SearchField light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SearchField.spec.mjs-snapshots/SearchField-chromium-darwin.png)\n![SearchField dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SearchField-dark.spec.mjs-snapshots/SearchField-dark-chromium-darwin.png)",
       "prefix": "<SearchField",
       "name": "SearchField",
       "scope": "javascript,typescript,javascriptreact",
@@ -436,7 +436,7 @@
       ]
     },
     {
-      "description": "[SegmentedControl](https://gestalt.pinterest.systems/segmentedcontrol)  may be used to group multiple selections. The controls display the current state and related state.\n\nCreate layout to convey clear sense of information hierarchy. When a control is engaged, information below the control should also be updated.",
+      "description": "[SegmentedControl](https://gestalt.pinterest.systems/web/segmentedcontrol)  may be used to group multiple selections. The controls display the current state and related state.\n\nCreate layout to convey clear sense of information hierarchy. When a control is engaged, information below the control should also be updated.",
       "prefix": "<SegmentedControl",
       "name": "SegmentedControl",
       "scope": "javascript,typescript,javascriptreact",
@@ -449,7 +449,7 @@
       ]
     },
     {
-      "description": "[SelectList](https://gestalt.pinterest.systems/selectlist) displays a list of actions or options using the browser’s native select.\n\n![SelectList light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SelectList.spec.mjs-snapshots/SelectList-chromium-darwin.png)\n![SelectList dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SelectList-dark.spec.mjs-snapshots/SelectList-dark-chromium-darwin.png)",
+      "description": "[SelectList](https://gestalt.pinterest.systems/web/selectlist) displays a list of actions or options using the browser’s native select.\n\n![SelectList light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SelectList.spec.mjs-snapshots/SelectList-chromium-darwin.png)\n![SelectList dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SelectList-dark.spec.mjs-snapshots/SelectList-dark-chromium-darwin.png)",
       "prefix": "<SelectList",
       "name": "SelectList",
       "scope": "javascript,typescript,javascriptreact",
@@ -462,14 +462,14 @@
       ]
     },
     {
-      "description": "[Sheets](https://gestalt.pinterest.systems/sheet ) are surfaces that allow users to view optional information or complete sub-tasks in a workflow while keeping the context of the current page. The most common example of Sheet displays content in a panel that opens from the side of the screen for the user to read or input information. Sheets have default, internal padding for content.",
+      "description": "[Sheets](https://gestalt.pinterest.systems/web/sheet ) are surfaces that allow users to view optional information or complete sub-tasks in a workflow while keeping the context of the current page. The most common example of Sheet displays content in a panel that opens from the side of the screen for the user to read or input information. Sheets have default, internal padding for content.",
       "prefix": "<Sheet",
       "name": "Sheet",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Sheet", "/>"]
     },
     {
-      "description": "[SideNavigation](https://gestalt.pinterest.systems/sidenavigation) is start-aligned and arranged vertically. It is used to navigate between page urls or sections when you have too many menu items to fit in horizontal [Tabs](https://gestalt.pinterest.systems/tabs).\n\n**NOTE**This component is on alpha phase, still under developoment. The component will support three levels and keyboard navigation. The component will change behavior and the API might also change in future component version releases.**NOTE**\n\n![SideNavigation light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SideNavigation.spec.mjs-snapshots/SideNavigation-chromium-darwin.png)\n![SideNavigation dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SideNavigation-dark.spec.mjs-snapshots/SideNavigation-dark-chromium-darwin.png)",
+      "description": "[SideNavigation](https://gestalt.pinterest.systems/web/sidenavigation) is start-aligned and arranged vertically. It is used to navigate between page urls or sections when you have too many menu items to fit in horizontal [Tabs](https://gestalt.pinterest.systems/web/tabs).\n\n**NOTE**This component is on alpha phase, still under developoment. The component will support three levels and keyboard navigation. The component will change behavior and the API might also change in future component version releases.**NOTE**\n\n![SideNavigation light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SideNavigation.spec.mjs-snapshots/SideNavigation-chromium-darwin.png)\n![SideNavigation dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SideNavigation-dark.spec.mjs-snapshots/SideNavigation-dark-chromium-darwin.png)",
       "prefix": "<SideNavigation",
       "name": "SideNavigation",
       "scope": "javascript,typescript,javascriptreact",
@@ -480,14 +480,14 @@
       ]
     },
     {
-      "description": "[SlimBanner](https://gestalt.pinterest.systems/slimbanner) conveys brief information related to a specific section of a page. The message can relay success, warning, error or general information. Since they are about a specific section of a page or surface, SlimBanner sits inside of a container, and not at the top of the page. For alerts that apply to the whole page, use [Callout](https://gestalt.pinterest.systems/callout).\n\n![SlimBanner light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SlimBanner.spec.mjs-snapshots/SlimBanner-chromium-darwin.png)\n![SlimBanner dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SlimBanner-dark.spec.mjs-snapshots/SlimBanner-dark-chromium-darwin.png)",
+      "description": "[SlimBanner](https://gestalt.pinterest.systems/web/slimbanner) conveys brief information related to a specific section of a page. The message can relay success, warning, error or general information. Since they are about a specific section of a page or surface, SlimBanner sits inside of a container, and not at the top of the page. For alerts that apply to the whole page, use [Callout](https://gestalt.pinterest.systems/web/callout).\n\n![SlimBanner light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SlimBanner.spec.mjs-snapshots/SlimBanner-chromium-darwin.png)\n![SlimBanner dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SlimBanner-dark.spec.mjs-snapshots/SlimBanner-dark-chromium-darwin.png)",
       "prefix": "<SlimBanner",
       "name": "SlimBanner",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<SlimBanner", "\tmessage={${1:string}}", "/>"]
     },
     {
-      "description": "[Spinner](https://gestalt.pinterest.systems/spinner ) helps indicate that a surface's content or portion of content is currently loading.",
+      "description": "[Spinner](https://gestalt.pinterest.systems/web/spinner ) helps indicate that a surface's content or portion of content is currently loading.",
       "prefix": "<Spinner",
       "name": "Spinner",
       "scope": "javascript,typescript,javascriptreact",
@@ -499,7 +499,7 @@
       ]
     },
     {
-      "description": "[Status](https://gestalt.pinterest.systems/status) is a graphic indicator of an element’s state.\n\n![Status light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Status.spec.mjs-snapshots/Status-chromium-darwin.png)\n![Status dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Status-dark.spec.mjs-snapshots/Status-dark-chromium-darwin.png)",
+      "description": "[Status](https://gestalt.pinterest.systems/web/status) is a graphic indicator of an element’s state.\n\n![Status light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Status.spec.mjs-snapshots/Status-chromium-darwin.png)\n![Status dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Status-dark.spec.mjs-snapshots/Status-dark-chromium-darwin.png)",
       "prefix": "<Status",
       "name": "Status",
       "scope": "javascript,typescript,javascriptreact",
@@ -510,14 +510,14 @@
       ]
     },
     {
-      "description": "[Sticky](https://gestalt.pinterest.systems/sticky) allows an element to become fixed when it reaches a threshold (top, left, bottom, or right).",
+      "description": "[Sticky](https://gestalt.pinterest.systems/web/sticky) allows an element to become fixed when it reaches a threshold (top, left, bottom, or right).",
       "prefix": "<Sticky",
       "name": "Sticky",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Sticky>", "\t${0:node}", "</Sticky>"]
     },
     {
-      "description": "Use [Switch](https://gestalt.pinterest.systems/switch) for single cell options that can be turned on and off only. If you have a cell with multiple options that can activated, consider using [Checkbox](https://gestalt.pinterest.systems/checkbox).\n\nSwitch supports right-to-left(RTL) language locales layout (auto flip on RTL locales like Arabic).\n\n![Switch light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Switch.spec.mjs-snapshots/Switch-chromium-darwin.png)\n![Switch dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Switch-dark.spec.mjs-snapshots/Switch-dark-chromium-darwin.png)",
+      "description": "Use [Switch](https://gestalt.pinterest.systems/web/switch) for single cell options that can be turned on and off only. If you have a cell with multiple options that can activated, consider using [Checkbox](https://gestalt.pinterest.systems/web/checkbox).\n\nSwitch supports right-to-left(RTL) language locales layout (auto flip on RTL locales like Arabic).\n\n![Switch light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Switch.spec.mjs-snapshots/Switch-chromium-darwin.png)\n![Switch dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Switch-dark.spec.mjs-snapshots/Switch-dark-chromium-darwin.png)",
       "prefix": "<Switch",
       "name": "Switch",
       "scope": "javascript,typescript,javascriptreact",
@@ -529,7 +529,7 @@
       ]
     },
     {
-      "description": "[Table](https://gestalt.pinterest.systems/table) is a set of structured data that is easy for a user to scan, examine, and compare. Table data is displayed in a grid format and can be used to structure both interactive and static data.\n\n![Table light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Table.spec.mjs-snapshots/Table-chromium-darwin.png)",
+      "description": "[Table](https://gestalt.pinterest.systems/web/table) is a set of structured data that is easy for a user to scan, examine, and compare. Table data is displayed in a grid format and can be used to structure both interactive and static data.\n\n![Table light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Table.spec.mjs-snapshots/Table-chromium-darwin.png)",
       "prefix": "<Table",
       "name": "Table",
       "scope": "javascript,typescript,javascriptreact",
@@ -540,7 +540,7 @@
       ]
     },
     {
-      "description": "[Tabs](https://gestalt.pinterest.systems/tabs) may be used navigate between multiple URLs. Tabs are intended as page-level navigation - if you're looking at just switching panels of content, please use [SegmentedControl](https://gestalt.pinterest.systems/segmentedcontrol).",
+      "description": "[Tabs](https://gestalt.pinterest.systems/web/tabs) may be used navigate between multiple URLs. Tabs are intended as page-level navigation - if you're looking at just switching panels of content, please use [SegmentedControl](https://gestalt.pinterest.systems/web/segmentedcontrol).",
       "prefix": "<Tabs",
       "name": "Tabs",
       "scope": "javascript,typescript,javascriptreact",
@@ -553,7 +553,7 @@
       ]
     },
     {
-      "description": "[Tags](https://gestalt.pinterest.systems/tag) are objects that hold text and have a delete icon to remove them. They can appear within [TextFields](https://gestalt.pinterest.systems/textfield#tagsExample), [TextAreas](https://gestalt.pinterest.systems/textarea#tagsExample), [ComboBox](https://gestalt.pinterest.systems/combobox#Tags) or as standalone components.\n\n![Tag light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Tag.spec.mjs-snapshots/Tag-chromium-darwin.png)\n![Tag dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Tag-dark.spec.mjs-snapshots/Tag-dark-chromium-darwin.png)",
+      "description": "[Tags](https://gestalt.pinterest.systems/web/tag) are objects that hold text and have a delete icon to remove them. They can appear within [TextFields](https://gestalt.pinterest.systems/web/textfield#tagsExample), [TextAreas](https://gestalt.pinterest.systems/web/textarea#tagsExample), [ComboBox](https://gestalt.pinterest.systems/web/combobox#Tags) or as standalone components.\n\n![Tag light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Tag.spec.mjs-snapshots/Tag-chromium-darwin.png)\n![Tag dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Tag-dark.spec.mjs-snapshots/Tag-dark-chromium-darwin.png)",
       "prefix": "<Tag",
       "name": "Tag",
       "scope": "javascript,typescript,javascriptreact",
@@ -567,14 +567,14 @@
       "body": ["<TapArea", "/>"]
     },
     {
-      "description": "The [Text](https://gestalt.pinterest.systems/text) component is used for all non-heading text on all surfaces, whether inside of UI components or in long-form paragraph text.\n\n![Text light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Text.spec.mjs-snapshots/Text-chromium-darwin.png)\n![Text dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Text-dark.spec.mjs-snapshots/Text-dark-chromium-darwin.png)",
+      "description": "The [Text](https://gestalt.pinterest.systems/web/text) component is used for all non-heading text on all surfaces, whether inside of UI components or in long-form paragraph text.\n\n![Text light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Text.spec.mjs-snapshots/Text-chromium-darwin.png)\n![Text dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Text-dark.spec.mjs-snapshots/Text-dark-chromium-darwin.png)",
       "prefix": "<Text",
       "name": "Text",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Text>", "\t${0:node}", "</Text>"]
     },
     {
-      "description": "[TextArea](https://gestalt.pinterest.systems/textarea) allows for multi-line input.\n\n![TextArea light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/TextArea.spec.mjs-snapshots/TextArea-chromium-darwin.png)\n![TextArea dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/TextArea-dark.spec.mjs-snapshots/TextArea-dark-chromium-darwin.png)",
+      "description": "[TextArea](https://gestalt.pinterest.systems/web/textarea) allows for multi-line input.\n\n![TextArea light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/TextArea.spec.mjs-snapshots/TextArea-chromium-darwin.png)\n![TextArea dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/TextArea-dark.spec.mjs-snapshots/TextArea-dark-chromium-darwin.png)",
       "prefix": "<TextArea",
       "name": "TextArea",
       "scope": "javascript,typescript,javascriptreact",
@@ -586,7 +586,7 @@
       ]
     },
     {
-      "description": "[TextField](https://gestalt.pinterest.systems/textfield) allows for multiple types of text input.\n\n![TextField light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/TextField.spec.mjs-snapshots/TextField-chromium-darwin.png)\n![TextField dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/TextField-dark.spec.mjs-snapshots/TextField-dark-chromium-darwin.png)",
+      "description": "[TextField](https://gestalt.pinterest.systems/web/textfield) allows for multiple types of text input.\n\n![TextField light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/TextField.spec.mjs-snapshots/TextField-chromium-darwin.png)\n![TextField dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/TextField-dark.spec.mjs-snapshots/TextField-dark-chromium-darwin.png)",
       "prefix": "<TextField",
       "name": "TextField",
       "scope": "javascript,typescript,javascriptreact",
@@ -598,28 +598,28 @@
       ]
     },
     {
-      "description": "[Toasts](https://gestalt.pinterest.systems/toast) can educate people on the content of the screen, provide confirmation when people complete an action, or simply communicate a short message.\n\nToast is purely visual. In order to properly handle the showing and dismissing of Toasts, as well as any animations, you will need to implement a Toast manager.\n\n![Toast light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Toast.spec.mjs-snapshots/Toast-chromium-darwin.png)",
+      "description": "[Toasts](https://gestalt.pinterest.systems/web/toast) can educate people on the content of the screen, provide confirmation when people complete an action, or simply communicate a short message.\n\nToast is purely visual. In order to properly handle the showing and dismissing of Toasts, as well as any animations, you will need to implement a Toast manager.\n\n![Toast light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Toast.spec.mjs-snapshots/Toast-chromium-darwin.png)",
       "prefix": "<Toast",
       "name": "Toast",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Toast", "\ttext={${1:string | Element}}", "/>"]
     },
     {
-      "description": "[Tooltip](https://gestalt.pinterest.systems/tooltip) is a floating text label that succinctly describes the function of an interactive element, typically [Icon Button](/iconbutton). It’s displayed continuously as long as the user hovers over or focuses on the element.\n\n**NOTE** Planning to use Tooltip with IconButton? Use [IconButton's built-in tooltip](https://gestalt.pinterest.systems/iconbutton#With-Tooltip) instead. **NOTE**\n\n![Tooltip light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Tooltip.spec.mjs-snapshots/Tooltip-chromium-darwin.png)\n![Tooltip dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Tooltip-dark.spec.mjs-snapshots/Tooltip-dark-chromium-darwin.png)",
+      "description": "[Tooltip](https://gestalt.pinterest.systems/web/tooltip) is a floating text label that succinctly describes the function of an interactive element, typically [Icon Button](/iconbutton). It’s displayed continuously as long as the user hovers over or focuses on the element.\n\n**NOTE** Planning to use Tooltip with IconButton? Use [IconButton's built-in tooltip](https://gestalt.pinterest.systems/web/iconbutton#With-Tooltip) instead. **NOTE**\n\n![Tooltip light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Tooltip.spec.mjs-snapshots/Tooltip-chromium-darwin.png)\n![Tooltip dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Tooltip-dark.spec.mjs-snapshots/Tooltip-dark-chromium-darwin.png)",
       "prefix": "<Tooltip",
       "name": "Tooltip",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Tooltip", "\ttext={${1:string}}", ">${2:node}</Tooltip>"]
     },
     {
-      "description": "[Upsells](https://gestalt.pinterest.systems/upsell) are banners that display short messages that focus on promoting an action or upgrading something the user already has.\n\n\n![Upsell light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Upsell.spec.mjs-snapshots/Upsell-chromium-darwin.png)\n![Upsell dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Upsell-dark.spec.mjs-snapshots/Upsell-dark-chromium-darwin.png)",
+      "description": "[Upsells](https://gestalt.pinterest.systems/web/upsell) are banners that display short messages that focus on promoting an action or upgrading something the user already has.\n\n\n![Upsell light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Upsell.spec.mjs-snapshots/Upsell-chromium-darwin.png)\n![Upsell dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Upsell-dark.spec.mjs-snapshots/Upsell-dark-chromium-darwin.png)",
       "prefix": "<Upsell",
       "name": "Upsell",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Upsell", "\tmessage={${1:string}}", ">${2:node}</Upsell>"]
     },
     {
-      "description": "[Video](https://gestalt.pinterest.systems/video) is used for media layout.\n\n![Video light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Video.spec.mjs-snapshots/Video-chromium-darwin.png)",
+      "description": "[Video](https://gestalt.pinterest.systems/web/video) is used for media layout.\n\n![Video light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Video.spec.mjs-snapshots/Video-chromium-darwin.png)",
       "prefix": "<Video",
       "name": "Video",
       "scope": "javascript,typescript,javascriptreact",
