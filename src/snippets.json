@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "73.3.0",
+  "gestaltVersion": "74.0.0",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/web/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard.spec.mjs-snapshots/ActivationCard-chromium-darwin.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard-dark.spec.mjs-snapshots/ActivationCard-dark-chromium-darwin.png)",
@@ -173,13 +173,13 @@
       ]
     },
     {
-      "description": "*ALPHA - DO NOT USE YET - MAY HAVE BREAKING CHANGES IN THE NEAR FUTURE*\n[DeviceTypeProvider](https://gestalt.pinterest.systems/web/utilities/devicetypeprovider) is an optional [React Context provider](https://reactjs.org/docs/context.html#contextprovider) to enable device-specific UI for Gestalt components that support it.",
+      "description": "[DeviceTypeProvider](https://gestalt.pinterest.systems/web/utilities/devicetypeprovider) is an optional [React Context provider](https://reactjs.org/docs/context.html#contextprovider) to enable device-specific UI for Gestalt components that support it.",
       "prefix": "<DeviceTypeProvider",
       "name": "DeviceTypeProvider",
       "scope": "javascript,typescript,javascriptreact",
       "body": [
         "<DeviceTypeProvider",
-        "\tdeviceType=\"${1|desktop,phone,tablet|}\"",
+        "\tdeviceType=\"${1|desktop,mobile|}\"",
         ">${2:node}</DeviceTypeProvider>"
       ]
     },
