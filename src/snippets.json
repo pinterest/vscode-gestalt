@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "76.0.0",
+  "gestaltVersion": "77.0.0",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/web/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard.spec.mjs-snapshots/ActivationCard-chromium-darwin.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard-dark.spec.mjs-snapshots/ActivationCard-dark-chromium-darwin.png)",
@@ -145,11 +145,10 @@
       "scope": "javascript,typescript,javascriptreact",
       "body": [
         "<ComboBox",
-        "\taccessibilityClearButtonLabel={${1:string}}",
-        "\tid={${2:string}}",
-        "\tlabel={${3:string}}",
-        "\tnoResultText={${4:string}}",
-        "\toptions={${5:\\$ReadOnlyArray<{| label: string, subtext?: string, value: string,\n|}>}}",
+        "\tid={${1:string}}",
+        "\tlabel={${2:string}}",
+        "\tnoResultText={${3:string}}",
+        "\toptions={${4:\\$ReadOnlyArray<{| label: string, subtext?: string, value: string,\n|}>}}",
         "/>"
       ]
     },
@@ -170,6 +169,17 @@
         "\ttitle={${1:string}}",
         "\tvalue={${2:string}}",
         "/>"
+      ]
+    },
+    {
+      "description": "[DefaultLabelProvider](https://gestalt.pinterest.systems/web/utilities/defaultlabelprovider) is an optional [React Context provider](https://reactjs.org/docs/context.html#contextprovider) to provide default strings for Gestalt component labels that support it. This allows for faster development by reducing boilerplate props at the callsite.",
+      "prefix": "<DefaultLabelProvider",
+      "name": "DefaultLabelProvider",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<DefaultLabelProvider>",
+        "\t${0:node}",
+        "</DefaultLabelProvider>"
       ]
     },
     {
