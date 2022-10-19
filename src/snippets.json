@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "78.0.3",
+  "gestaltVersion": "78.1.0",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/web/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard.spec.mjs-snapshots/ActivationCard-chromium-darwin.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard-dark.spec.mjs-snapshots/ActivationCard-dark-chromium-darwin.png)",
@@ -404,7 +404,7 @@
       "body": ["<Pulsar", "/>"]
     },
     {
-      "description": "Use [RadioButtons](https://gestalt.pinterest.systems/web/radiobutton) when you have a few options that a user can choose from. Never use radio buttons if the user can select more than one option from a list.\n**NOTE** The standalone RadioButton is soon to be deprecated, use [RadioGroup](https://gestalt.pinterest.systems/web/radiogroup) and RadioGroup.RadioButton instead.**NOTE**\n![RadioButton light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/RadioButton.spec.mjs-snapshots/RadioButton-chromium-darwin.png)\n![RadioButton dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/RadioButton-dark.spec.mjs-snapshots/RadioButton-dark-chromium-darwin.png)",
+      "description": "**NOTE** The standalone RadioButton is soon to be deprecated, use [RadioGroup](https://gestalt.pinterest.systems/web/radiogroup) and RadioGroup.RadioButton instead.**NOTE**",
       "prefix": "<RadioButton",
       "name": "RadioButton",
       "scope": "javascript,typescript,javascriptreact",
