@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "82.0.2",
+  "gestaltVersion": "82.1.0",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/web/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard.spec.mjs-snapshots/ActivationCard-chromium-darwin.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard-dark.spec.mjs-snapshots/ActivationCard-dark-chromium-darwin.png)",
@@ -507,7 +507,7 @@
       "prefix": "<SlimBanner",
       "name": "SlimBanner",
       "scope": "javascript,typescript,javascriptreact",
-      "body": ["<SlimBanner", "\tmessage={${1:string}}", "/>"]
+      "body": ["<SlimBanner", "\tmessage={${1:string | Element}}", "/>"]
     },
     {
       "description": "[Spinner](https://gestalt.pinterest.systems/web/spinner ) helps indicate that a surface's content or portion of content is currently loading.",
