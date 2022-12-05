@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "83.5.12",
+  "gestaltVersion": "83.6.0",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/web/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard.spec.mjs-snapshots/ActivationCard-chromium-darwin.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard-dark.spec.mjs-snapshots/ActivationCard-dark-chromium-darwin.png)",
@@ -260,6 +260,20 @@
       "name": "IconButton",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<IconButton", "/>"]
+    },
+    {
+      "description": "[IconButtonFloating](https://gestalt.pinterest.systems/web/iconbuttonfloating) represents the primary or most common action on the screen. As the name suggests, it floats over the content and is always on top of everything on the screen. Similar to [IconButton](https://gestalt.pinterest.systems/web/iconbutton), the floating version uses icons instead of text to convey available actions; however, it is used when the action needs to be visible at all times in a sticky way where content can scroll underneath. IconButtonFloating remains in place on scroll.\n\nBy default, it has a circular shape with a [floating elevation](https://gestalt.pinterest.systems/foundations/elevation) shadow style built-in; when pressed, it will open more related actions by triggering [Dropdown](https://gestalt.pinterest.systems/web/dropdown) or [Modal](https://gestalt.pinterest.systems/web/modal).\n\nIconButtonFloating is typically found in the Home feed, boards, and dashboards, allowing Pinners to perform core actions.",
+      "prefix": "<IconButtonFloating",
+      "name": "IconButtonFloating",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<IconButtonFloating",
+        "\taccessibilityPopupRole=\"${1|menu,dialog|}\"",
+        "\taccessibilityLabel={${2:string}}",
+        "\ticon={${3:undefined}}",
+        "\tonClick={${4:({| event: | SyntheticMouseEvent<HTMLButtonElement> | SyntheticKeyboardEvent<HTMLButtonElement> | SyntheticMouseEvent<HTMLAnchorElement> | SyntheticKeyboardEvent<HTMLAnchorElement>, dangerouslyDisableOnNavigation: () => void,\n|}) => void}}",
+        "/>"
+      ]
     },
     {
       "description": "[Image](https://gestalt.pinterest.systems/web/image) is the workhorse of Pinterest. If you define Pinterest to be all about collecting ideas, then images are how we choose to represent those ideas. In response, we've added a few extra superpowers to the regular img tag to make it even more awesome.\n\n![Image light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Image.spec.mjs-snapshots/Image-chromium-darwin.png)\n![Image dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Image-dark.spec.mjs-snapshots/Image-dark-chromium-darwin.png)",
