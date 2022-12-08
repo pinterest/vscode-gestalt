@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "84.0.7",
+  "gestaltVersion": "84.1.0",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/web/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard.spec.mjs-snapshots/ActivationCard-chromium-darwin.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard-dark.spec.mjs-snapshots/ActivationCard-dark-chromium-darwin.png)",
@@ -411,7 +411,7 @@
       ]
     },
     {
-      "description": "[Pulsars](https://gestalt.pinterest.systems/web/pulsar ) bring focus to a specific element on the screen and act like training wheels to guide people towards the normal way to perform that action. They are used in isolation or combination with other education components for more instructions.",
+      "description": "[Pulsar](https://gestalt.pinterest.systems/web/pulsar ) brings focus to a specific element on the screen, acting like \"training wheels\" to guide people towards the intended way to perform the action. Pulsar is used in isolation or combination with other education components for more instruction.",
       "prefix": "<Pulsar",
       "name": "Pulsar",
       "scope": "javascript,typescript,javascriptreact",
