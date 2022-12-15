@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "85.0.0",
+  "gestaltVersion": "85.1.0",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/web/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard.spec.mjs-snapshots/ActivationCard-chromium-darwin.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard-dark.spec.mjs-snapshots/ActivationCard-dark-chromium-darwin.png)",
@@ -13,20 +13,6 @@
         "\tstatusMessage={${3:string}}",
         "\ttitle={${4:string}}",
         "/>"
-      ]
-    },
-    {
-      "description": "A [ModalAlert](https://gestalt.pinterest.systems/web/modalalert) is a simple modal dialog used to alert a user of an issue, or to request confirmation after a user-triggered action. ModalAlert overlays and blocks page content until it is dismissed by the user.",
-      "prefix": "<ModalAlert",
-      "name": "ModalAlert",
-      "scope": "javascript,typescript,javascriptreact",
-      "body": [
-        "<ModalAlert",
-        "\taccessibilityModalLabel={${1:string}}",
-        "\theading={${2:string}}",
-        "\tonDismiss={${3:() => void}}",
-        "\tprimaryAction={${4:{| accessibilityLabel: string, disabled?: boolean, href?: string, label: string, onClick?: ({| event: | SyntheticMouseEvent<HTMLButtonElement> | SyntheticMouseEvent<HTMLAnchorElement> | SyntheticKeyboardEvent<HTMLAnchorElement> | SyntheticKeyboardEvent<HTMLButtonElement>, dangerouslyDisableOnNavigation: () => void, |}) => void, rel?: 'none' | 'nofollow', target?: null | 'self' | 'blank',\n|}}}",
-        ">${5:node}</ModalAlert>"
       ]
     },
     {
@@ -324,6 +310,13 @@
       "body": ["<Link", "\thref={${1:string}}", ">${2:node}</Link>"]
     },
     {
+      "description": "[List](https://gestalt.pinterest.systems/web/list) allows users to view individual, but related, text items grouped together.\n![List light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/List.spec.mjs-snapshots/List-chromium-darwin.png)\n![List dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/List-dark.spec.mjs-snapshots/List-dark-chromium-darwin.png)",
+      "prefix": "<List",
+      "name": "List",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": ["<List", "\tlabel={${1:string | Element}}", ">${2:node}</List>"]
+    },
+    {
       "description": "[Mask](https://gestalt.pinterest.systems/web/mask) is used to display content in a specific shape.",
       "prefix": "<Mask",
       "name": "Mask",
@@ -352,6 +345,20 @@
         "\taccessibilityModalLabel={${1:string}}",
         "\tonDismiss={${2:() => void}}",
         ">${3:node}</Modal>"
+      ]
+    },
+    {
+      "description": "A [ModalAlert](https://gestalt.pinterest.systems/web/modalalert) is a simple modal dialog used to alert a user of an issue, or to request confirmation after a user-triggered action. ModalAlert overlays and blocks page content until it is dismissed by the user.",
+      "prefix": "<ModalAlert",
+      "name": "ModalAlert",
+      "scope": "javascript,typescript,javascriptreact",
+      "body": [
+        "<ModalAlert",
+        "\taccessibilityModalLabel={${1:string}}",
+        "\theading={${2:string}}",
+        "\tonDismiss={${3:() => void}}",
+        "\tprimaryAction={${4:{| accessibilityLabel: string, disabled?: boolean, href?: string, label: string, onClick?: ({| event: | SyntheticMouseEvent<HTMLButtonElement> | SyntheticMouseEvent<HTMLAnchorElement> | SyntheticKeyboardEvent<HTMLAnchorElement> | SyntheticKeyboardEvent<HTMLButtonElement>, dangerouslyDisableOnNavigation: () => void, |}) => void, rel?: 'none' | 'nofollow', target?: null | 'self' | 'blank',\n|}}}",
+        ">${5:node}</ModalAlert>"
       ]
     },
     {
