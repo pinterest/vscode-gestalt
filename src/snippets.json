@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "85.1.3",
+  "gestaltVersion": "85.1.4",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/web/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard.spec.mjs-snapshots/ActivationCard-chromium-darwin.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard-dark.spec.mjs-snapshots/ActivationCard-dark-chromium-darwin.png)",
@@ -76,7 +76,7 @@
       ]
     },
     {
-      "description": "[Card](https://gestalt.pinterest.systems/web/card) is used to highlight content in grids. It visually shows that children elements belong together and can highlight the items on hover.",
+      "description": "[Card](https://gestalt.pinterest.systems/web/card) is used to highlight content in grids. It visually shows that children elements belong together and can highlight the items on hover.\n![Card light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Card.spec.mjs-snapshots/Card-chromium-darwin.png)\n![Card dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Card-dark.spec.mjs-snapshots/Button-dark-chromium-darwin.png)",
       "prefix": "<Card",
       "name": "Card",
       "scope": "javascript,typescript,javascriptreact",
@@ -290,7 +290,7 @@
       "body": ["<Layer>", "\t${0:node}", "</Layer>"]
     },
     {
-      "description": "[Letterboxes](https://gestalt.pinterest.systems/web/letterbox) are useful if you have some source media which is larger than the area you want to display it in. For instance, you might have a really tall image and want it to be displayed in a neatly cropped square. While the ideal solution to this problem is to update the source image, this might not always be possible for either cost or performance reasons.\n\nLetterbox should be used in situations where you would otherwise use the CSS property \\`background-size: cover\\`.",
+      "description": "[Letterboxes](https://gestalt.pinterest.systems/web/letterbox) are useful if you have some source media which is larger than the area you want to display it in. For instance, you might have a really tall image and want it to be displayed in a neatly cropped square. While the ideal solution to this problem is to update the source image, this might not always be possible for either cost or performance reasons.\n\nLetterbox should be used in situations where you would otherwise use the CSS property \\`background-size: cover\\`.\n\n![Letterbox light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Letterbox.spec.mjs-snapshots/Letterbox-chromium-darwin.png)",
       "prefix": "<Letterbox",
       "name": "Letterbox",
       "scope": "javascript,typescript,javascriptreact",
@@ -317,14 +317,14 @@
       "body": ["<List", "\tlabel={${1:string | Element}}", ">${2:node}</List>"]
     },
     {
-      "description": "[Mask](https://gestalt.pinterest.systems/web/mask) is used to display content in a specific shape.",
+      "description": "[Mask](https://gestalt.pinterest.systems/web/mask) is used to display content in a specific shape.\n\n![Mask light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Mask.spec.mjs-snapshots/Mask-chromium-darwin.png)",
       "prefix": "<Mask",
       "name": "Mask",
       "scope": "javascript,typescript,javascriptreact",
       "body": ["<Mask>", "\t${0:node}", "</Mask>"]
     },
     {
-      "description": "[Masonry](https://gestalt.pinterest.systems/web/masonry) creates a deterministic grid layout, positioning items based on available vertical space. It contains performance optimizations like virtualization and support for infinite scrolling.",
+      "description": "[Masonry](https://gestalt.pinterest.systems/web/masonry) creates a deterministic grid layout, positioning items based on available vertical space. It contains performance optimizations like virtualization and support for infinite scrolling.\n\n![Masonry light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Masonry.spec.mjs-snapshots/Masonry-chromium-darwin.png)",
       "prefix": "<Masonry",
       "name": "Masonry",
       "scope": "javascript,typescript,javascriptreact",
