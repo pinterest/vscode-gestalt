@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "85.1.5",
+  "gestaltVersion": "85.1.6",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/web/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard.spec.mjs-snapshots/ActivationCard-chromium-darwin.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard-dark.spec.mjs-snapshots/ActivationCard-dark-chromium-darwin.png)",
@@ -336,7 +336,7 @@
       ]
     },
     {
-      "description": "A [Modal](https://gestalt.pinterest.systems/web/modal) displays content that requires user interaction. Modals appear on a layer above the page and therefore block the content underneath, preventing users from interacting with anything else besides the Modal. Modal should be used to gather short bits of information from the user. For confirmation of an action or acknowledgment, use [ModalAlert](https://gestalt.pinterest.systems/web/modalalert).\n\n![Modal light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Modal.spec.mjs-snapshots/Modal-chromium-darwin.png)\n![Modal dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Modal-dark.spec.mjs-snapshots/Button-dark-chromium-darwin.png)",
+      "description": "A [Modal](https://gestalt.pinterest.systems/web/modal) displays content that requires user interaction. Modals appear on a layer above the page and therefore block the content underneath, preventing users from interacting with anything else besides the Modal. Modal should be used to gather short bits of information from the user. For confirmation of an action or acknowledgment, use [ModalAlert](https://gestalt.pinterest.systems/web/modalalert).\n\n![Modal light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Modal.spec.mjs-snapshots/Modal-chromium-darwin.png)\n![Modal dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Modal-dark.spec.mjs-snapshots/Modal-dark-chromium-darwin.png)",
       "prefix": "<Modal",
       "name": "Modal",
       "scope": "javascript,typescript,javascriptreact",
@@ -406,7 +406,7 @@
       "body": ["<Pog", "/>"]
     },
     {
-      "description": "[Popover](https://gestalt.pinterest.systems/web/popover) is a floating view that contains a task related to the content on screen. It can be triggered when the user clicks or focuses on an element, typically [Button](https://gestalt.pinterest.systems/web/button) or [IconButton](https://gestalt.pinterest.systems/web/iconbutton). It can also be triggered automatically, as in the case of user education. Popover is non-modal and can be dismissed by interacting with another part of the screen or an item within Popover.\n\nPopover is most appropriate for desktop screens and can contain a variety of elements, such as [Button](https://gestalt.pinterest.systems/web/button) and [Images](https://gestalt.pinterest.systems/web/image). Popover is also the container used to construct more complex elements like [Dropdown](https://gestalt.pinterest.systems/web/dropdown) and the board picker, pictured below, which allow people to choose the board to save a Pin to.",
+      "description": "[Popover](https://gestalt.pinterest.systems/web/popover) is a floating view that contains a task related to the content on screen. It can be triggered when the user clicks or focuses on an element, typically [Button](https://gestalt.pinterest.systems/web/button) or [IconButton](https://gestalt.pinterest.systems/web/iconbutton). It can also be triggered automatically, as in the case of user education. Popover is non-modal and can be dismissed by interacting with another part of the screen or an item within Popover.\n\nPopover is most appropriate for desktop screens and can contain a variety of elements, such as [Button](https://gestalt.pinterest.systems/web/button) and [Images](https://gestalt.pinterest.systems/web/image). Popover is also the container used to construct more complex elements like [Dropdown](https://gestalt.pinterest.systems/web/dropdown) and the board picker, pictured below, which allow people to choose the board to save a Pin to.\n\n![Popover light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Popover.spec.mjs-snapshots/Popover-chromium-darwin.png)\n![Popover dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Popover-dark.spec.mjs-snapshots/Popover-dark-chromium-darwin.png)",
       "prefix": "<Popover",
       "name": "Popover",
       "scope": "javascript,typescript,javascriptreact",
@@ -418,7 +418,7 @@
       ]
     },
     {
-      "description": "[Pulsar](https://gestalt.pinterest.systems/web/pulsar ) brings focus to a specific element on the screen, acting like \"training wheels\" to guide people towards the intended way to perform the action. Pulsar is used in isolation or combination with other education components for more instruction.\n\n![Pulsar light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Pulsar.spec.mjs-snapshots/Pulsar-chromium-darwin.png)\n![Pulsar dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Pulsar-dark.spec.mjs-snapshots/Button-dark-chromium-darwin.png)",
+      "description": "[Pulsar](https://gestalt.pinterest.systems/web/pulsar ) brings focus to a specific element on the screen, acting like \"training wheels\" to guide people towards the intended way to perform the action. Pulsar is used in isolation or combination with other education components for more instruction.\n\n![Pulsar light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Pulsar.spec.mjs-snapshots/Pulsar-chromium-darwin.png)\n![Pulsar dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Pulsar-dark.spec.mjs-snapshots/Pulsar-dark-chromium-darwin.png)",
       "prefix": "<Pulsar",
       "name": "Pulsar",
       "scope": "javascript,typescript,javascriptreact",
@@ -481,7 +481,7 @@
       ]
     },
     {
-      "description": "[SegmentedControl](https://gestalt.pinterest.systems/web/segmentedcontrol)  may be used to group multiple selections. The controls display the current state and related state.\n\nCreate layout to convey clear sense of information hierarchy. When a control is engaged, information below the control should also be updated.\n\n![SegmendtedControl light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SegmendtedControl.spec.mjs-snapshots/SegmendtedControl-chromium-darwin.png)\n![SegmendtedControl dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SegmendtedControl-dark.spec.mjs-snapshots/Button-dark-chromium-darwin.png)",
+      "description": "[SegmentedControl](https://gestalt.pinterest.systems/web/segmentedcontrol)  may be used to group multiple selections. The controls display the current state and related state.\n\nCreate layout to convey clear sense of information hierarchy. When a control is engaged, information below the control should also be updated.\n\n![SegmentedControl light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SegmentedControl.spec.mjs-snapshots/SegmentedControl-chromium-darwin.png)\n![SegmentedControl dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/SegmentedControl-dark.spec.mjs-snapshots/SegmentedControl-dark-chromium-darwin.png)",
       "prefix": "<SegmentedControl",
       "name": "SegmentedControl",
       "scope": "javascript,typescript,javascriptreact",
@@ -506,7 +506,7 @@
       ]
     },
     {
-      "description": "[Sheets](https://gestalt.pinterest.systems/web/sheet ) are surfaces that allow users to view optional information or complete sub-tasks in a workflow while keeping the context of the current page. The most common example of Sheet displays content in a panel that opens from the side of the screen for the user to read or input information. Sheets have default, internal padding for content.\n\n![Sheet light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Sheet.spec.mjs-snapshots/Sheet-chromium-darwin.png)\n![Sheet dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Sheet-dark.spec.mjs-snapshots/Button-dark-chromium-darwin.png)",
+      "description": "[Sheets](https://gestalt.pinterest.systems/web/sheet ) are surfaces that allow users to view optional information or complete sub-tasks in a workflow while keeping the context of the current page. The most common example of Sheet displays content in a panel that opens from the side of the screen for the user to read or input information. Sheets have default, internal padding for content.\n\n![Sheet light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Sheet.spec.mjs-snapshots/Sheet-chromium-darwin.png)\n![Sheet dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Sheet-dark.spec.mjs-snapshots/Sheet-dark-chromium-darwin.png)",
       "prefix": "<Sheet",
       "name": "Sheet",
       "scope": "javascript,typescript,javascriptreact",
@@ -584,7 +584,7 @@
       ]
     },
     {
-      "description": "[Tabs](https://gestalt.pinterest.systems/web/tabs) may be used navigate between multiple URLs. Tabs are intended as page-level navigation - if you're looking at just switching panels of content, please use [SegmentedControl](https://gestalt.pinterest.systems/web/segmentedcontrol).\n\n![Tabs light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Tabs.spec.mjs-snapshots/Tabs-chromium-darwin.png)\n![Tabs dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Tabs-dark.spec.mjs-snapshots/Button-dark-chromium-darwin.png)",
+      "description": "[Tabs](https://gestalt.pinterest.systems/web/tabs) may be used navigate between multiple URLs. Tabs are intended as page-level navigation - if you're looking at just switching panels of content, please use [SegmentedControl](https://gestalt.pinterest.systems/web/segmentedcontrol).\n\n![Tabs light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Tabs.spec.mjs-snapshots/Tabs-chromium-darwin.png)\n![Tabs dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/Tabs-dark.spec.mjs-snapshots/Tabs-dark-chromium-darwin.png)",
       "prefix": "<Tabs",
       "name": "Tabs",
       "scope": "javascript,typescript,javascriptreact",
