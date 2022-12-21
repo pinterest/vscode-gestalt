@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "85.1.6",
+  "gestaltVersion": "85.1.7",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/web/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard.spec.mjs-snapshots/ActivationCard-chromium-darwin.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard-dark.spec.mjs-snapshots/ActivationCard-dark-chromium-darwin.png)",
@@ -248,7 +248,7 @@
       "body": ["<IconButton", "/>"]
     },
     {
-      "description": "[IconButtonFloating](https://gestalt.pinterest.systems/web/iconbuttonfloating) represents the primary or most common action on the screen. As the name suggests, it floats over the content and is always on top of everything on the screen. Similar to [IconButton](https://gestalt.pinterest.systems/web/iconbutton), the floating version uses icons instead of text to convey available actions. However, it is used when the action needs to be visible at all times in a sticky way where content can scroll underneath. IconButtonFloating remains in place on scroll.\n\nBy default, it has a circular shape with a [floating elevation](https://gestalt.pinterest.systems/foundations/elevation) shadow style built-in. When pressed, it will open more related actions by triggering [Dropdown](https://gestalt.pinterest.systems/web/dropdown) or [Modal](https://gestalt.pinterest.systems/web/modal).\n\nIconButtonFloating is typically found in the Home feed, boards, and dashboards, allowing Pinners to perform core actions.",
+      "description": "[IconButtonFloating](https://gestalt.pinterest.systems/web/iconbuttonfloating) represents the primary or most common action on the screen. As the name suggests, it floats over the content and is always on top of everything on the screen. Similar to [IconButton](https://gestalt.pinterest.systems/web/iconbutton), the floating version uses icons instead of text to convey available actions. However, it is used when the action needs to be visible at all times in a sticky way where content can scroll underneath. IconButtonFloating remains in place on scroll.\n\nBy default, it has a circular shape with a [floating elevation](https://gestalt.pinterest.systems/foundations/elevation) shadow style built-in. When pressed, it will open more related actions by triggering [Dropdown](https://gestalt.pinterest.systems/web/dropdown) or [Modal](https://gestalt.pinterest.systems/web/modal).\n\nIconButtonFloating is typically found in the Home feed, boards, and dashboards, allowing Pinners to perform core actions.\n\n![IconButtonFloating light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/IconButtonFloating.spec.mjs-snapshots/IconButtonFloating-chromium-darwin.png)\n![IconButtonFloating dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/IconButtonFloating-dark.spec.mjs-snapshots/IconButtonFloating-dark-chromium-darwin.png)",
       "prefix": "<IconButtonFloating",
       "name": "IconButtonFloating",
       "scope": "javascript,typescript,javascriptreact",
@@ -348,7 +348,7 @@
       ]
     },
     {
-      "description": "A [ModalAlert](https://gestalt.pinterest.systems/web/modalalert) is a simple modal dialog used to alert a user of an issue, or to request confirmation after a user-triggered action. ModalAlert overlays and blocks page content until it is dismissed by the user.",
+      "description": "A [ModalAlert](https://gestalt.pinterest.systems/web/modalalert) is a simple modal dialog used to alert a user of an issue, or to request confirmation after a user-triggered action. ModalAlert overlays and blocks page content until it is dismissed by the user.\n\n![ModalAlert light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ModalAlert.spec.mjs-snapshots/ModalAlert-chromium-darwin.png)\n![ModalAlert dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ModalAlert-dark.spec.mjs-snapshots/ModalAlert-dark-chromium-darwin.png)",
       "prefix": "<ModalAlert",
       "name": "ModalAlert",
       "scope": "javascript,typescript,javascriptreact",
