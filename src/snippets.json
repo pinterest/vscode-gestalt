@@ -1,5 +1,5 @@
 {
-  "gestaltVersion": "85.1.7",
+  "gestaltVersion": "85.1.8",
   "snippets": [
     {
       "description": "[ActivationCards](https://gestalt.pinterest.systems/web/activationcard) are used in groups to communicate a user’s stage in a series of steps toward an overall action.\n\n![ActivationCard light mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard.spec.mjs-snapshots/ActivationCard-chromium-darwin.png)\n![ActivationCard dark mode](https://raw.githubusercontent.com/pinterest/gestalt/master/playwright/visual-test/ActivationCard-dark.spec.mjs-snapshots/ActivationCard-dark-chromium-darwin.png)",
@@ -283,7 +283,7 @@
       "body": ["<Label", "\thtmlFor={${1:string}}", ">${2:node}</Label>"]
     },
     {
-      "description": "[Layers](https://gestalt.pinterest.systems/web/layer) allow you to render children outside the DOM hierarchy of the parent. It's a wrapper around React createPortal that lets you use it as a component. This is particularly useful for places you might have needed to use z-index to overlay the screen before.",
+      "description": "[Layers](https://gestalt.pinterest.systems/web/layer) allow you to render children outside the DOM hierarchy of the parent. It's a wrapper around React createPortal that lets you use it as a component. This is particularly useful for places you might have needed to use z-index to overlay the screen before.\n\n![Layer](https://raw.githubusercontent.com/pinterest/gestalt/master/docs/graphics/building-blocks/Layer.svg)",
       "prefix": "<Layer",
       "name": "Layer",
       "scope": "javascript,typescript,javascriptreact",
@@ -450,7 +450,7 @@
       ]
     },
     {
-      "description": "[ScrollBoundaryContainer](https://gestalt.pinterest.systems/web/utilities/scrollboundarycontainer) is used with anchor-based components such as Popover, Tooltip, Dropdown or ComboBox. ScrollBoundaryContainer is needed for proper positioning when the anchor-based component is anchored to an element that is located within a scrolling container. The use of ScrollBoundaryContainer ensures the anchor-based component remains attached to its anchor when scrolling. Don't use ScrollBoundaryContainer to add scrolling to a container, use [Box's props](https://gestalt.pinterest.systems/web/box#Props) instead.",
+      "description": "[ScrollBoundaryContainer](https://gestalt.pinterest.systems/web/utilities/scrollboundarycontainer) is used with anchor-based components such as Popover, Tooltip, Dropdown or ComboBox. ScrollBoundaryContainer is needed for proper positioning when the anchor-based component is anchored to an element that is located within a scrolling container. The use of ScrollBoundaryContainer ensures the anchor-based component remains attached to its anchor when scrolling. Don't use ScrollBoundaryContainer to add scrolling to a container, use [Box's props](https://gestalt.pinterest.systems/web/box#Props) instead.\n\n![ScrollBoundaryContainer](https://raw.githubusercontent.com/pinterest/gestalt/master/docs/graphics/building-blocks/ScrollBoundaryContainer.svg)",
       "prefix": "<ScrollBoundaryContainer",
       "name": "ScrollBoundaryContainer",
       "scope": "javascript,typescript,javascriptreact",
@@ -531,7 +531,7 @@
       "body": ["<SlimBanner", "\tmessage={${1:string | Element}}", "/>"]
     },
     {
-      "description": "[Spinner](https://gestalt.pinterest.systems/web/spinner ) helps indicate that a surface's content or portion of content is currently loading.",
+      "description": "[Spinner](https://gestalt.pinterest.systems/web/spinner ) helps indicate that a surface's content or portion of content is currently loading.\n\n![Spinner](https://raw.githubusercontent.com/pinterest/gestalt/master/docs/graphics/general/Spinner.svg)",
       "prefix": "<Spinner",
       "name": "Spinner",
       "scope": "javascript,typescript,javascriptreact",
@@ -554,7 +554,7 @@
       ]
     },
     {
-      "description": "[Sticky](https://gestalt.pinterest.systems/web/sticky) allows an element to become fixed when it reaches a threshold (top, left, bottom, or right).",
+      "description": "[Sticky](https://gestalt.pinterest.systems/web/sticky) allows an element to become fixed when it reaches a threshold (top, left, bottom, or right).\n\n![Sticky](https://raw.githubusercontent.com/pinterest/gestalt/master/docs/graphics/building-blocks/Sticky.svg)",
       "prefix": "<Sticky",
       "name": "Sticky",
       "scope": "javascript,typescript,javascriptreact",
@@ -609,7 +609,7 @@
       ]
     },
     {
-      "description": "[TapArea](https://gestalt.pinterest.systems/tapArea) allows components to be clickable and touchable in an accessible way",
+      "description": "[TapArea](https://gestalt.pinterest.systems/tapArea) allows components to be clickable and touchable in an accessible way\n\n![TapArea](https://raw.githubusercontent.com/pinterest/gestalt/master/docs/graphics/building-blocks/TapArea.svg)",
       "prefix": "<TapArea",
       "name": "TapArea",
       "scope": "javascript,typescript,javascriptreact",
