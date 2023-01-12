@@ -24,8 +24,8 @@ jobs:
         run: npm install -g vsce
       - name: Publish to VSCode marketplace
         run: |
-          git config --global user.email vueringschristian@gmail.com > /dev/null 2>&1
-          git config --global user.name christianvuerings > /dev/null 2>&1
+          git config --global user.email ryanwilsonjames@gmail.com > /dev/null 2>&1
+          git config --global user.name dangerismycat > /dev/null 2>&1
           npm run generate:snippets
           git add .
           git diff-index --quiet HEAD || git commit -m "Update snippets"
