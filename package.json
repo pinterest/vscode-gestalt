@@ -148,7 +148,7 @@
     "@babel/core": "^7.16.5",
     "@babel/plugin-syntax-flow": "^7.16.5",
     "execa": "^5.1.1",
-    "got": "^11.8.3",
+    "got": "^12.5.3",
     "react-docgen": "^5.4.0",
     "uuid": "^8.3.2"
   },
